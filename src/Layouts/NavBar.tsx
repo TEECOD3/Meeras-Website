@@ -24,7 +24,7 @@ const NavBar = () => {
         {ModalOpen && <MobileNav hideModalHandler={hidemodalHandler} />}
       </AnimatePresence>
 
-      <nav className="">
+      <nav className="max-w-[100rem]">
         <div className="fixed z-50 w-full backdrop-blur-md bg-white/20  mx-auto max-lg:w-full ">
           <div className="h-[4rem] w-[90%] flex justify-between items-center px-2 md:px-4 sm:h-[5rem]  sm:max-w-[84%] mx-auto">
             <NavLink to="/" className="">

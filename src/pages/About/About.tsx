@@ -10,9 +10,10 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { images } from "../Home/data/Data";
 import StaffCard from "./components/staffcard";
+import Accordion from "./components/Accordion";
 const About = () => {
   return (
-    <main className="pt-20">
+    <main className="pt-20 max-w-[100rem] mx-auto">
       <section className="firstsection| backdrop:relative md:h-[400px] py-2 lg:h-[500px] xl:h-[700px]  lg:py-4 md:mb-4 flex flex-col md:flex-row max-w-8xl mx-auto">
         <div className="w-full h-full  mx-auto flex flex-col  lg:flex-row   sm:w-[80%] md:w-[70%]  md:mt-14  lg:mt-0 lg:w-[90%] lg:p-20 lg:gap-1 ">
           <div className="mt-0 space-y-5  text-center md:text-left sm:px-4 md:px-0">
@@ -24,8 +25,8 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className=" w-full md:absolute md:w-[70%] md:right-[10%] top-[1rem] mt-20">
-          <img src={aboutlogo} className="h-full w-full" />
+        <div className=" w-full md:absolute md:w-[70%] md:right-[10%] top-[1rem] mt-8 md:mt-20">
+          <img src={aboutlogo} className="h-full max-w-[60rwm]" />
         </div>
       </section>
 
@@ -124,7 +125,7 @@ const About = () => {
       </section>
 
       <section className="mt-16 my-16  w-full ">
-        <h2 className="font-medium capitalize text-center text-blue-400 sm:font-semibold sm:text-3xl md:mt-4 lg:font-semibold ">
+        <h2 className="capitalize text-center font-bold text-blue-400 sm:font-semibold sm:text-3xl md:mt-4 lg:font-semibold ">
           Our services
         </h2>
         <h1 className="text-xl sm:text-4xl w-2/3 lg:w-1/2 text-lightdark mb-4 lg:text-5xl text-center font-black mx-auto">
@@ -141,8 +142,11 @@ const About = () => {
         </div>
       </section>
 
-      <section className="accordion">
-        <div className=""></div>
+      <section className="accordion  max-w-[100rem]">
+        <div className="w-[88%] mx-auto">
+          <div className=""></div>
+          <Accordion />
+        </div>
       </section>
     </main>
   );
