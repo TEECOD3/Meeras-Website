@@ -142,10 +142,30 @@ const About = () => {
         </div>
       </section>
 
-      <section className="accordion  max-w-[100rem]">
-        <div className="w-[88%] mx-auto">
-          <div className=""></div>
-          <Accordion />
+      <section className="accordion  max-w-[100rem] bg-[#FFEFE3] mb-20 py-4">
+        <div className="md:w-[88%] mx-auto flex flex-col sm:flex-row gap-4 ">
+          <div className=" px-2 w-full md:w-3/6  lg:flex lg:items-center lg:justify-center">
+            <div className="lg:w-1/2 ">
+              <h4 className="font-extrabold text-2xl text-center md:text-left md:text-5xl xl:text-6xl">
+                Frequent Asked Question
+              </h4>
+              <p className="font-semibold text-sm mt-4 lg:text-base ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                ornare cursus sed nunc eget dictum Sed ornare cursus sed nunc
+                eget dictumd nunc eget{" "}
+              </p>
+            </div>
+          </div>
+          <div className=" w-full px-1 lg:w-3/6 ">
+            <div className="w-full px-1 md:px-0 items-center justify-center flex flex-col">
+              <Accordion />
+              <Accordion />
+              <Accordion />
+              <Accordion />
+              <Accordion />
+              <Accordion />
+            </div>
+          </div>
         </div>
       </section>
     </main>
