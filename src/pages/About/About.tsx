@@ -2,27 +2,33 @@ import React from "react";
 import aboutlogo from "../About/assets/images/AboutPagehero.png";
 import aboutusimage from "../About/assets/images/AboutUsImage.png";
 import { Button } from "../../Components/UI/Button";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay, Pagination, Navigation } from "swiper";
+import { images } from "../Home/data/Data";
 const About = () => {
   return (
     <main className="pt-20">
-      <section className=" h-[70vh] sm:h-[90vh]  xl:h-[100vh] bg-white lg:py-4 mb-4">
-        <div className="w-full h-full relative mx-auto flex flex-col  lg:flex-row   sm:w-[80%] md:w-[70%]  md:mt-14  lg:mt-0 lg:w-[90%] lg:p-20 lg:gap-1 ">
-          <div className="text-center mt-20 space-y-5 sm:space-y-7 md:space-y-10 lg:space-y-4 xl:space-y-5 md:mt-4 lg:text-left lg:w-1/2 ">
-            <h1 className="font-extrabold text-3xl sm:text-4xl lg:text-4xl xl:text-6xl xxl:text-8xl lg:leading-14 px-1 ">
+      <section className="relative md:h-[400px] lg:h-[500px] xl:h-[700px] bg-white lg:py-4 md:mb-4 flex flex-col md:flex-row max-w-8xl mx-auto">
+        <div className="w-full h-full  mx-auto flex flex-col  lg:flex-row   sm:w-[80%] md:w-[70%]  md:mt-14  lg:mt-0 lg:w-[90%] lg:p-20 lg:gap-1 ">
+          <div className="mt-0 space-y-5  text-center md:text-left sm:px-4 md:px-0">
+            <h1 className="font-extrabold text-3xl sm:text-4xl mt-4 md:mt-0 md:text-2xl lg:text-4xl xl:text-6xl xxl:text-8xl lg:leading-14 px-1 md:w-1/2 lg:w-2/3 xl:w-[60%] ">
               Distribute your brand from design to code
             </h1>
-            <p className="font-bold text-base md:text-xl lg:text-base xl:w-3/4 xxl:text-3xl text-blue-500">
+            <p className="font-bold text-base   md:text-xl lg:text-base xxl:text-3xl text-blue-500">
               Software Solution for your Business
             </p>
           </div>
-          <div className="mt-10 h-[10rem] mb-5 lg:mt-0 lg:absolute  lg:top-4  lg:w-[80%] right-[10rem] xxl:w-2/4 xl:h-[30rem] lg:h-[25rem] ">
-            <img src={aboutlogo} className="" />
-          </div>
+        </div>
+        <div className=" w-full md:absolute md:w-[70%] md:right-[10%] top-[1rem] mt-4 md:mt-0">
+          <img src={aboutlogo} className="h-full w-full" />
         </div>
       </section>
-      <section className="  flex flex-col md:flex-row mb-8">
-        <div className=" w-full lg:h-[500px]  md:w-1/2">
+
+      <section className="  flex flex-col md:flex-row md:mb-20">
+        <div className=" w-full  lg:h-[500px]  md:w-1/2">
           <img
             src={aboutusimage}
             alt="about us image"
@@ -50,6 +56,37 @@ const About = () => {
           >
             contact us
           </Button>
+        </div>
+      </section>
+
+      <section className="h-[20vh] p-4 w-full md:mb-10">
+        <div className="w-full text-center">
+          <ul className="flex gap-5 w-full  mt-10 md:mx-auto">
+            <Swiper
+              spaceBetween={10}
+              slidesPerView={4}
+              autoplay={{
+                delay: 1,
+                disableOnInteraction: false,
+              }}
+              speed={2400}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="w-full"
+            >
+              {images.map((image) => (
+                <SwiperSlide key={image.id}>
+                  <li>
+                    <img
+                      key={image.id}
+                      className="h-7 w-7 rounded-full md:w-20 md:h-20"
+                      src={image.image}
+                      alt=""
+                    />
+                  </li>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </ul>
         </div>
       </section>
     </main>
