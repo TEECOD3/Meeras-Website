@@ -30,7 +30,7 @@ const Accordion: FC<AccordionProps> = () => {
         <AnimatePresence>
           {isactive && (
             <motion.p
-              className="w-1/2  bg-red-400"
+              className=""
               initial={{ y: 0, opacity: 0 }}
               animate={{ y: 4, opacity: 1 }}
               exit={{ opacity: 0, y: 0 }}
