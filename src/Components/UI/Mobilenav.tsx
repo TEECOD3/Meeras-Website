@@ -54,12 +54,7 @@ const MobileNav: FC<MobileNavProps> = (props: MobileNavProps) => {
               onClick={hideModalHandler}
               className="mb-7"
             >
-              <li>
-                <img
-                  src={meeraslogo}
-                  className=" h-16 w-16  sm:h-20 sm:w-20 "
-                />
-              </li>
+              <img src={meeraslogo} className=" h-16 w-16  sm:h-20 sm:w-20 " />
             </motion.li>
           </NavLink>
 
@@ -79,7 +74,7 @@ const MobileNav: FC<MobileNavProps> = (props: MobileNavProps) => {
               }}
               onClick={hideModalHandler}
             >
-              <li>About</li>
+              About
             </motion.li>
           </NavLink>
           <motion.li

@@ -1,6 +1,7 @@
 import React from "react";
 import aboutlogo from "../About/assets/images/AboutPagehero.png";
 import aboutusimage from "../About/assets/images/AboutUsImage.png";
+import aboutimage from "../About/assets/images/aboutimage3.png";
 import { Button } from "../../Components/UI/Button";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -11,7 +12,7 @@ import { images } from "../Home/data/Data";
 const About = () => {
   return (
     <main className="pt-20">
-      <section className="relative md:h-[400px] lg:h-[500px] xl:h-[700px] bg-white lg:py-4 md:mb-4 flex flex-col md:flex-row max-w-8xl mx-auto">
+      <section className="firstsection| backdrop:relative md:h-[400px] lg:h-[500px] xl:h-[700px] bg-white lg:py-4 md:mb-4 flex flex-col md:flex-row max-w-8xl mx-auto">
         <div className="w-full h-full  mx-auto flex flex-col  lg:flex-row   sm:w-[80%] md:w-[70%]  md:mt-14  lg:mt-0 lg:w-[90%] lg:p-20 lg:gap-1 ">
           <div className="mt-0 space-y-5  text-center md:text-left sm:px-4 md:px-0">
             <h1 className="font-extrabold text-3xl sm:text-4xl mt-4 md:mt-0 md:text-2xl lg:text-4xl xl:text-6xl xxl:text-8xl lg:leading-14 px-1 md:w-1/2 lg:w-2/3 xl:w-[60%] ">
@@ -27,7 +28,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="  flex flex-col md:flex-row lg:mb-4">
+      <section className="secondSection|  flex flex-col md:flex-row lg:mb-4">
         <div className=" w-full  lg:h-[500px]  md:w-1/2">
           <img
             src={aboutusimage}
@@ -60,7 +61,7 @@ const About = () => {
       </section>
 
       <section
-        className="h-[20vh] p-4 w-full md:mb-10
+        className="scrollingsection| h-[20vh] p-4 w-full md:mb-10
       "
       >
         <div className="w-full text-center">
@@ -83,13 +84,41 @@ const About = () => {
                       key={image.id}
                       className="h-12 w-12 rounded-full md:w-20 md:h-20"
                       src={image.image}
-                      alt=""
+                      alt="scrolling images"
                     />
                   </li>
                 </SwiperSlide>
               ))}
             </Swiper>
           </ul>
+        </div>
+      </section>
+
+      <section className="relative w-full h-[450px] sm:h-[400px] xl:h-[700px]">
+        <img
+          src={aboutimage}
+          alt=""
+          className="w-full h-full absolute top-0 left-0 z-5 object-cover"
+        />
+        <div className="bg-black/70 absolute top-0 left-0 h-full w-full z-10" />
+
+        <div className="relative xl:h-full z-30 py-2 px-4 lg:p-10 text-center lg:text-left grid place-items-center md:place-items-start md:w-1/2">
+          <h4 className="font-extrabold text-3xl text-white xl:text-7xl mt-14 sm:mt-20">
+            Distribute your brand from{" "}
+            <span className="text-red-600 font-black">design</span> to{" "}
+            <span className="text-red-600 font-black">code</span>
+          </h4>
+          <p className="text-white text-sm mt-1 lg:text-base xl:w-3/4">
+            We make it easy for you to share and collaborate on critical content
+            — everything from contracts to spreadsheets to videos — all on a
+            single platform. And we help you keep it all secure. Fill out the
+            form and we'll show you how to get more done in the Content Cloud.
+            Spreadsheets to videos — all on a single platform. And we help you
+            keep it all secure. We make it easy for you to share and collaborate
+            on critical content — everything from contracts to spreadsheets to
+            videos — all on a single platform. And we help you keep it all
+            secure.
+          </p>
         </div>
       </section>
     </main>
