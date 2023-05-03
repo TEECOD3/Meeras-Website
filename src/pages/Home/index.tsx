@@ -49,7 +49,7 @@ const Home: FC<homeprops> = () => {
         </div>
       </section>
 
-      <section className="h-[20vh] p-4">
+      <section className=" p-4">
         <div className="w-full text-center">
           <p className="mb-4 font-semibold text-[#000B17]  text-base">
             Join the 100+ companies using the Segment platform
