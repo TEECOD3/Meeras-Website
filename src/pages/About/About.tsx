@@ -11,6 +11,7 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 import { images } from "../Home/data/Data";
 import StaffCard from "./components/staffcard";
 import Accordion from "./components/Accordion";
+import Input from "../../Components/forms/input";
 const About = () => {
   return (
     <main className="pt-20 max-w-[100rem] mx-auto">
@@ -166,6 +167,28 @@ const About = () => {
               <Accordion />
             </div>
           </div>
+        </div>
+      </section>
+      <section className="bg-grey-100 flex items-center justify-center flex-col py-28 px-2 mt-20">
+        <h2 className="text-2xl text-[#000B17] text-center font-bold px-2 md:text-4xl md:w-2/4 lg:3/6 lg:text-5xl xl:text-6xl xl:1/4 md:mb-10">
+          Ready to simplify how you work?
+        </h2>
+        <div className="flex flex-col space-y-4 mt-2 w-full md:flex-row md:w-1/2 md:gap-6 md:h-10  items-center justify-center">
+          <Input
+            variant="default"
+            inputs={{
+              type: "email",
+              placeholder: "enter your email",
+            }}
+            className="w-full  md:p-4 md:-mb-5 xxl:p-9 xxl:text-2xl"
+          />
+          <Button
+            className="mt-4 text-[0.8rem] p-3 w-1/2  mx-auto sm:w-2/3 lg:text-xl md:p-5 xxl:p-10 xxl:text-2xl  "
+            size="default"
+            variants="default"
+          >
+            subscribe Now
+          </Button>
         </div>
       </section>
     </main>
