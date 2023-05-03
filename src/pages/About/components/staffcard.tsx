@@ -11,7 +11,9 @@ const StaffCard: FC<StaffpropsProps> = () => {
       </div>
 
       <div className="my-3">
-        <h2 className="text-sm capitalize text-blue-500 md:text-base">ceo</h2>
+        <h2 className="text-sm capitalize text-blue-500 md:text-base">
+          frontend developer
+        </h2>
         <h3 className="text-base capitalize font-medium text-lightdark md:text-xl">
           temitope david
         </h3>

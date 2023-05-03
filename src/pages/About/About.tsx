@@ -95,7 +95,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="relative w-full h-[450px]   xl:h-[700px] flex justify-center flex-col ">
+      <section className="relative w-full h-[450px]   xl:h-[700px] flex justify-center flex-col md:px-20 ">
         <img
           src={aboutimage}
           alt=""
@@ -131,7 +131,7 @@ const About = () => {
           Lorem ipsum dolor sit amet consectetur a
         </h1>
 
-        <div className="grid grid-cols-2 gap-4 px-3 md:grid-cols-3 md:px-20 md:gap-10">
+        <div className="grid grid-cols-2 gap-4 px-3 md:grid-cols-3 md:px-24 md:gap-10">
           <StaffCard />
           <StaffCard />
           <StaffCard />
@@ -139,6 +139,10 @@ const About = () => {
           <StaffCard />
           <StaffCard />
         </div>
+      </section>
+
+      <section className="accordion">
+        <div className=""></div>
       </section>
     </main>
   );
