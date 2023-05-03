@@ -10,16 +10,6 @@ interface MobileNavProps {
 const MobileNav: FC<MobileNavProps> = (props: MobileNavProps) => {
   const { hideModalHandler } = props;
 
-  const svgvariants = {
-    hidden: { rotate: -180 },
-    visible: {
-      rotate: 0,
-      transition: {
-        duration: 1,
-      },
-    },
-  };
-
   const item = {
     exit: {
       opacity: 0,
@@ -47,7 +37,7 @@ const MobileNav: FC<MobileNavProps> = (props: MobileNavProps) => {
         />
 
         <ul className="text-3xl space-y-8 p-10 capitalize font-rails font-medium text-orange-600">
-          <NavLink to="/menu">
+          <NavLink to="/">
             <motion.li
               variants={item}
               initial={{ y: 24, opacity: 0 }}
@@ -72,7 +62,8 @@ const MobileNav: FC<MobileNavProps> = (props: MobileNavProps) => {
               </li>
             </motion.li>
           </NavLink>
-          <NavLink to="/about">
+
+          <NavLink to="About">
             <motion.li
               variants={item}
               initial={{ y: 24, opacity: 0 }}
