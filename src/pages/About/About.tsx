@@ -27,7 +27,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="  flex flex-col md:flex-row md:mb-20">
+      <section className="  flex flex-col md:flex-row lg:mb-4">
         <div className=" w-full  lg:h-[500px]  md:w-1/2">
           <img
             src={aboutusimage}
@@ -59,7 +59,10 @@ const About = () => {
         </div>
       </section>
 
-      <section className="h-[20vh] p-4 w-full md:mb-10">
+      <section
+        className="h-[20vh] p-4 w-full md:mb-10
+      "
+      >
         <div className="w-full text-center">
           <ul className="flex gap-5 w-full  mt-10 md:mx-auto">
             <Swiper
