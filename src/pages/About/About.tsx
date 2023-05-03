@@ -81,7 +81,7 @@ const About = () => {
                   <li>
                     <img
                       key={image.id}
-                      className="h-7 w-7 rounded-full md:w-20 md:h-20"
+                      className="h-12 w-12 rounded-full md:w-20 md:h-20"
                       src={image.image}
                       alt=""
                     />
