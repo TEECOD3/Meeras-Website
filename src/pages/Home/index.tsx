@@ -51,7 +51,7 @@ const Home: FC<homeprops> = () => {
 
       <section className="h-[20vh] p-4">
         <div className="w-full text-center">
-          <p className="mb-4 font-medium text-black text-base">
+          <p className="mb-4 font-semibold text-[#000B17]  text-base">
             Join the 100+ companies using the Segment platform
           </p>
           <ul className="flex gap-5 w-full md:w-[60%] mt-10 md:mx-auto">
