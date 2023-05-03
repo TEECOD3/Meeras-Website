@@ -38,6 +38,7 @@ export default {
         grey: {
           100: "#EAEAEA",
         },
+        lightdark: "#000B17",
       },
       backgroundImage: {
         Merrasimg: "url('./src/pages/Home/images/meraasico.png')",

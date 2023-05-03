@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { images } from "../Home/data/Data";
+import StaffCard from "./components/staffcard";
 const About = () => {
   return (
     <main className="pt-20">
@@ -119,6 +120,24 @@ const About = () => {
             videos — all on a single platform. And we help you keep it all
             secure.
           </p>
+        </div>
+      </section>
+
+      <section className="mt-16 my-16  w-full ">
+        <h2 className="font-medium capitalize text-center text-blue-400 sm:font-semibold sm:text-3xl md:mt-4 lg:font-semibold ">
+          Our services
+        </h2>
+        <h1 className="text-xl sm:text-4xl w-2/3 lg:w-1/2 text-lightdark mb-4 lg:text-5xl text-center font-black mx-auto">
+          Lorem ipsum dolor sit amet consectetur a
+        </h1>
+
+        <div className="grid grid-cols-2 gap-4 px-3 md:grid-cols-3 md:px-20 md:gap-10">
+          <StaffCard />
+          <StaffCard />
+          <StaffCard />
+          <StaffCard />
+          <StaffCard />
+          <StaffCard />
         </div>
       </section>
     </main>
