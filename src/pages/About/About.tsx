@@ -12,7 +12,7 @@ import { images } from "../Home/data/Data";
 const About = () => {
   return (
     <main className="pt-20">
-      <section className="firstsection| backdrop:relative md:h-[400px] lg:h-[500px] xl:h-[700px] bg-white lg:py-4 md:mb-4 flex flex-col md:flex-row max-w-8xl mx-auto">
+      <section className="firstsection| backdrop:relative md:h-[400px] py-2 lg:h-[500px] xl:h-[700px]  lg:py-4 md:mb-4 flex flex-col md:flex-row max-w-8xl mx-auto">
         <div className="w-full h-full  mx-auto flex flex-col  lg:flex-row   sm:w-[80%] md:w-[70%]  md:mt-14  lg:mt-0 lg:w-[90%] lg:p-20 lg:gap-1 ">
           <div className="mt-0 space-y-5  text-center md:text-left sm:px-4 md:px-0">
             <h1 className="font-extrabold text-3xl sm:text-4xl mt-4 md:mt-0 md:text-2xl lg:text-4xl xl:text-6xl xxl:text-8xl lg:leading-14 px-1 md:w-1/2 lg:w-2/3 xl:w-[60%] ">
@@ -23,13 +23,13 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className=" w-full md:absolute md:w-[70%] md:right-[10%] top-[1rem] mt-4 md:mt-0">
+        <div className=" w-full md:absolute md:w-[70%] md:right-[10%] top-[1rem] mt-20">
           <img src={aboutlogo} className="h-full w-full" />
         </div>
       </section>
 
       <section className="secondSection|  flex flex-col md:flex-row lg:mb-4">
-        <div className=" w-full  lg:h-[500px]  md:w-1/2">
+        <div className=" w-full lg:h-[500px] md:w-1/2 ">
           <img
             src={aboutusimage}
             alt="about us image"
@@ -61,11 +61,11 @@ const About = () => {
       </section>
 
       <section
-        className="scrollingsection| h-[20vh] p-4 w-full mb-14 xl:mb-4
+        className="scrollingsection| py-8  w-full mb-6 xl:mb-4
       "
       >
         <div className="w-full text-center">
-          <ul className="flex gap-5 w-full  mt-10 md:mx-auto">
+          <ul className="flex gap-5 w-full  mt-1 md:mx-auto">
             <Swiper
               spaceBetween={10}
               slidesPerView={4}
@@ -94,7 +94,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="relative w-full h-[450px]   xl:h-[700px]">
+      <section className="relative w-full h-[450px]   xl:h-[700px] flex justify-center flex-col ">
         <img
           src={aboutimage}
           alt=""
@@ -102,13 +102,13 @@ const About = () => {
         />
         <div className="bg-black/70 absolute top-0 left-0 h-full w-full z-10" />
 
-        <div className="relative xl:h-full z-30 py-2 px-4  lg:p-12 text-center lg:text-left grid place-items-center md:place-items-start md:w-1/2">
+        <div className="relative xl:5/6 z-30 py-2 px-4  lg:p-12 text-center lg:text-left flex justify-center flex-col  md:w-1/2">
           <h4 className="font-extrabold text-3xl text-white xl:text-7xl mt-10 lg:mt-0">
-            Distribute your brand from{" "}
-            <span className="text-red-600 font-black">design</span> to{" "}
-            <span className="text-red-600 font-black">code</span>
+            Distribute your brand from
+            <span className="text-red-600 font-black">design</span> to
+            <span className="text-red-600 font-black ml-3">code</span>
           </h4>
-          <p className="text-white text-sm mt-1 lg:mt-4 lg:text-base xl:w-3/4 ">
+          <p className="text-white text-sm mt-3  lg:text-base xl:w-3/4 ">
             We make it easy for you to share and collaborate on critical content
             — everything from contracts to spreadsheets to videos — all on a
             single platform. And we help you keep it all secure. Fill out the
