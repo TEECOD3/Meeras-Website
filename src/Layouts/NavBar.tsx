@@ -5,16 +5,24 @@ import { useState } from "react";
 import { Button } from "../Components/UI/Button";
 import { NavLink } from "react-router-dom";
 import merraslog from "../pages/Home/images/Meeraslogo.png";
+import { AnimatePresence } from "framer-motion";
+import MobileNav from "../Components/UI/Mobilenav";
 
 const NavBar = () => {
-  const [modal, SetModal] = useState<boolean>(false);
+  const [ModalOpen, setModalOpen] = useState(false);
+
+  const openModalHandler = () => {
+    setModalOpen(!ModalOpen);
+  };
+
+  const hidemodalHandler = () => {
+    setModalOpen(false);
+  };
   return (
     <>
-      {modal && (
-        <div className="absolute">
-          <p>mobile navigation</p>
-        </div>
-      )}
+      <AnimatePresence>
+        {ModalOpen && <MobileNav hideModalHandler={hidemodalHandler} />}
+      </AnimatePresence>
 
       <nav className="">
         <div className="fixed z-50 w-full backdrop-blur-md bg-white/20  mx-auto max-lg:w-full ">
@@ -88,7 +96,10 @@ const NavBar = () => {
               </li>
             </ul>
 
-            <MdOutlineMenu className="lg:hidden text-4xl cursor-pointer " />
+            <MdOutlineMenu
+              className="lg:hidden text-4xl cursor-pointer "
+              onClick={openModalHandler}
+            />
           </div>
         </div>
       </nav>
