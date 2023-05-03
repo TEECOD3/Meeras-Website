@@ -94,7 +94,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="relative w-full h-[450px] sm:h-[400px] xl:h-[700px]">
+      <section className="relative w-full h-[450px]   xl:h-[700px]">
         <img
           src={aboutimage}
           alt=""
@@ -102,8 +102,8 @@ const About = () => {
         />
         <div className="bg-black/70 absolute top-0 left-0 h-full w-full z-10" />
 
-        <div className="relative xl:h-full z-30 py-2 px-4  lg:p-24 text-center lg:text-left grid place-items-center md:place-items-start md:w-1/2">
-          <h4 className="font-extrabold text-3xl text-white xl:text-7xl mt-14 sm:mt-20">
+        <div className="relative xl:h-full z-30 py-2 px-4  lg:p-12 text-center lg:text-left grid place-items-center md:place-items-start md:w-1/2">
+          <h4 className="font-extrabold text-3xl text-white xl:text-7xl mt-10 lg:mt-0">
             Distribute your brand from{" "}
             <span className="text-red-600 font-black">design</span> to{" "}
             <span className="text-red-600 font-black">code</span>
