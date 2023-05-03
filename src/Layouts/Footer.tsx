@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className=" bg-blue-900 flex flex-col items-center justify-center pt-8 px-3 lg:pt-20">
       <div className=" flex flex-col md:flex-row-reverse  md:max-w-[83%] mx-auto gap-10 ">
         <div className="flex px-6 md:px-0 justify-between md:justify-around md:flex-1 max-sm:text-sm  text-white font-light md:gap-10 ">
-          <ul className="space-y-8 text-md md:text-base grid place-items-center">
+          <ul className="space-y-8 text-md md:text-base grid place-items-start">
             <h4 className="font-bold text-md">Company</h4>
             <li>About us</li>
             <li>About us</li>
