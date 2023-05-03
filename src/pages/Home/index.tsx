@@ -54,8 +54,7 @@ const Home: FC<homeprops> = () => {
           <p className="mb-4 font-semibold text-[#000B17]  text-base">
             Join the 100+ companies using the Segment platform
           </p>
-          <ul className="flex gap-5 w-full md:w-[60%] mt-10 md:mx-auto">
-            <div className="h-[3rem] backdrop-blur-md bg-transparent w:1/12 sm:w-2/12 opacity-10 " />
+          <ul className="flex gap-5 w-full md:w-[80%] mt-10 md:mx-auto">
             <Swiper
               spaceBetween={10}
               slidesPerView={4}
@@ -80,7 +79,6 @@ const Home: FC<homeprops> = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div className="h-[3rem] bg-white w:1/12 sm:w-2/12 opacity-20 " />
           </ul>
         </div>
       </section>
