@@ -35,7 +35,7 @@ const About = () => {
             Distribute your brand from
             <span className="text-blue-600 ml-1">design to code</span>
           </h2>
-          <p className="sm:mt-2 text-sm lg:text-base text-[#000B17] xl:w-3/4 lg:py-3">
+          <p className="mt-2 text-sm lg:text-base text-[#000B17] xl:w-3/4 lg:py-3">
             We make it easy for you to share and collaborate on critical content
             — everything from contracts to spreadsheets to videos — all on a
             single platform. And we help you keep it all secure. Fill out the
@@ -46,7 +46,7 @@ const About = () => {
           <Button
             variants="default"
             size="default"
-            className="rounded-none px-6 py-3 sm:mt-10"
+            className="rounded-none px-6 py-3 mt-4 sm:mt-10"
           >
             contact us
           </Button>
