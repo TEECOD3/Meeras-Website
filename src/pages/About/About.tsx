@@ -61,7 +61,7 @@ const About = () => {
       </section>
 
       <section
-        className="scrollingsection| h-[20vh] p-4 w-full md:mb-10
+        className="scrollingsection| h-[20vh] p-4 w-full mb-14 xl:mb-4
       "
       >
         <div className="w-full text-center">
@@ -82,7 +82,7 @@ const About = () => {
                   <li>
                     <img
                       key={image.id}
-                      className="h-12 w-12 rounded-full md:w-20 md:h-20"
+                      className="h-12 w-12 rounded-full md:w-24 md:h-24"
                       src={image.image}
                       alt="scrolling images"
                     />
@@ -102,13 +102,13 @@ const About = () => {
         />
         <div className="bg-black/70 absolute top-0 left-0 h-full w-full z-10" />
 
-        <div className="relative xl:h-full z-30 py-2 px-4 lg:p-10 text-center lg:text-left grid place-items-center md:place-items-start md:w-1/2">
+        <div className="relative xl:h-full z-30 py-2 px-4  lg:p-24 text-center lg:text-left grid place-items-center md:place-items-start md:w-1/2">
           <h4 className="font-extrabold text-3xl text-white xl:text-7xl mt-14 sm:mt-20">
             Distribute your brand from{" "}
             <span className="text-red-600 font-black">design</span> to{" "}
             <span className="text-red-600 font-black">code</span>
           </h4>
-          <p className="text-white text-sm mt-1 lg:text-base xl:w-3/4">
+          <p className="text-white text-sm mt-1 lg:mt-4 lg:text-base xl:w-3/4 ">
             We make it easy for you to share and collaborate on critical content
             — everything from contracts to spreadsheets to videos — all on a
             single platform. And we help you keep it all secure. Fill out the
