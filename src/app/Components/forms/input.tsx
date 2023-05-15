@@ -3,11 +3,12 @@ import { cva, VariantProps } from "class-variance-authority";
 import { cn } from "../../utils/tailwindclassmod";
 
 const inputVariants = cva(
-  " mx-auto p-2 capitalize border-blue-400 border-[3px] rounded-md inline-flex focus:border-blue-400 outline-none w-[100%]",
+  "mx-auto p-2 capitalize border-gray-200 bg-white text-sm border-[1px] rounded-md inline-flex focus:border-blue-200 outline-none w-[100%]",
   {
     variants: {
       variant: {
-        default: "bg-[#EAEAEA] text-gray-900",
+        default: "bg-white  text-gray-900 text-[0.6rem] p-4 md:p-6 ",
+        bg_gray: "bg-gray-400",
       },
     },
     defaultVariants: {

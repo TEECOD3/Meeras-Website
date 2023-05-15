@@ -20,13 +20,13 @@ interface homeprops {}
 const Home: FC<homeprops> = () => {
   return (
     <main>
-      <section className=" bg-[#FFEFE3] relative p-4 lg:py-20 ">
+      <section className=" bg-[#FFEFE3] relative p-4 lg:py-20  ">
         <div className="w-full mx-auto flex flex-col relative lg:flex-row  sm:w-[80%] md:w-[70%]  lg:w-[95%] lg:p-20 lg:gap-10 ">
           <div className="text-center mt-20 space-y-5 sm:space-y-7 md:space-y-10 lg:space-y-5 xl:space-y-10 md:mt-20 lg:text-left lg:w-1/2 lg:mt-10">
             <h2 className="text-xl capitalize font-medium text-orange-500 sm:text-2xl xxl:text-4xl">
               Software Solution for your Business
             </h2>
-            <h1 className="font-extrabold text-3xl sm:text-4xl lg:text-4xl xl:text-6xl xxl:text-8xl lg:leading-14 ">
+            <h1 className="font-extrabold text-3xl sm:text-4xl lg:text-4xl xl:text-6xl xxl:text-8xl lg:leading-[5rem] ">
               Distribute your brand from design to code
             </h1>
             <p className="font-medium text-base md:text-xl lg:text-base xl:w-3/4 xxl:text-3xl">
@@ -39,7 +39,7 @@ const Home: FC<homeprops> = () => {
             <Image
               src={mobilemeerasimg}
               alt="meeras image for mobile"
-              className="bg-no-repeat bg-contain w-[16rem] h-[20rem] "
+              className="bg-no-repeat bg-contain w-full sm:w-[16rem] h-[24rem] "
             />
           </div>
 
@@ -73,7 +73,7 @@ const Home: FC<homeprops> = () => {
                   <li>
                     <Image
                       key={image.id}
-                      className="h-12 w-12 rounded-full md:w-20 md:h-20"
+                      className="h-14 w-14 rounded-full md:w-20 md:h-20 "
                       src={image.image}
                       alt=""
                     />
@@ -85,9 +85,9 @@ const Home: FC<homeprops> = () => {
         </div>
       </section>
 
-      <section className=" max-sm:p-2 max-md:px-16 mt-8 md:p-6">
+      <section className=" max-sm:p-2 max-md:px-16 mt-8 md:p-6 ">
         <div className="lg:max-w-[90%] xl:max-w-[83%] mx-auto ">
-          <div className="sticky top-[4.5rem] bg-white p-2">
+          <div className="sticky top-[3.9rem] md:top-[4.3rem] bg-white p-2">
             <h2 className="text-xl md:text-2xl font-bold text-orange-400 md:mb-4">
               Our Services
             </h2>
@@ -96,7 +96,7 @@ const Home: FC<homeprops> = () => {
             </h1>
           </div>
 
-          <div className=" sm:w-full overflow-hidden mx-auto grid grid-cols-2 gap-4 md:grid-cols-3">
+          <div className=" px-3 sm:w-full overflow-hidden mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-3 my-5">
             {services.map((card) => (
               <CardServices
                 key={card.id}
@@ -109,7 +109,7 @@ const Home: FC<homeprops> = () => {
         </div>
       </section>
 
-      <section className="mt-16 sm:mt-32 relative text-center  ">
+      <section className="mt-16 sm:mt-32 relative text-center">
         <div className=" bg-blue-600 h-[10rem] clip-octagon pt-2 pb-10 md:pt-4 md:pb-20 md:h-[15rem] lg:h-[24rem] xl:h-[28rem]">
           <h2 className="font-medium text-white sm:font-semibold sm:text-3xl md:mt-4 lg:font-semibold ">
             Our Product
@@ -174,7 +174,7 @@ const Home: FC<homeprops> = () => {
         </div>
       </section>
 
-      <section className="bg-grey-100 flex items-center justify-center flex-col py-28 px-2 mt-20">
+      <section className="bg-grey-100 flex items-center justify-center flex-col py-28 px-4 mt-20">
         <h2 className="text-2xl text-[#000B17] text-center font-bold px-2 md:text-4xl md:w-2/4 lg:3/6 lg:text-5xl xl:text-6xl xl:1/4 md:mb-10">
           Ready to simplify how you work?
         </h2>

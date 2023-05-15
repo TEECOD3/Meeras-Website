@@ -16,7 +16,7 @@ import Input from "../Components/forms/input";
 import Image from "next/image";
 const About = () => {
   return (
-    <main className="pt-20 max-w-[100rem] mx-auto">
+    <main className="pt-20 max-w-[100%] mx-auto">
       <section className="firstsection| backdrop:relative md:h-[400px] py-2 lg:h-[500px] xl:h-[700px]  lg:py-4 md:mb-4 flex flex-col md:flex-row max-w-8xl mx-auto">
         <div className="w-full h-full  mx-auto flex flex-col  lg:flex-row   sm:w-[80%] md:w-[70%]  md:mt-14  lg:mt-0 lg:w-[90%] lg:p-20 lg:gap-1 ">
           <div className="mt-0 space-y-5  text-center md:text-left sm:px-4 md:px-0">
@@ -106,7 +106,7 @@ const About = () => {
       <section className="relative w-full h-[450px]   xl:h-[700px] flex justify-center flex-col md:px-20 ">
         <Image
           src={aboutimage}
-          alt=""
+          alt="aboutimage"
           className="w-full h-full absolute top-0 left-0 z-5 object-cover"
         />
         <div className="bg-black/70 absolute top-0 left-0 h-full w-full z-10" />
@@ -149,7 +149,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="accordion|  max-w-[100rem] bg-[#FFEFE3] mb-20 py-4">
+      <section className="accordion|  max-w-[100rem] bg-[#FFEFE3] mb-20 py-4 px-1">
         <div className="md:w-[88%] mx-auto flex flex-col sm:flex-row gap-4 ">
           <div className=" px-2 w-full md:w-3/6  lg:flex lg:items-center lg:justify-center">
             <div className="lg:w-1/2 ">
@@ -164,7 +164,7 @@ const About = () => {
             </div>
           </div>
           <div className=" w-full px-1 lg:w-3/6">
-            <div className="w-full  md:px-0 items-center justify-center flex flex-col">
+            <div className="w-full  md:px-0 items-center justify-center flex flex-col px-2">
               <Accordion />
               <Accordion />
               <Accordion />
