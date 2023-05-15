@@ -1,113 +1,203 @@
-import Image from 'next/image'
+"use client";
+import { FC } from "react";
+import { Button } from "./Components/UI/Button";
+import Input from "./Components/forms/input";
+import mobilemeerasimg from "./images/meraasIco.png";
+import desktopmerrasimage from "./images/bigmerras.png";
+import schollmgt from "./images/schoomgtsys.png";
+import CardServices from "./Components/UI/CardServices";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay, Pagination, Navigation } from "swiper";
+import SwipperNavbuttons from "./Components/UI/SwipperNavbuttons";
+import { testimoonials, images, services } from "./data/Data";
+import TestimonialCard from "./Components/UI/TestimonialCard";
+import Image from "next/image";
 
-export default function Home() {
+interface homeprops {}
+const Home: FC<homeprops> = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
+    <main>
+      <section className=" bg-[#FFEFE3] relative p-4 lg:py-20 ">
+        <div className="w-full mx-auto flex flex-col relative lg:flex-row  sm:w-[80%] md:w-[70%]  lg:w-[95%] lg:p-20 lg:gap-10 ">
+          <div className="text-center mt-20 space-y-5 sm:space-y-7 md:space-y-10 lg:space-y-5 xl:space-y-10 md:mt-20 lg:text-left lg:w-1/2 lg:mt-10">
+            <h2 className="text-xl capitalize font-medium text-orange-500 sm:text-2xl xxl:text-4xl">
+              Software Solution for your Business
+            </h2>
+            <h1 className="font-extrabold text-3xl sm:text-4xl lg:text-4xl xl:text-6xl xxl:text-8xl lg:leading-14 ">
+              Distribute your brand from design to code
+            </h1>
+            <p className="font-medium text-base md:text-xl lg:text-base xl:w-3/4 xxl:text-3xl">
+              Specify helps you unify your brand identity by collecting, storing
+              and distributing design tokens and assets — automatically.
+            </p>
+          </div>
+
+          <div className="flex items-center w-full justify-center lg:hidden mt-4">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+              src={mobilemeerasimg}
+              alt="meeras image for mobile"
+              className="bg-no-repeat bg-contain w-[16rem] h-[20rem] "
             />
-          </a>
+          </div>
+
+          <Image
+            alt="meerasimage"
+            src={desktopmerrasimage}
+            className="hidden lg:block w-3/4 xxl:w-2/4 xl:h-[30rem] lg:h-[25rem]  lg:mr-[-7rem] xl:mr-[-8.5rem] "
+          />
         </div>
-      </div>
+      </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
+      <section className=" p-4">
+        <div className="w-full text-center">
+          <p className="mb-4 font-semibold text-[#000B17]  text-base">
+            Join the 100+ companies using the Segment platform
+          </p>
+          <ul className="flex gap-5 w-full md:w-[80%] mt-10 md:mx-auto">
+            <Swiper
+              spaceBetween={10}
+              slidesPerView={4}
+              autoplay={{
+                delay: 1,
+                disableOnInteraction: false,
+              }}
+              speed={2400}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="w-full"
+            >
+              {images.map((image) => (
+                <SwiperSlide key={image.id}>
+                  <li>
+                    <Image
+                      key={image.id}
+                      className="h-12 w-12 rounded-full md:w-20 md:h-20"
+                      src={image.image}
+                      alt=""
+                    />
+                  </li>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </ul>
+        </div>
+      </section>
+
+      <section className=" max-sm:p-2 max-md:px-16 mt-8 md:p-6">
+        <div className="lg:max-w-[90%] xl:max-w-[83%] mx-auto ">
+          <div className="sticky top-[4.5rem] bg-white p-2">
+            <h2 className="text-xl md:text-2xl font-bold text-orange-400 md:mb-4">
+              Our Services
+            </h2>
+            <h1 className="text-2xl  font-extrabold  lg:text-6xl lg:w-4/5 mb-10  ">
+              Lorem ipsum dolor sit amet, consectetur a
+            </h1>
+          </div>
+
+          <div className=" sm:w-full overflow-hidden mx-auto grid grid-cols-2 gap-4 md:grid-cols-3">
+            {services.map((card) => (
+              <CardServices
+                key={card.id}
+                paragraph={card.description}
+                title={card.title}
+                image={card.img}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mt-16 sm:mt-32 relative text-center  ">
+        <div className=" bg-blue-600 h-[10rem] clip-octagon pt-2 pb-10 md:pt-4 md:pb-20 md:h-[15rem] lg:h-[24rem] xl:h-[28rem]">
+          <h2 className="font-medium text-white sm:font-semibold sm:text-3xl md:mt-4 lg:font-semibold ">
+            Our Product
+          </h2>
+          <h1 className="text-xl sm:text-4xl  text-white mb-4 lg:text-5xl font-black">
+            School Management System
+          </h1>
+        </div>
+
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+          src={schollmgt}
+          alt="school management system image"
+          className="w-full h-[15rem] bg-contain bg-no-repeat absolute md:h-[28rem] lg:h-[35rem]  xl:h-[50rem] xl:w-3/4 top-[4rem] sm:top-[5rem] lg:top-[10rem] xl:left-[15%]  z-30"
+        ></Image>
+      </section>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <section className="mt-44  md:mt-[24rem] xl:mt-[32rem] sm:max-w-[83%] sm:mx-auto ">
+        <h2 className="text-left  px-3 text-2xl w-5/6 font-extrabold sm:w-5/6 md:w-1/2 sm:text-5xl lg:ml-12  md:text-2xl lg:text-4xl  ">
+          Trusted by startups and the worlds largest companies
+        </h2>
+        <div className="flex mt-4 xl:mt-8 flex-col lg:flex-row shadow-xl lg:w-[90%] mx-auto p-3 px-3 md:p-0 rounded-2xl ">
+          <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            modules={[Autoplay, Pagination, Navigation]}
+            speed={2500}
+            className="w-full sm-h-full md:h-full relative bg-blue-600 rounded-2xl rounded-br-[4rem] py-8 flex items-center justify-start "
+          >
+            {testimoonials.map((testimony) => (
+              <SwiperSlide
+                key={testimony.id}
+                className="transition-all delay-75 ease-in-out"
+              >
+                <TestimonialCard
+                  name={testimony.name}
+                  description={testimony.description}
+                  key={testimony.id}
+                  position={testimony.position}
+                />
+              </SwiperSlide>
+            ))}
+            <SwipperNavbuttons className="absolute z-[3000] bottom-8 lg:bottom-16 right-8 " />
+          </Swiper>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <div className="w-full  rounded-br-[1rem] lg:w-4/6 bg-[#ffffff] py-20 px-2 flex flex-col gap-10 space-y-7 text-blue-600  sm:pl-8">
+            <div className="">
+              <h2 className="text-6xl font-extrabold ">90%</h2>
+              <p className="text-xl font-bold mt-8 xl:w-1/2">
+                Job success rate across all our project from our clieclients
+              </p>
+            </div>
+            <h1 className="flex items-center justify-center ml-10 mt-5 gap-2">
+              <span className="w-20 bg-blue-600 h-[0.09rem] "></span>
+              <span className="font-semibold">Learn More</span>{" "}
+              <span>&#62;</span>
+            </h1>
+          </div>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <section className="bg-grey-100 flex items-center justify-center flex-col py-28 px-2 mt-20">
+        <h2 className="text-2xl text-[#000B17] text-center font-bold px-2 md:text-4xl md:w-2/4 lg:3/6 lg:text-5xl xl:text-6xl xl:1/4 md:mb-10">
+          Ready to simplify how you work?
+        </h2>
+        <div className="flex flex-col space-y-4 mt-2 w-full md:flex-row md:w-1/2 md:gap-6 md:h-10  items-center justify-center">
+          <Input
+            variant="default"
+            inputs={{
+              type: "email",
+              placeholder: "enter your email",
+            }}
+            className="w-full  md:p-4 md:-mb-5 xxl:p-9 xxl:text-2xl"
+          />
+          <Button
+            className="mt-4 text-[0.8rem] p-3 w-1/2  mx-auto sm:w-2/3 lg:text-xl md:p-5 xxl:p-10 xxl:text-2xl  "
+            size="default"
+            variants="default"
+          >
+            subscribe Now
+          </Button>
+        </div>
+      </section>
     </main>
-  )
-}
+  );
+};
+
+export default Home;
