@@ -46,7 +46,7 @@ const Home: FC<homeprops> = () => {
           <Image
             alt="meerasimage"
             src={desktopmerrasimage}
-            className="hidden lg:block w-3/4 xxl:w-2/4 xl:h-[30rem] lg:h-[25rem]  lg:mr-[-7rem] xl:mr-[-8.5rem] "
+            className="hidden lg:block w-2/4 xxl:w-2/4 xl:h-[30rem] lg:h-[25rem]  lg:mr-[-7rem] xl:mr-[-8.5rem] "
           />
         </div>
       </section>
@@ -130,7 +130,7 @@ const Home: FC<homeprops> = () => {
         <h2 className="text-left  px-3 text-2xl w-5/6 font-extrabold sm:w-5/6 md:w-1/2 sm:text-5xl lg:ml-12  md:text-2xl lg:text-4xl  ">
           Trusted by startups and the worlds largest companies
         </h2>
-        <div className="flex mt-4 xl:mt-8 flex-col lg:flex-row shadow-xl lg:w-[90%] mx-auto p-3 px-3 md:p-0 rounded-2xl ">
+        <div className="flex mt-4 xl:mt-8 flex-col lg:flex-row shadow-xl h-full  lg:w-[90%] mx-auto p-3 px-3 md:p-0 rounded-2xl ">
           <Swiper
             spaceBetween={30}
             centeredSlides={true}
@@ -140,12 +140,12 @@ const Home: FC<homeprops> = () => {
             }}
             modules={[Autoplay, Pagination, Navigation]}
             speed={2500}
-            className="w-full sm-h-full md:h-full relative bg-blue-600 rounded-2xl rounded-br-[4rem] py-8 flex items-center justify-start "
+            className="w-full  relative bg-blue-600 rounded-2xl rounded-br-[4rem] py-8 flex items-center justify-start "
           >
             {testimoonials.map((testimony) => (
               <SwiperSlide
                 key={testimony.id}
-                className="transition-all delay-75 ease-in-out"
+                className="transition-all delay-75 ease-in-out h-full w-full"
               >
                 <TestimonialCard
                   name={testimony.name}

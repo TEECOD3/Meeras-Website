@@ -35,7 +35,7 @@ const NavBar = () => {
               />
             </Link>
             <ul className="flex justify-around sm:w-[80%]  md:w-[60%] lg:w-[70%] xl:w-[50%] font-medium items-center gap-2 max-lg:hidden capitalize max-lg:w-[70%]  ">
-              <Link href="/about">
+              <Link href="/Aboutpage">
                 <li className="mb-1">about</li>
               </Link>
               <Link href="/">
