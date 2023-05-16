@@ -82,54 +82,63 @@ const MobileNav: FC<MobileNavProps> = (props: MobileNavProps) => {
               About
             </motion.li>
           </Link>
-          <motion.li
-            variants={item}
-            initial={{ y: 24, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.4 }}
-            exit={{
-              opacity: 0,
-              y: 24,
-              transition: {
-                ease: "easeInOut",
-                delay: 0.6,
-              },
-            }}
-          >
-            Product
-          </motion.li>
-          <motion.li
-            variants={item}
-            initial={{ y: 24, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.4 }}
-            exit={{
-              opacity: 0,
-              y: 30,
-              transition: {
-                ease: "easeInOut",
-                delay: 0.4,
-              },
-            }}
-          >
-            portfolio
-          </motion.li>
-          <motion.li
-            variants={item}
-            initial={{ y: 24, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.4 }}
-            exit={{
-              opacity: 0,
-              y: 24,
-              transition: {
-                ease: "easeInOut",
-                delay: 0.2,
-              },
-            }}
-          >
-            blog
-          </motion.li>
+
+          <Link href="/Contactpage">
+            <motion.li
+              variants={item}
+              initial={{ y: 24, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.4 }}
+              exit={{
+                opacity: 0,
+                y: 24,
+                transition: {
+                  ease: "easeInOut",
+                  delay: 0.8,
+                },
+              }}
+              onClick={hideModalHandler}
+            >
+              contact
+            </motion.li>
+          </Link>
+
+          <Link href="/">
+            <motion.li
+              variants={item}
+              initial={{ y: 24, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.4 }}
+              exit={{
+                opacity: 0,
+                y: 30,
+                transition: {
+                  ease: "easeInOut",
+                  delay: 0.4,
+                },
+              }}
+            >
+              portfolio
+            </motion.li>
+          </Link>
+          <Link href="/">
+            <motion.li
+              variants={item}
+              initial={{ y: 24, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.4 }}
+              exit={{
+                opacity: 0,
+                y: 24,
+                transition: {
+                  ease: "easeInOut",
+                  delay: 0.2,
+                },
+              }}
+            >
+              blog
+            </motion.li>
+          </Link>
         </ul>
       </motion.div>
     </>

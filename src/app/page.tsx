@@ -20,7 +20,7 @@ interface homeprops {}
 const Home: FC<homeprops> = () => {
   return (
     <main>
-      <section className=" bg-[#FFEFE3] relative p-4 lg:py-20  ">
+      <section className=" bg-[#FFEFE3] relative p-4 lg:py-28  ">
         <div className="w-full mx-auto flex flex-col relative lg:flex-row  sm:w-[80%] md:w-[70%]  lg:w-[95%] lg:p-20 lg:gap-10 ">
           <div className="text-center mt-20 space-y-5 sm:space-y-7 md:space-y-10 lg:space-y-5 xl:space-y-10 md:mt-20 lg:text-left lg:w-1/2 lg:mt-10">
             <h2 className="text-xl capitalize font-medium text-orange-500 sm:text-2xl xxl:text-4xl">
@@ -39,7 +39,7 @@ const Home: FC<homeprops> = () => {
             <Image
               src={mobilemeerasimg}
               alt="meeras image for mobile"
-              className="bg-no-repeat bg-contain w-full sm:w-[16rem] h-[24rem] "
+              className="bg-no-repeat bg-contain w-[80%] sm:w-[16rem] h-[24rem] "
             />
           </div>
 
@@ -75,7 +75,7 @@ const Home: FC<homeprops> = () => {
                       key={image.id}
                       className="h-14 w-14 rounded-full md:w-20 md:h-20 "
                       src={image.image}
-                      alt=""
+                      alt="images of clients"
                     />
                   </li>
                 </SwiperSlide>
@@ -86,7 +86,7 @@ const Home: FC<homeprops> = () => {
       </section>
 
       <section className=" max-sm:p-2 max-md:px-16 mt-8 md:p-6 ">
-        <div className="lg:max-w-[90%] xl:max-w-[83%] mx-auto ">
+        <div className=" w-[80%] lg:max-w-[90%] xl:max-w-[83%] mx-auto ">
           <div className="sticky top-[3.9rem] md:top-[4.3rem] bg-white p-2">
             <h2 className="text-xl md:text-2xl font-bold text-orange-400 md:mb-4">
               Our Services

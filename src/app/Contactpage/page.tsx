@@ -17,8 +17,8 @@ const Contactpage = () => {
         <div className="bg-black/60 absolute top-0 left-0 h-full w-full z-10" />
 
         <div className="relative h-full w-full z-30 px-4 sm:px-20 md:px-2 lg:px-1 lg:p-12 md:text-left flex flex-col lg:flex-row justify-between item-center">
-          <div className="flex flex-col text-center md:text-left lg:w-1/2  lg:mt-5 mb-3 md:mb-0">
-            <h4 className=" text-2xl sm:text-5xl  font-bold  text-white sm:leading-[4rem] lg:leading-[6rem] lg:text-7xl md:w-11/12">
+          <div className="flex  h-full flex-col text-center md:text-left lg:w-1/2  lg:mt-5 mb-3 md:mb-0 lg:my-auto">
+            <h4 className=" text-2xl sm:text-5xl  font-bold  text-white sm:leading-[4rem] lg:leading-[9rem] lg:text-7xl md:w-11/12 lg:10/12 lg:mt-16">
               Distribute your brand from
               <span className="text-orange-600 font-black ml-1"> design </span>
               to
@@ -46,7 +46,10 @@ const Contactpage = () => {
               <Input inputs={{ placeholder: "enter your email..." }} />
               <Input inputs={{ placeholder: "enter your email..." }} />
               <Input inputs={{ placeholder: "enter your email..." }} />
-              <Input inputs={{ placeholder: "enter your email..." }} />
+              <textarea
+                placeholder="how can the company help you"
+                className="border-[1px] border-gray-300 p-4 w-full focus:border-gray-400 focus:border-[1px] outline-none focus:outline-none resize-none text-[0.7rem]"
+              ></textarea>
               <p className="text-black text-[0.8rem]">
                 By clicking on contact us, you agree to receive emails from Box
                 regarding product and service updates, special offers, events

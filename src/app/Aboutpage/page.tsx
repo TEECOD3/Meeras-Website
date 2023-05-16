@@ -42,12 +42,12 @@ const About = () => {
           <Image
             src={aboutusimage}
             alt="about us image"
-            className="object-cover "
+            className="object-cover"
           />
         </div>
 
         <div className=" md:w-1/2 p-4 xl:px-8 xl:py-8">
-          <h2 className=" text-2xl md:text-4xl xl:text-[54px] font-extrabold xl:w-3/4 lg:leading-[1.3] ">
+          <h2 className=" text-2xl md:text-4xl xl:text-[54px] font-extrabold xl:w-3/4 lg:leading-[8rem] ">
             Distribute your brand from
             <span className="text-blue-600 ml-1">design to code</span>
           </h2>
