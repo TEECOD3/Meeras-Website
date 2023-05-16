@@ -19,7 +19,7 @@ const CardServices = (props: CardProps) => {
             className=" w-full rounded-xl  object-cover"
           />
         </div>
-        <div className="px-2 md:pb-5 md:px-4 ">
+        <div className="px-2 md:pb-5 md:px-8 ">
           <h3 className="text-base  capitalize font-bold sm:text-base lg:text-xl text-blue-600 md:font-extrabold xxl:text-4xl">
             {title}
           </h3>

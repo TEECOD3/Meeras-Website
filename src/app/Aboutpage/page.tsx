@@ -16,8 +16,8 @@ import Input from "../Components/forms/input";
 import Image from "next/image";
 const About = () => {
   return (
-    <main className="pt-20 max-w-[100%] mx-auto">
-      <section className="firstsection| backdrop:relative md:h-[400px] py-2 lg:h-[500px] xl:h-[700px]  lg:py-4 md:mb-4 flex flex-col md:flex-row max-w-8xl mx-auto">
+    <main className="pt-20 max-w-[100%] mx-auto ">
+      <section className="firstsection| backdrop:relative md:h-[400px] py-2 lg:h-[500px] xl:h-[700px]  lg:py-16 md:mb-4 flex flex-col md:flex-row max-w-8xl mx-auto">
         <div className="w-full h-full  mx-auto flex flex-col  lg:flex-row   sm:w-[80%] md:w-[70%]  md:mt-14  lg:mt-0 lg:w-[90%] lg:p-20 lg:gap-1 ">
           <div className="mt-0 space-y-5  text-center md:text-left sm:px-4 md:px-0">
             <h1 className="font-extrabold text-3xl sm:text-4xl mt-4 md:mt-0 md:text-2xl lg:text-4xl xl:text-6xl xxl:text-8xl lg:leading-14 px-1 md:w-1/2 lg:w-2/3 xl:w-[60%] ">
@@ -70,7 +70,7 @@ const About = () => {
       </section>
 
       <section
-        className="scrollingsection| py-8  w-full mb-6 xl:mb-4
+        className="scrollingsection| py-16  w-full mb-6 xl:mb-4
       "
       >
         <div className="w-full text-center">
@@ -186,7 +186,7 @@ const About = () => {
               type: "email",
               placeholder: "enter your email",
             }}
-            className="w-full  md:p-4 md:-mb-5 xxl:p-9 xxl:text-2xl"
+            className="w-full  md:p-4 md:-mb-5 xxl:p-9 xxl:text-2xl bg-[#EAEAEA]"
           />
           <Button
             className="mt-4 text-[0.8rem] p-3 w-1/2  mx-auto sm:w-2/3 lg:text-xl md:p-5 xxl:p-10 xxl:text-2xl  "

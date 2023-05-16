@@ -26,7 +26,7 @@ const Home: FC<homeprops> = () => {
             <h2 className="text-xl capitalize font-medium text-orange-500 sm:text-2xl xxl:text-4xl">
               Software Solution for your Business
             </h2>
-            <h1 className="font-extrabold text-3xl sm:text-4xl lg:text-4xl xl:text-6xl xxl:text-8xl lg:leading-[5rem] ">
+            <h1 className="font-extrabold text-3xl sm:text-4xl lg:text-4xl xl:text-7xl xxl:text-8xl lg:leading-[9rem] lg:w-10/12 ">
               Distribute your brand from design to code
             </h1>
             <p className="font-medium text-base md:text-xl lg:text-base xl:w-3/4 xxl:text-3xl">
@@ -185,7 +185,7 @@ const Home: FC<homeprops> = () => {
               type: "email",
               placeholder: "enter your email",
             }}
-            className="w-full  md:p-4 md:-mb-5 xxl:p-9 xxl:text-2xl"
+            className="w-full  md:p-4 md:-mb-5 xxl:p-9 xxl:text-2xl bg-[#EAEAEA] border-blue-600 border-[2px]"
           />
           <Button
             className="mt-4 text-[0.8rem] p-3 w-1/2  mx-auto sm:w-2/3 lg:text-xl md:p-5 xxl:p-10 xxl:text-2xl  "
