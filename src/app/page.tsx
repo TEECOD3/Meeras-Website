@@ -85,7 +85,7 @@ const Home: FC<homeprops> = () => {
         </div>
       </section>
 
-      <section className=" max-sm:p-2 max-md:px-16 mt-8 md:p-6 ">
+      <section className=" max-sm:p-2 max-md:px-12 mt-8 md:p-6 ">
         <div className=" w-[80%] lg:max-w-[90%] xl:max-w-[83%] mx-auto ">
           <div className="sticky top-[3.9rem] md:top-[4.3rem] bg-white p-2">
             <h2 className="text-xl md:text-2xl font-bold text-orange-400 md:mb-4">
@@ -96,7 +96,7 @@ const Home: FC<homeprops> = () => {
             </h1>
           </div>
 
-          <div className=" px-3 sm:w-full overflow-hidden mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-3 my-5">
+          <div className=" px-3 sm:w-full overflow-hidden mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-3 my-5 gap-y-8">
             {services.map((card) => (
               <CardServices
                 key={card.id}
