@@ -185,7 +185,7 @@ const Home: FC<homeprops> = () => {
               type: "email",
               placeholder: "enter your email",
             }}
-            className="w-full  md:p-4 md:-mb-5 xxl:p-9 xxl:text-2xl bg-[#EAEAEA] border-blue-600 border-[2px]"
+            className="w-full  md:p-4 md:-mb-5 xxl:p-9 xxl:text-2xl bg-[#EAEAEA] border-blue-600 border-[2px] text-base "
           />
           <Button
             className="mt-4 text-[0.8rem] p-3 w-1/2  mx-auto sm:w-2/3 lg:text-xl md:p-5 xxl:p-10 xxl:text-2xl  "

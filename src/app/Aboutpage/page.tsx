@@ -20,7 +20,7 @@ const About = () => {
       <section className="firstsection| backdrop:relative md:h-[400px] py-2 lg:h-[500px] xl:h-[700px]  lg:py-16 md:mb-4 flex flex-col md:flex-row max-w-8xl mx-auto">
         <div className="w-full h-full  mx-auto flex flex-col  lg:flex-row   sm:w-[80%] md:w-[70%]  md:mt-14  lg:mt-0 lg:w-[90%] lg:p-20 lg:gap-1 ">
           <div className="mt-0 space-y-5  text-center md:text-left sm:px-4 md:px-0">
-            <h1 className="font-extrabold text-3xl sm:text-4xl mt-4 md:mt-0 md:text-2xl lg:text-4xl xl:text-6xl xxl:text-8xl lg:leading-14 px-1 md:w-1/2 lg:w-2/3 xl:w-[60%] ">
+            <h1 className="font-extrabold text-3xl sm:text-4xl mt-4 md:mt-0 md:text-2xl lg:text-4xl xl:text-6xl xxl:text-8xl lg:leading-[5rem] px-1 md:w-1/2 lg:w-2/3 xl:w-[60%] ">
               Distribute your brand from design to code
             </h1>
             <p className="font-bold text-base   md:text-xl lg:text-base xxl:text-3xl text-blue-500">
@@ -47,7 +47,7 @@ const About = () => {
         </div>
 
         <div className=" md:w-1/2 p-4 xl:px-8 xl:py-8">
-          <h2 className=" text-2xl md:text-4xl xl:text-[54px] font-extrabold xl:w-3/4 lg:leading-[8rem] ">
+          <h2 className=" text-2xl md:text-4xl xl:text-[54px] font-extrabold xl:w-3/5 lg:mt-10 lg:leading-[4rem] ">
             Distribute your brand from
             <span className="text-blue-600 ml-1">design to code</span>
           </h2>
@@ -149,7 +149,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="accordion|  max-w-[100rem] bg-[#FFEFE3] mb-20 py-4 px-1">
+      <section className="accordion|  max-w-[100%] bg-[#FFEFE3] mb-20 py-8 px-1">
         <div className="md:w-[88%] mx-auto flex flex-col sm:flex-row gap-4 ">
           <div className=" px-2 w-full md:w-3/6  lg:flex lg:items-center lg:justify-center">
             <div className="lg:w-1/2 ">
@@ -184,12 +184,12 @@ const About = () => {
             variant="default"
             inputs={{
               type: "email",
-              placeholder: "enter your email",
+              placeholder: "enter your email...",
             }}
-            className="w-full  md:p-4 md:-mb-5 xxl:p-9 xxl:text-2xl bg-[#EAEAEA]"
+            className="w-full md:p-4 md:-mb-5 xxl:p-9 xxl:text-2xl bg-[#EAEAEA] border-blue-700 text-base"
           />
           <Button
-            className="mt-4 text-[0.8rem] p-3 w-1/2  mx-auto sm:w-2/3 lg:text-xl md:p-5 xxl:p-10 xxl:text-2xl  "
+            className="mt-4 text-[0.8rem] p-3 w-1/2  mx-auto sm:w-2/3 lg:text-xl md:p-5 xxl:p-10 xxl:text-2xl"
             size="default"
             variants="default"
           >
