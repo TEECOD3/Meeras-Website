@@ -19,7 +19,8 @@ import twelthimagelogo from "../images/IMG-20230423-WA0039.jpg";
 import teenedimagelogo from "../images/IMG-20230423-WA0040.jpg";
 import fourteendimagelogo from "../images/IMG-20230423-WA0041.jpg";
 import fifteenedimagelogo from "../images/IMG-20230423-WA0042.jpg";
-
+import imageauthor from "../images/blogimage.jpg";
+import blogimage from "../images/meerasblogimg.png";
 export const services = [
   {
     id: 1,
@@ -129,4 +130,40 @@ export const images = [
   { id: 13, image: fifteenedimagelogo },
   { id: 14, image: fourteendimagelogo },
   { id: 15, image: sventhimagelogo },
+];
+
+export const blogheroposts = [
+  {
+    id: 1,
+    image: blogimage,
+    title: "Introducing Sprout: Modern Corporate Treasury...",
+    blogtext:
+      "  We make it easy for you to share and collaborate on critical content       — everything from contracts to spreadsheets to videos — all on a  single platform. And we help you keep it all secure. Fill out the form and we will show you how to get more done in the Content Cloud and some other things",
+
+    blogauthorimage: imageauthor,
+    date: "2010-06-19",
+    name: "david temitope",
+  },
+  {
+    id: 2,
+    image: blogimage,
+    title: " Introducing Sprout: Modern Corporate Treasury...",
+    blogtext:
+      "  We make it easy for you to share and collaborate on critical content       — everything from contracts to spreadsheets to videos — all on a  single platform. And we help you keep it all secure. Fill out the form and we will show you how to get more done in the Content Cloud and some other things",
+
+    blogauthorimage: imageauthor,
+    date: "2010-06-19",
+    name: "david temitope",
+  },
+  {
+    id: 3,
+    image: blogimage,
+    title: " Introducing Sprout: Modern Corporate Treasury...",
+    blogtext:
+      "  We make it easy for you to share and collaborate on critical content       — everything from contracts to spreadsheets to videos — all on a  single platform. And we help you keep it all secure. Fill out the form and we will show you how to get more done in the Content Cloud and some other things",
+
+    blogauthorimage: imageauthor,
+    date: "2010-06-19",
+    name: "david temitope",
+  },
 ];

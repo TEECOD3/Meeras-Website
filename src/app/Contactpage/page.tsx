@@ -4,7 +4,6 @@ import Image from "next/image";
 import Input from "../Components/forms/input";
 import { Button } from "../Components/UI/Button";
 import map from "../images/Mapsiclemap.png";
-import { type } from "os";
 
 const Contactpage = () => {
   return (

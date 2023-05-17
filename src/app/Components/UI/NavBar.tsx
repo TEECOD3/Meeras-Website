@@ -7,10 +7,15 @@ import merraslog from "../../images/Meeraslogo.png";
 import { AnimatePresence } from "framer-motion";
 import MobileNav from "../UI/Mobilenav";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const NavBar = () => {
   const [ModalOpen, setModalOpen] = useState(false);
+  const router = useRouter();
 
+  const loadContactpagehandler = () => {
+    router.push("/Contactpage");
+  };
   const openModalHandler = () => {
     setModalOpen(!ModalOpen);
   };
@@ -44,11 +49,9 @@ const NavBar = () => {
               <Link href="/Blogpage">
                 <li className="mb-1">blog</li>
               </Link>
-              <Link href="/Contactpage">
-                <li className="mb-1">contact</li>
-              </Link>
               <li>
                 <Button
+                  onClick={loadContactpagehandler}
                   variants="default"
                   className="py-4 px-10 max-lg:py-2  rounded-[0.5rem] cursor-pointer text-[1rem] max-lg:text-[0.7rem] max-xl:text-sm "
                 >

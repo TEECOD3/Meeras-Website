@@ -21,7 +21,7 @@ const Home: FC<homeprops> = () => {
   return (
     <main>
       <section className=" bg-[#FFEFE3] relative p-4 lg:py-28  ">
-        <div className="w-full mx-auto flex flex-col relative lg:flex-row  sm:w-[80%] md:w-[70%]  lg:w-[95%] lg:p-20 lg:gap-10 ">
+        <div className="w-full mx-auto flex flex-col relative lg:flex-row  sm:w-[80%] md:w-[70%]  lg:w-[90%] lg:p-20 lg:gap-10 ">
           <div className="text-center mt-20 space-y-5 sm:space-y-7 md:space-y-10 lg:space-y-5 xl:space-y-10 md:mt-20 lg:text-left lg:w-1/2 lg:mt-10">
             <h2 className="text-xl capitalize font-medium text-orange-500 sm:text-2xl xxl:text-4xl">
               Software Solution for your Business
@@ -64,6 +64,7 @@ const Home: FC<homeprops> = () => {
                 delay: 1,
                 disableOnInteraction: false,
               }}
+              loop={true}
               speed={2400}
               modules={[Autoplay, Pagination, Navigation]}
               className="w-full"
@@ -140,6 +141,7 @@ const Home: FC<homeprops> = () => {
             }}
             modules={[Autoplay, Pagination, Navigation]}
             speed={2500}
+            loop={true}
             className="w-full  relative bg-blue-600 rounded-2xl rounded-br-[4rem] py-8 flex items-center justify-start "
           >
             {testimoonials.map((testimony) => (

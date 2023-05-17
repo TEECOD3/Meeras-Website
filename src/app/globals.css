@@ -19,3 +19,18 @@ body {
     );
   }
 }
+.swiper-pagination {
+  position: absolute !important;
+  bottom: -1rem !important;
+  margin-top: 10rem !important;
+  width: 20rem;
+  overflow: none !important;
+}
+.swiper-pagination-bullet {
+  width: 2rem !important;
+  height: 3px !important;
+}
+.swiper-pagination-bullet-active {
+  color: #fff !important;
+  background: black !important;
+}

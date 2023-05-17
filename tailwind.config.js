@@ -41,6 +41,7 @@ module.exports = {
         grey: {
           100: "#EAEAEA",
         },
+        lightgreen: "#F1FFF9",
         lightdark: "#000B17",
       },
       backgroundImage: {
