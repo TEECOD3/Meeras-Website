@@ -10,10 +10,6 @@ const Blogpage = () => {
         <h2 className=" text-3xl lg:text-6xl font-extrabold capitalize mb-4 ">
           meeras blog
         </h2>
-        <p className="mb-10 text-base ">
-          We make it easy for you to share and collaborate on critical conten
-          ontent Cloud. Spreadsheets to videos — all on a single platform.
-        </p>
 
         <article>
           <Blogherolist />

@@ -8,7 +8,7 @@ const TestimonialCard = (props: testimonialprops) => {
   const { description, name, position } = props;
   return (
     <>
-      <div className="flex flex-col w-full lg:mt-10   justify-between items-start px-3 text-white font-bold  md:px-10">
+      <div className="flex flex-col w-full lg:mt-10 md:gap-y-20  justify-between items-start px-3 text-white font-bold  md:px-10">
         <p className="sm:text-base md:text-2xl xl:text-2xl mt-8">
           {description}
         </p>

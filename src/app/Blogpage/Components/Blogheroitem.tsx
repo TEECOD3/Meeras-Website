@@ -33,7 +33,7 @@ function Blogheroitem({
 
       <div className="sm:w-1/2 mx-auto lg:w-2/4">
         <div className="mx-auto">
-          <h3 className="xl:w-3/4 text-xl md:text-3xl lg:text-5xl md:leading-[4rem] xl:leading-[5rem] font-extrabold mt-4 lg:mt-0">
+          <h3 className=" text-xl md:text-3xl lg:text-5xl md:leading-[3rem] lg:leading-[5rem] capitalize font-extrabold mt-4 lg:mt-0">
             {title}
           </h3>
           <p className="text-base md:text-xl font-normal mt-4 xl:mt-0">

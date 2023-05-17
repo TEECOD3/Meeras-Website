@@ -147,7 +147,7 @@ export const blogheroposts = [
   {
     id: 2,
     image: blogimage,
-    title: " Introducing Sprout: Modern Corporate Treasury...",
+    title: "implications of ai to devlopement in software development",
     blogtext:
       "  We make it easy for you to share and collaborate on critical content       — everything from contracts to spreadsheets to videos — all on a  single platform. And we help you keep it all secure. Fill out the form and we will show you how to get more done in the Content Cloud and some other things",
 
@@ -158,7 +158,7 @@ export const blogheroposts = [
   {
     id: 3,
     image: blogimage,
-    title: " Introducing Sprout: Modern Corporate Treasury...",
+    title: "distribution of laptops for developers",
     blogtext:
       "  We make it easy for you to share and collaborate on critical content       — everything from contracts to spreadsheets to videos — all on a  single platform. And we help you keep it all secure. Fill out the form and we will show you how to get more done in the Content Cloud and some other things",
 
