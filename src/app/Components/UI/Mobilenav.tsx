@@ -135,6 +135,7 @@ const MobileNav: FC<MobileNavProps> = (props: MobileNavProps) => {
                   delay: 0.2,
                 },
               }}
+              onClick={hideModalHandler}
             >
               blog
             </motion.li>
