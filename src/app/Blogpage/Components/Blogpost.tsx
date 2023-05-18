@@ -17,7 +17,7 @@ export default function Blogpost({}: Props) {
       <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-r from-black/70 to-black/10 z-[16]"></div>
       <div className="relative z-30   w-[80%] mx-auto  h-full flex flex-col justify-between py-6 ">
         <div className="text-white">
-          <Button className="bg-orange-600 px-4 lg:px-10 py-2 lg:py-4 capitalize text-white text-base outline-none focus:outline-none active:outline-none">
+          <Button className="bg-orange-600 px-4 lg:px-10 py-2 lg:py-4 capitalize text-white text-sm lg:text-base outline-none focus:outline-none active:outline-none">
             #ui design
           </Button>
           <p className="mt-6 text-xl lg:text-4xl font-bold">
@@ -27,7 +27,7 @@ export default function Blogpost({}: Props) {
         </div>
         <div className="flex justify-between items-center">
           <h4 className="text-white">15 comments</h4>
-          <Button className="bg-white px-4 lg:px-10 py-2 lg:py-4 capitalize text-black text-base outline-none focus:outline-none active:outline-none">
+          <Button className="bg-white  px-4 lg:px-10 py-2 lg:py-4 capitalize text-black text-sm lg:text-base outline-none focus:outline-none active:outline-none">
             readmore
           </Button>
         </div>
