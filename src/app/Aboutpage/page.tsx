@@ -18,9 +18,9 @@ const About = () => {
   return (
     <main className="pt-20 max-w-[100%] mx-auto ">
       <section className="firstsection| backdrop:relative md:h-[400px] py-2 lg:h-[500px] xl:h-[700px]  lg:py-16 md:mb-4 flex flex-col md:flex-row max-w-8xl mx-auto">
-        <div className="w-full h-full  mx-auto flex flex-col  lg:flex-row   sm:w-[80%] md:w-[70%]  md:mt-14  lg:mt-0 lg:w-[90%] lg:p-20 lg:gap-1 ">
+        <div className="w-full h-full  mx-auto flex flex-col  lg:flex-row  sm:w-[82%]  md:mt-14  lg:mt-0 lg:w-[90%] lg:p-20 lg:gap-1 ">
           <div className="mt-0 space-y-5  text-center md:text-left sm:px-4 md:px-0">
-            <h1 className="font-extrabold text-3xl sm:text-4xl mt-4 md:mt-0 md:text-2xl lg:text-4xl xl:text-6xl xxl:text-8xl lg:leading-[5rem] px-1 md:w-1/2 lg:w-2/3 xl:w-[60%] ">
+            <h1 className="font-extrabold text-3xl sm:text-4xl  mt-4 md:mt-0 md:text-2xl lg:text-4xl xl:text-6xl xxl:text-8xl px-1 md:w-1/2 lg:w-2/3 xl:w-[60%] ">
               Distribute your brand from design to code
             </h1>
             <p className="font-bold text-base   md:text-xl lg:text-base xxl:text-3xl text-blue-500">
@@ -112,7 +112,7 @@ const About = () => {
         <div className="bg-black/70 absolute top-0 left-0 h-full w-full z-10" />
 
         <div className="relative xl:5/6 z-30 py-2 px-4  lg:p-12 text-center lg:text-left flex justify-center flex-col  md:w-1/2">
-          <h4 className="font-extrabold text-3xl text-white xl:text-7xl mt-10 lg:mt-0">
+          <h4 className="font-extrabold text-3xl text-white md:text-5xl xl:text-7xl mt-10 lg:mt-0">
             Distribute your brand from
             <span className="text-red-600 font-black">design</span> to
             <span className="text-red-600 font-black ml-3">code</span>
@@ -152,14 +152,14 @@ const About = () => {
       <section className="accordion|  max-w-[100%] bg-[#FFEFE3] mb-20 py-8 px-1">
         <div className="md:w-[88%] mx-auto flex flex-col sm:flex-row gap-4 ">
           <div className=" px-2 w-full md:w-3/6  lg:flex lg:items-center lg:justify-center">
-            <div className="lg:w-1/2 ">
-              <h4 className="font-extrabold text-2xl text-center md:text-left md:text-5xl xl:text-6xl">
+            <div className="">
+              <h4 className="font-extrabold text-2xl text-left md:text-5xl xl:text-6xl">
                 Frequent Asked Question
               </h4>
               <p className="font-semibold text-sm mt-4 lg:text-base px-5 md:px-0">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 ornare cursus sed nunc eget dictum Sed ornare cursus sed nunc
-                eget dictumd nunc eget{" "}
+                eget dictumd nunc eget
               </p>
             </div>
           </div>
