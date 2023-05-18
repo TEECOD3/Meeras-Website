@@ -131,7 +131,20 @@ export const images = [
   { id: 14, image: fourteendimagelogo },
   { id: 15, image: sventhimagelogo },
 ];
-
+export const buttondata = [
+  { id: 1, name: "all" },
+  { id: 2, name: "web developement" },
+  { id: 3, name: "mobile development" },
+  { id: 4, name: "IT infrastructure" },
+  {
+    id: 5,
+    name: "Content management",
+  },
+  {
+    id: 5,
+    name: "artificial intelligence",
+  },
+];
 export const blogheroposts = [
   {
     id: 1,

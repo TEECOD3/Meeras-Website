@@ -22,7 +22,7 @@ function Blogheroitem({
   date,
 }: Props) {
   return (
-    <li className="flex flex-col gap-x-[5rem] lg:gap-x-[10rem] lg:flex-row justify-between">
+    <li className="flex flex-col gap-x-[5rem] lg:gap-x-[10rem] lg:flex-row justify-between ">
       <div className="lg:w-2/4">
         <Image
           src={image}
@@ -31,12 +31,12 @@ function Blogheroitem({
         />
       </div>
 
-      <div className="sm:w-1/2 mx-auto lg:w-2/4">
+      <div className="sm:w-1/2 mx-auto lg:w-2/4 flex flex-col justify-between gap-y-4 mt-8">
         <div className="mx-auto">
           <h3 className="text-base md:text-3xl lg:text-5xl md:leading-[3rem] lg:leading-[5rem] capitalize font-extrabold mt-4 lg:mt-0">
             {title}
           </h3>
-          <p className="text-base md:text-xl font-normal mt-4 xl:mt-0">
+          <p className="text-base md:text-xl lg:text-2xl font-normal mt-4 lg:mt-10">
             {blogtext}
           </p>
           <div className="flex  font-semibold items-center justify-start gap-x-1 mt-6">

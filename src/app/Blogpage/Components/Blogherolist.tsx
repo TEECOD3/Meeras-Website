@@ -12,7 +12,7 @@ type Props = {};
 
 function Blogherolist({}: Props) {
   return (
-    <ul className="relative  xl:p-10 h-[600px] md:h-[800px] lg:h-[580px]">
+    <ul className="relative  xl:p-2 h-[600px] md:h-[800px] lg:h-[580px]">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
