@@ -31,7 +31,7 @@ function Blogheroitem({
         />
       </div>
 
-      <div className="sm:w-1/2 mx-auto lg:w-2/4 flex flex-col justify-between gap-y-4 mt-8">
+      <div className="sm:w-1/2 mx-auto lg:w-2/4 flex flex-col justify-between gap-y-4 lg:mt-8">
         <div className="mx-auto">
           <h3 className="text-base md:text-3xl lg:text-5xl md:leading-[3rem] lg:leading-[5rem] capitalize font-extrabold mt-4 lg:mt-0">
             {title}
