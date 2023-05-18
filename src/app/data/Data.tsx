@@ -147,7 +147,7 @@ export const blogheroposts = [
   {
     id: 2,
     image: blogimage,
-    title: "implications of ai to devlopement in software development",
+    title: "implications of ai to devlopement",
     blogtext:
       "  We make it easy for you to share and collaborate on critical content       — everything from contracts to spreadsheets to videos — all on a  single platform. And we help you keep it all secure. Fill out the form and we will show you how to get more done in the Content Cloud and some other things",
 
@@ -159,6 +159,17 @@ export const blogheroposts = [
     id: 3,
     image: blogimage,
     title: "distribution of laptops for developers",
+    blogtext:
+      "  We make it easy for you to share and collaborate on critical content       — everything from contracts to spreadsheets to videos — all on a  single platform. And we help you keep it all secure. Fill out the form and we will show you how to get more done in the Content Cloud and some other things",
+
+    blogauthorimage: imageauthor,
+    date: "2010-06-19",
+    name: "david temitope",
+  },
+  {
+    id: 4,
+    image: blogimage,
+    title: "machine learning in the area of intrusion detections ",
     blogtext:
       "  We make it easy for you to share and collaborate on critical content       — everything from contracts to spreadsheets to videos — all on a  single platform. And we help you keep it all secure. Fill out the form and we will show you how to get more done in the Content Cloud and some other things",
 

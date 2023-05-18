@@ -31,7 +31,7 @@ function Blogherolist({}: Props) {
         }}
         modules={[Autoplay, Pagination, Navigation]}
         speed={2500}
-        className=" h-full p-4 "
+        className=" h-full p-4"
       >
         <div className="swiper-pagination"></div>
         {blogheroposts.map((post) => (
