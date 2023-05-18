@@ -39,7 +39,7 @@ const Blogpage = () => {
           </div>
         </div>
 
-        <div className="w-[82%] mx-auto mt-16">
+        <div className=" w-11/12 md:w-[82%] mx-auto mt-16">
           <Blogpostlist />
         </div>
       </section>

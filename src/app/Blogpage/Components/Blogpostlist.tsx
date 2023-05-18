@@ -5,7 +5,7 @@ type Props = {};
 
 export default function Blogpostlist({}: Props) {
   return (
-    <ul className=" grid grid-cols-1 md:grid-cols-2 gap-y-16 lg:gap-y-24 gap-x-20">
+    <ul className=" grid grid-cols-1 md:grid-cols-2 gap-y-6 lg:gap-y-24 gap-x-20">
       <Blogpost />
       <Blogpost />
       <Blogpost />
