@@ -14,8 +14,8 @@ export default function Blogpost({}: Props) {
         className=" absolute z-10 h-full w-full object-cover rounded-lg top-0 left-0"
       />
 
-      <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-r from-black/70 to-black/10 z-[16]"></div>
-      <div className="relative z-30   w-[80%] mx-auto  h-full flex flex-col justify-between py-6 ">
+      <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-r from-black/70 to-black/10 z-[16] "></div>
+      <div className="relative z-30   w-[80%] mx-auto  h-full flex flex-col justify-between py-6 lg:pt-10 lg:pb-6">
         <div className="text-white">
           <Button className="bg-orange-600 px-4 lg:px-10 py-2 lg:py-4 capitalize text-white text-sm lg:text-base outline-none focus:outline-none active:outline-none">
             #ui design
