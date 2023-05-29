@@ -20,43 +20,43 @@ interface homeprops {}
 const Home: FC<homeprops> = () => {
   return (
     <main>
-      <section className=" bg-[#FFEFE3] relative p-4 lg:py-28  ">
-        <div className="w-full mx-auto flex flex-col relative lg:flex-row  sm:w-[80%] md:w-[70%]  lg:w-[90%] lg:p-20 lg:gap-10 ">
-          <div className="text-center mt-20 space-y-5 sm:space-y-7 md:space-y-10 lg:space-y-5 xl:space-y-10 md:mt-20 lg:text-left lg:w-1/2 lg:mt-10">
-            <h2 className="text-xl capitalize font-medium text-orange-500 sm:text-2xl xxl:text-4xl">
+      <section className=" relative bg-[#FFEFE3] p-4 lg:py-28  ">
+        <div className="relative mx-auto flex w-full flex-col sm:w-[80%]  md:w-[70%] lg:w-[90%]  lg:flex-row lg:gap-10 lg:p-20 ">
+          <div className="mt-20 space-y-5 text-center sm:space-y-7 md:mt-20 md:space-y-10 lg:mt-10 lg:w-1/2 lg:space-y-5 lg:text-left xl:space-y-10">
+            <h2 className="text-xl font-medium capitalize text-orange-500 sm:text-2xl xxl:text-4xl">
               Software Solution for your Business
             </h2>
-            <h1 className="font-extrabold text-3xl sm:text-4xl lg:text-4xl xl:text-7xl xxl:text-8xl lg:leading-[9rem] lg:w-10/12 ">
+            <h1 className="text-3xl font-extrabold sm:text-4xl lg:w-10/12 lg:text-4xl lg:leading-[9rem] xl:text-7xl xxl:text-8xl ">
               Distribute your brand from design to code
             </h1>
-            <p className="font-medium text-base md:text-xl lg:text-base xl:w-3/4 xxl:text-3xl">
+            <p className="text-base font-medium md:text-xl lg:text-base xl:w-3/4 xxl:text-3xl">
               Specify helps you unify your brand identity by collecting, storing
               and distributing design tokens and assets — automatically.
             </p>
           </div>
 
-          <div className="flex items-center w-full justify-center lg:hidden mt-4">
+          <div className="mt-4 flex w-full items-center justify-center lg:hidden">
             <Image
               src={mobilemeerasimg}
               alt="meeras image for mobile"
-              className="bg-no-repeat bg-contain w-[80%] sm:w-[16rem] h-[24rem] "
+              className="h-[24rem] w-[80%] bg-contain bg-no-repeat sm:w-[16rem] "
             />
           </div>
 
           <Image
             alt="meerasimage"
             src={desktopmerrasimage}
-            className="hidden lg:block w-2/4 xxl:w-2/4 xl:h-[30rem] lg:h-[25rem]  lg:mr-[-7rem] xl:mr-[-8.5rem] "
+            className="hidden w-2/4 lg:mr-[-7rem] lg:block lg:h-[25rem] xl:mr-[-8.5rem]  xl:h-[30rem] xxl:w-2/4 "
           />
         </div>
       </section>
 
       <section className=" p-4">
         <div className="w-full text-center">
-          <p className="mb-4 font-semibold text-[#000B17]  text-base">
+          <p className="mb-4 text-base font-semibold  text-[#000B17]">
             Join the 100+ companies using the Segment platform
           </p>
-          <ul className="flex gap-5 w-full md:w-[80%] mt-10 md:mx-auto">
+          <ul className="mt-10 flex w-full gap-5 md:mx-auto md:w-[80%]">
             <Swiper
               spaceBetween={10}
               slidesPerView={4}
@@ -74,7 +74,7 @@ const Home: FC<homeprops> = () => {
                   <li>
                     <Image
                       key={image.id}
-                      className="h-14 w-14 rounded-full md:w-20 md:h-20 "
+                      className="h-14 w-14 rounded-full md:h-20 md:w-20 "
                       src={image.image}
                       alt="images of clients"
                     />
@@ -86,18 +86,18 @@ const Home: FC<homeprops> = () => {
         </div>
       </section>
 
-      <section className=" max-sm:p-2 max-md:px-12 mt-8 md:p-6 ">
-        <div className=" w-[80%] lg:max-w-[90%] xl:max-w-[83%] mx-auto ">
-          <div className="sticky top-[3.9rem] md:top-[4.3rem] bg-white p-2">
-            <h2 className="text-xl md:text-2xl font-bold text-orange-400 md:mb-4">
+      <section className=" mt-8 max-md:px-12 max-sm:p-2 md:p-6 ">
+        <div className=" mx-auto w-[80%] lg:max-w-[90%] xl:max-w-[83%] ">
+          <div className="sticky top-[3.9rem] bg-white p-2 md:top-[4.3rem]">
+            <h2 className="text-xl font-bold text-orange-400 md:mb-4 md:text-2xl">
               Our Services
             </h2>
-            <h1 className="text-2xl  font-extrabold  lg:text-6xl lg:w-4/5 mb-10  ">
+            <h1 className="mb-10  text-2xl  font-extrabold lg:w-4/5 lg:text-6xl  ">
               Lorem ipsum dolor sit amet, consectetur a
             </h1>
           </div>
 
-          <div className=" px-3 sm:w-full overflow-hidden mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-3 my-5 gap-y-8">
+          <div className=" mx-auto my-5 grid grid-cols-1 gap-4 gap-y-8 overflow-hidden px-3 sm:w-full sm:grid-cols-2 md:grid-cols-3">
             {services.map((card) => (
               <CardServices
                 key={card.id}
@@ -110,12 +110,12 @@ const Home: FC<homeprops> = () => {
         </div>
       </section>
 
-      <section className="mt-16 sm:mt-32 relative text-center">
-        <div className=" bg-blue-600 h-[10rem] clip-octagon pt-2 pb-10 md:pt-4 md:pb-20 md:h-[15rem] lg:h-[24rem] xl:h-[28rem]">
-          <h2 className="font-medium text-white sm:font-semibold sm:text-3xl md:mt-4 lg:font-semibold ">
+      <section className="relative mt-16 text-center sm:mt-32">
+        <div className=" clip-octagon h-[10rem] bg-blue-600 pb-10 pt-2 md:h-[15rem] md:pb-20 md:pt-4 lg:h-[24rem] xl:h-[28rem]">
+          <h2 className="font-medium text-white sm:text-3xl sm:font-semibold md:mt-4 lg:font-semibold ">
             Our Product
           </h2>
-          <h1 className="text-xl sm:text-4xl  text-white mb-4 lg:text-5xl font-black">
+          <h1 className="mb-4 text-xl  font-black text-white sm:text-4xl lg:text-5xl">
             School Management System
           </h1>
         </div>
@@ -123,15 +123,15 @@ const Home: FC<homeprops> = () => {
         <Image
           src={schollmgt}
           alt="school management system image"
-          className="w-full h-[15rem] bg-contain bg-no-repeat absolute md:h-[28rem] lg:h-[35rem]  xl:h-[50rem] xl:w-3/4 top-[4rem] sm:top-[5rem] lg:top-[10rem] xl:left-[15%]  z-30"
+          className="absolute top-[4rem] z-30 h-[15rem] w-full bg-contain bg-no-repeat  sm:top-[5rem] md:h-[28rem] lg:top-[10rem] lg:h-[35rem] xl:left-[15%] xl:h-[50rem]  xl:w-3/4"
         ></Image>
       </section>
 
-      <section className="mt-44  md:mt-[24rem] xl:mt-[32rem] sm:max-w-[83%] sm:mx-auto ">
-        <h2 className="text-left  px-3 text-2xl w-5/6 font-extrabold sm:w-5/6 md:w-1/2 sm:text-5xl lg:ml-12  md:text-2xl lg:text-4xl  ">
+      <section className="mt-44  sm:mx-auto sm:max-w-[83%] md:mt-[24rem] xl:mt-[32rem] ">
+        <h2 className="w-5/6  px-3 text-left text-2xl font-extrabold sm:w-5/6 sm:text-5xl md:w-1/2 md:text-2xl  lg:ml-12 lg:text-4xl  ">
           Trusted by startups and the worlds largest companies
         </h2>
-        <div className="flex mt-4 xl:mt-8 flex-col lg:flex-row shadow-xl h-full  lg:w-[90%] mx-auto p-3 px-3 md:p-0 rounded-2xl ">
+        <div className="mx-auto mt-4 flex h-full flex-col rounded-2xl p-3  px-3 shadow-xl md:p-0 lg:w-[90%] lg:flex-row xl:mt-8 ">
           <Swiper
             spaceBetween={30}
             centeredSlides={true}
@@ -142,12 +142,12 @@ const Home: FC<homeprops> = () => {
             modules={[Autoplay, Pagination, Navigation]}
             speed={2500}
             loop={true}
-            className="w-full  relative bg-blue-600 rounded-2xl rounded-br-[4rem] py-8 flex items-center justify-start "
+            className="relative  flex w-full items-center justify-start rounded-2xl rounded-br-[4rem] bg-blue-600 py-8 "
           >
             {testimoonials.map((testimony) => (
               <SwiperSlide
                 key={testimony.id}
-                className="transition-all delay-75 ease-in-out h-full w-full"
+                className="h-full w-full transition-all delay-75 ease-in-out"
               >
                 <TestimonialCard
                   name={testimony.name}
@@ -157,18 +157,18 @@ const Home: FC<homeprops> = () => {
                 />
               </SwiperSlide>
             ))}
-            <SwipperNavbuttons className="absolute z-[3000] bottom-8 lg:bottom-16 right-8 " />
+            <SwipperNavbuttons className="absolute bottom-8 right-8 z-[3000] lg:bottom-16 " />
           </Swiper>
 
-          <div className="w-full  rounded-br-[1rem] lg:w-4/6 bg-[#ffffff] py-20 px-2 flex flex-col gap-10 space-y-7 text-blue-600  sm:pl-8">
+          <div className="flex  w-full flex-col gap-10 space-y-7 rounded-br-[1rem] bg-[#ffffff] px-2 py-20 text-blue-600 sm:pl-8  lg:w-4/6">
             <div className="">
               <h2 className="text-6xl font-extrabold ">90%</h2>
-              <p className="text-xl font-bold mt-8 xl:w-1/2">
+              <p className="mt-8 text-xl font-bold xl:w-1/2">
                 Job success rate across all our project from our clieclients
               </p>
             </div>
-            <h1 className="flex items-center justify-center ml-10 mt-5 gap-2">
-              <span className="w-20 bg-blue-600 h-[0.09rem] "></span>
+            <h1 className="ml-10 mt-5 flex items-center justify-center gap-2">
+              <span className="h-[0.09rem] w-20 bg-blue-600 "></span>
               <span className="font-semibold">Learn More</span>{" "}
               <span>&#62;</span>
             </h1>
@@ -176,21 +176,21 @@ const Home: FC<homeprops> = () => {
         </div>
       </section>
 
-      <section className="bg-grey-100 flex items-center justify-center flex-col py-28 px-4 mt-20">
-        <h2 className="text-2xl text-[#000B17] text-center font-bold px-2 md:text-4xl md:w-2/4 lg:3/6 lg:text-5xl xl:text-6xl xl:1/4 md:mb-10">
+      <section className="mt-20 flex flex-col items-center justify-center bg-grey-100 px-4 py-28">
+        <h2 className="lg:3/6 xl:1/4 px-2 text-center text-2xl font-bold text-[#000B17] md:mb-10 md:w-2/4 md:text-4xl lg:text-5xl xl:text-6xl">
           Ready to simplify how you work?
         </h2>
-        <div className="flex flex-col space-y-4 mt-2 w-full md:flex-row md:w-1/2 md:gap-6 md:h-10  items-center justify-center">
+        <div className="mt-2 flex w-full flex-col items-center justify-center space-y-4 md:h-10 md:w-1/2  md:flex-row md:gap-6">
           <Input
             variant="default"
             inputs={{
               type: "email",
               placeholder: "enter your email",
             }}
-            className="w-full  md:p-4 md:-mb-5 xxl:p-9 xxl:text-2xl bg-[#EAEAEA] border-blue-600 border-[2px] text-base "
+            className="w-full  border-[2px] border-blue-600 bg-[#EAEAEA] text-base md:-mb-5 md:p-4 xxl:p-9 xxl:text-2xl "
           />
           <Button
-            className="mt-4 text-[0.8rem] p-3 w-1/2  mx-auto sm:w-2/3 lg:text-xl md:p-5 xxl:p-10 xxl:text-2xl  "
+            className="mx-auto mt-4 w-1/2 p-3  text-[0.8rem] sm:w-2/3 md:p-5 lg:text-xl xxl:p-10 xxl:text-2xl  "
             size="default"
             variants="default"
           >

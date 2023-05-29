@@ -22,24 +22,26 @@ function Blogheroitem({
   date,
 }: Props) {
   return (
-    <li className="flex flex-col gap-x-[5rem] lg:gap-x-[10rem] lg:flex-row justify-between ">
-      <div className="lg:w-2/4">
+    <li className="flex flex-col gap-x-[5rem] md:flex-row  md:justify-around md:gap-x-[4rem] xl:justify-between xl:gap-x-[10rem] ">
+      <div className="h-full w-full  xl:w-1/2">
         <Image
           src={image}
           alt="meeras blog image"
-          className="w-full object-cover  sm:w-1/2 sm:h-[200px] lg:h-[450px] lg:w-full mx-auto rounded-lg"
+          className="mx-auto w-full rounded-lg object-cover"
+          loading="lazy"
+          placeholder="blur"
         />
       </div>
 
-      <div className="sm:w-1/2 mx-auto lg:w-2/4 flex flex-col justify-between gap-y-4 lg:mt-8">
+      <div className="mx-auto flex w-full flex-col justify-between gap-y-4 lg:mt-8 lg:w-1/2">
         <div className="mx-auto">
-          <h3 className="text-base md:text-3xl lg:text-5xl md:leading-[3rem] lg:leading-[5rem] capitalize font-extrabold mt-4 lg:mt-0">
+          <h3 className="mt-2 text-base font-extrabold capitalize md:text-2xl md:leading-[2rem] lg:mt-0 xl:text-5xl xl:leading-[5rem]">
             {title}
           </h3>
-          <p className="text-base md:text-xl lg:text-2xl font-normal mt-4 lg:mt-10">
+          <p className="mt-2 text-base font-normal xl:mt-5 xl:text-xl">
             {blogtext}
           </p>
-          <div className="flex  font-semibold items-center justify-start gap-x-1 mt-6">
+          <div className="mt-6  flex items-center justify-start gap-x-1 font-semibold">
             <Image
               src={authorimage}
               alt="authorimage"

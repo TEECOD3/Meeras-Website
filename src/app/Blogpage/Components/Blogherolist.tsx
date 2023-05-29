@@ -12,7 +12,7 @@ type Props = {};
 
 function Blogherolist({}: Props) {
   return (
-    <ul className="relative  xl:p-2 h-[600px] md:h-[800px] lg:h-[580px]">
+    <ul className="relative flex items-center  xl:p-2">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -22,14 +22,14 @@ function Blogherolist({}: Props) {
           disableOnInteraction: false,
         }}
         effect="fade"
-        pagination={{
-          el: ".swiper-pagination",
-          clickable: true,
-          renderBullet(index, className) {
-            return '<span class="' + className + '">' + " .</span>";
-          },
-        }}
-        modules={[Autoplay, Pagination, Navigation]}
+        // pagination={{
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        //   renderBullet(index, className) {
+        //     return '<span class="' + className + '">' + " .</span>";
+        //   },
+        // }}
+        modules={[Autoplay, Navigation]}
         speed={2500}
         className=" h-full p-4"
       >
@@ -37,7 +37,7 @@ function Blogherolist({}: Props) {
         {blogheroposts.map((post) => (
           <SwiperSlide
             key={post.id}
-            className="transition-all delay-75 ease-in-out h-full w-full"
+            className="h-full w-full transition-all delay-75 ease-in-out"
           >
             <Blogheroitem
               name={post.name}

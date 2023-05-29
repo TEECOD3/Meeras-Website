@@ -7,11 +7,13 @@ import merraslog from "../../images/Meeraslogo.png";
 import { AnimatePresence } from "framer-motion";
 import MobileNav from "../UI/Mobilenav";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { AiOutlineDown } from "react-icons/ai";
 
 const NavBar = () => {
   const [ModalOpen, setModalOpen] = useState(false);
   const router = useRouter();
+  const pathname = usePathname();
 
   const loadContactpagehandler = () => {
     router.push("/Contactpage");
@@ -23,6 +25,22 @@ const NavBar = () => {
   const hidemodalHandler = () => {
     setModalOpen(false);
   };
+
+  let aboutlink = (
+    <Link href="/Aboutpage">
+      <li className="mb-1">about</li>
+    </Link>
+  );
+
+  if (pathname === "/Contactpage") {
+    aboutlink = (
+      <Link href="/Aboutpage">
+        <li className="mb-1 flex items-center gap-x-3 ">
+          <span>+234 813 4567 312</span> <AiOutlineDown />
+        </li>
+      </Link>
+    );
+  }
   return (
     <>
       <AnimatePresence>
@@ -30,19 +48,19 @@ const NavBar = () => {
       </AnimatePresence>
 
       <nav className="max-w-[82%]">
-        <div className="fixed z-50 w-full backdrop-blur-md bg-white/20  mx-auto max-lg:w-full ">
-          <div className="h-[4rem] w-[90%] flex justify-between items-center px-2 md:px-4 sm:h-[5rem]  sm:max-w-[84%] mx-auto">
+        <div className="fixed z-50 mx-auto w-full bg-white/20  backdrop-blur-md max-lg:w-full ">
+          <div className="mx-auto flex h-[4rem] w-[90%] items-center justify-between px-2 sm:h-[5rem]  sm:max-w-[84%] md:px-4">
             <Link href="/" className="">
               <Image
                 src={merraslog}
                 alt="meeras logo"
-                className="h-10 w-10 md:w-full md:h-full"
+                className="h-10 w-10 md:h-full md:w-full"
+                loading="lazy"
+                placeholder="blur"
               />
             </Link>
-            <ul className="flex justify-around sm:w-[80%]  md:w-[60%] lg:w-[70%] xl:w-[50%] font-medium items-center gap-2 max-lg:hidden capitalize max-lg:w-[70%]  ">
-              <Link href="/Aboutpage">
-                <li className="mb-1">about</li>
-              </Link>
+            <ul className="flex items-center justify-around  gap-2 font-medium capitalize max-lg:hidden max-lg:w-[50%] lg:w-[40%] ">
+              {aboutlink}
               <Link href="/">
                 <li className="mb-1">product</li>
               </Link>
@@ -53,15 +71,19 @@ const NavBar = () => {
                 <Button
                   onClick={loadContactpagehandler}
                   variants="default"
-                  className="py-4 px-10 max-lg:py-2  rounded-[0.5rem] cursor-pointer text-[1rem] max-lg:text-[0.7rem] max-xl:text-sm "
+                  className={`${
+                    pathname === "/Contactpage"
+                      ? " hover:text-white-200 border-2 border-orange-500 bg-transparent font-bold text-orange-600 hover:bg-orange-200 "
+                      : ""
+                  } max-lg:text-[0.7rem]} cursor-pointer rounded-[0.5rem]  px-10 py-4 text-[1rem] max-xl:text-sm max-lg:py-2`}
                 >
-                  Contact Us
+                  {pathname === "/Contactpage" ? "Get Started" : "Contact Us"}
                 </Button>
               </li>
             </ul>
 
             <MdOutlineMenu
-              className="lg:hidden text-4xl cursor-pointer "
+              className="cursor-pointer text-4xl lg:hidden "
               onClick={openModalHandler}
             />
           </div>
