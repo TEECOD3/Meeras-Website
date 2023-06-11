@@ -17,7 +17,7 @@ export default function HeroDetail({}: Props) {
       />
       <div className="absolute left-0 top-0 z-[14] h-full w-full bg-black/50"></div>
 
-      <div className="relative z-20 flex h-full w-full flex-col items-center justify-center  text-white">
+      <div className="relative z-20 flex h-full w-full flex-col items-center justify-center  py-6 text-white md:p-0">
         <h4 className=" text-xl font-medium md:mb-4 md:text-2xl md:font-bold ">
           UI/UX Design
         </h4>

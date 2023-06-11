@@ -21,7 +21,7 @@ const Mainnews = () => {
           <Image
             src={someimage}
             alt="blogimagedescription"
-            className=" mt-3 h-[30rem] w-full object-cover md:h-[40rem]"
+            className=" mt-3  w-full object-cover md:h-[40rem]"
             loading="lazy"
             placeholder="blur"
           />
