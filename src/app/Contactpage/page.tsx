@@ -75,7 +75,13 @@ const Contactpage = () => {
 
       <section className="mx-auto bg-[#CEE2DA] p-4 md:p-10">
         <div className="">
-          <Image src={map} alt="map" className="mx-auto object-cover" />
+          <Image
+            src={map}
+            alt="map"
+            className="mx-auto object-cover"
+            loading="lazy"
+            placeholder="blur"
+          />
         </div>
       </section>
     </main>

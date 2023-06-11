@@ -40,6 +40,8 @@ const Home: FC<homeprops> = () => {
               src={mobilemeerasimg}
               alt="meeras image for mobile"
               className="h-[24rem] w-[80%] bg-contain bg-no-repeat sm:w-[16rem] "
+              loading="lazy"
+              placeholder="blur"
             />
           </div>
 
@@ -47,6 +49,8 @@ const Home: FC<homeprops> = () => {
             alt="meerasimage"
             src={desktopmerrasimage}
             className="hidden w-2/4 lg:mr-[-7rem] lg:block lg:h-[25rem] xl:mr-[-8.5rem]  xl:h-[30rem] xxl:w-2/4 "
+            loading="lazy"
+            placeholder="blur"
           />
         </div>
       </section>
@@ -77,6 +81,8 @@ const Home: FC<homeprops> = () => {
                       className="h-14 w-14 rounded-full md:h-20 md:w-20 "
                       src={image.image}
                       alt="images of clients"
+                      loading="lazy"
+                      placeholder="blur"
                     />
                   </li>
                 </SwiperSlide>
@@ -121,6 +127,8 @@ const Home: FC<homeprops> = () => {
         </div>
 
         <Image
+          loading="lazy"
+          placeholder="blur"
           src={schollmgt}
           alt="school management system image"
           className="absolute top-[4rem] z-30 h-[15rem] w-full bg-contain bg-no-repeat  sm:top-[5rem] md:h-[28rem] lg:top-[10rem] lg:h-[35rem] xl:left-[15%] xl:h-[50rem]  xl:w-3/4"

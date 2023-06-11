@@ -11,19 +11,21 @@ const CardServices = (props: CardProps) => {
 
   return (
     <>
-      <div className="rounded-2xl bg-[#FFFFFF] overflow-hidden shadow-lg p-2">
+      <div className="overflow-hidden rounded-2xl bg-[#FFFFFF] p-2 shadow-lg">
         <div>
           <Image
             src={image}
             alt="image"
             className=" w-full rounded-xl  object-cover"
+            loading="lazy"
+            placeholder="blur"
           />
         </div>
-        <div className="px-2 md:pb-5 md:px-8 ">
-          <h3 className="text-base  capitalize font-bold sm:text-base lg:text-xl text-blue-600 md:font-extrabold xxl:text-4xl">
+        <div className="px-2 md:px-8 md:pb-5 ">
+          <h3 className="text-base  font-bold capitalize text-blue-600 sm:text-base md:font-extrabold lg:text-xl xxl:text-4xl">
             {title}
           </h3>
-          <p className="text-sm sm:text-sm font-normal lg:text-base  xxl:text-3xl ">
+          <p className="text-sm font-normal sm:text-sm lg:text-xl  xxl:text-3xl ">
             {paragraph}
           </p>
         </div>

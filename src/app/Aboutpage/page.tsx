@@ -98,6 +98,8 @@ const About = () => {
                       className="h-12 w-12 rounded-full md:h-24 md:w-24"
                       src={image.image}
                       alt="scrolling images"
+                      loading="lazy"
+                      placeholder="blur"
                     />
                   </li>
                 </SwiperSlide>
@@ -116,9 +118,9 @@ const About = () => {
         <div className="absolute left-0 top-0 z-10 h-full w-full bg-black/70" />
 
         <div className="xl:5/6 relative z-30 flex flex-col  justify-center px-4 py-2 text-center md:w-1/2 lg:p-12  lg:text-left">
-          <h4 className="mt-10 text-3xl font-extrabold text-white md:text-5xl lg:mt-0 xl:text-7xl">
+          <h4 className="mt-10 text-4xl font-extrabold text-white md:text-5xl lg:mt-0 xl:text-7xl">
             Distribute your brand from
-            <span className="font-black text-red-600">design</span> to
+            <span className="ml-3 font-black text-red-600">design</span> to
             <span className="ml-3 font-black text-red-600">code</span>
           </h4>
           <p className="mt-3 text-sm text-white  lg:text-base xl:w-3/4 ">
@@ -135,7 +137,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="my-16 mt-16  w-full lg:w-[88%]">
+      <section className="mx-auto my-16  mt-16 w-full lg:w-[90%]">
         <h2 className="text-center font-bold capitalize text-blue-400 sm:text-3xl sm:font-semibold md:mt-4 lg:font-semibold ">
           Our services
         </h2>
@@ -154,13 +156,13 @@ const About = () => {
       </section>
 
       <section className="accordion|  mb-20 max-w-[100%] bg-[#FFEFE3] px-1 py-8">
-        <div className="mx-auto flex flex-col gap-4 sm:flex-row md:w-[90%] ">
+        <div className="mx-auto flex flex-col gap-4 sm:flex-row md:w-[87%] ">
           <div className="lg:justify-left px-10  md:w-3/6 lg:flex lg:items-center">
             <div className="">
               <h4 className="text-left text-2xl font-extrabold md:text-5xl xl:text-6xl">
                 Frequent Asked Question
               </h4>
-              <p className="mt-4 px-5 text-sm font-semibold md:px-0 lg:text-base">
+              <p className="mt-4  text-sm font-semibold  lg:text-base">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 ornare cursus sed nunc eget dictum Sed ornare cursus sed nunc
                 eget dictumd nunc eget
