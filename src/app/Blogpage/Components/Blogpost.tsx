@@ -7,7 +7,7 @@ import { Button } from "@/app/Components/UI/Button";
 import { useRouter } from "next/navigation";
 
 type Props = {
-  textclassName: string;
+  textclassName?: string;
 };
 
 export default function Blogpost({ textclassName }: Props) {
