@@ -25,7 +25,7 @@ const CardServices = (props: CardProps) => {
           <h3 className="text-base  font-bold capitalize text-blue-600 sm:text-base md:font-extrabold lg:text-xl xxl:text-4xl">
             {title}
           </h3>
-          <p className="text-sm font-normal sm:text-sm lg:text-xl  xxl:text-3xl ">
+          <p className="text-sm font-normal sm:text-sm lg:text-xl ">
             {paragraph}
           </p>
         </div>

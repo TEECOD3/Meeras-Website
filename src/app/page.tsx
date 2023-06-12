@@ -26,12 +26,15 @@ const Home: FC<homeprops> = () => {
             <h2 className="text-xl font-medium capitalize text-orange-500 sm:text-2xl xxl:text-4xl">
               Software Solution for your Business
             </h2>
-            <h1 className="text-3xl font-extrabold sm:text-4xl lg:w-10/12 lg:text-4xl lg:leading-[9rem] xl:text-7xl xxl:text-8xl ">
-              Distribute your brand from design to code
+            <h1 className="text-3xl font-extrabold sm:text-4xl lg:w-10/12 lg:text-4xl lg:leading-[9rem] xl:text-7xl">
+              Empowering Your Digital Transformation
             </h1>
-            <p className="text-base font-medium md:text-xl lg:text-base xl:w-3/4 xxl:text-3xl">
-              Specify helps you unify your brand identity by collecting, storing
-              and distributing design tokens and assets — automatically.
+            <p className="text-base font-medium md:text-base lg:text-xl xl:w-3/4 ">
+              Are you ready to unlock the true potential of your business
+              through cutting-edge software solutions? Look no further than
+              Software Solution! We are a leading technology company dedicated
+              to providing innovative and customized software solutions to
+              businesses of all sizes
             </p>
           </div>
 
@@ -99,7 +102,7 @@ const Home: FC<homeprops> = () => {
               Our Services
             </h2>
             <h1 className="mb-10  text-2xl  font-extrabold lg:w-4/5 lg:text-6xl  ">
-              Lorem ipsum dolor sit amet, consectetur a
+              Transform your digital presence with Meeras Software Solution.
             </h1>
           </div>
 

@@ -28,7 +28,7 @@ const Mainnews = () => {
           <Image
             src={someimage}
             alt="blogimagedescription"
-            className=" mt-3  w-full object-cover md:h-[40rem]"
+            className=" mt-4  w-full object-cover md:h-[40rem]"
             loading="lazy"
             placeholder="blur"
           />
@@ -62,7 +62,7 @@ const Mainnews = () => {
           <Image
             src={someimage}
             alt="blogimagedescription"
-            className=" `w-full mt-3 bg-center object-cover md:h-[40rem]"
+            className=" `w-full mt-4 bg-center object-cover md:h-[40rem]"
             loading="lazy"
             placeholder="blur"
           />
@@ -113,7 +113,7 @@ const Mainnews = () => {
         </section>
       </article>
 
-      <div className="mx-auto mt-5 w-full md:mt-10 lg:w-2/5 xl:w-1/5  ">
+      <div className="mx-auto mt-5 w-full md:mt-10 lg:w-2/5 xl:w-[30%]  ">
         <div className="flex w-full justify-center md:justify-start">
           <div className="flex h-28 w-28 flex-col items-center justify-center">
             <div className="inline-block cursor-pointer rounded-full bg-[#dceee6]  p-4 hover:scale-105">
@@ -158,6 +158,9 @@ const Mainnews = () => {
           </div>
 
           <div className="mt-4 space-y-8">
+            <h3 className=" my-2 text-xl font-bold capitalize text-gray-600 md:my-6 md:text-3xl">
+              related posts
+            </h3>
             <Blogpost textclassName="text-sm" />
             <Blogpost textclassName="text-base md:text-xl" />
             <Blogpost textclassName="text-base md:text-xl" />

@@ -8,7 +8,7 @@ type Props = {};
 export const Postdetails = (props: Props) => {
   return (
     <div className=" mt-2 border-b-2 border-gray-300 pb-3">
-      <p className="text-gray-600">
+      <p className="text-sm text-gray-600 md:text-xl">
         We make it easy for you to share and collaborate on critical content —
         everything from contracts.
       </p>

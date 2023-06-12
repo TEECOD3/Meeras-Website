@@ -27,14 +27,14 @@ export const services = [
     img: webdev,
     title: "web development",
     description:
-      "Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social",
+      "Dynamic websites that captivate and drive results. Our experienced web developers create customized solutions aligned with your brand and business goals. From simple brochure websites to complex e-commerce platforms, we ensure seamless user experiences and responsive design on all devices.",
   },
   {
     id: 2,
     img: mobile,
     title: "mobile development",
     description:
-      "Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social",
+      "Unleash the power of mobile technology with Meeras Software Solution. Our talented app developers bring your ideas to life with intuitive and feature-rich iOS and Android applications. We collaborate closely to deliver high-quality mobile apps that engage users with seamless experiences.",
   },
 
   {
@@ -42,7 +42,7 @@ export const services = [
     img: infras,
     title: "IT infrastructure",
     description:
-      "Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social",
+      "Meeras Software Solution optimizes and enhances your IT infrastructure. From network setup to data security, our expert team ensures robustness, security, and alignment with your business needs. We manage your IT infrastructure needs, allowing you to focus on your core business.",
   },
 
   {
