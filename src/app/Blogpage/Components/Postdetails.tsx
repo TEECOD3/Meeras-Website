@@ -22,8 +22,8 @@ export const Postdetails = (props: Props) => {
         />
 
         <div className=" flex flex-1 flex-col gap-y-1 text-gray-600 ">
-          <div className="">orezi</div>
-          <div className="">June 2, 2022 at 9:16 am</div>
+          <div className="font-bold capitalize">orezi</div>
+          <div className="text-sm ">June 2, 2022 at 9:16 am</div>
         </div>
       </div>
     </div>
