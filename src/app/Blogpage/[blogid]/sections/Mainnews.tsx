@@ -3,9 +3,14 @@ import React from "react";
 import someimage from "../../../images/blogdetshero.png";
 import Input from "@/app/Components/forms/input";
 import { Button } from "@/app/Components/UI/Button";
+import { AiFillLike } from "react-icons/ai";
+import { BsInstagram, BsLink, BsTelegram, BsTwitter } from "react-icons/bs";
+import { FaLinkedinIn } from "react-icons/fa";
+import { Postdetails } from "../../Components/Postdetails";
+import Blogpost from "../../Components/Blogpost";
 const Mainnews = () => {
   return (
-    <section className="max-auto mx-auto mb-20 flex w-full max-w-[95%] flex-col space-x-10 lg:max-w-[90%] lg:flex-row xl:space-x-36">
+    <section className="mx-auto mb-20 flex w-full max-w-[95%] flex-col md:space-x-10 lg:max-w-[90%] lg:flex-row xl:space-x-36">
       <article className="flex-1">
         <p className="mt-10 text-base lg:text-xl">
           We make it easy for you to share and collaborate on critical content —
@@ -96,7 +101,7 @@ const Mainnews = () => {
                   type: "text",
                   placeholder: "enter your email address..",
                 }}
-                className="mb-2 flex-1 bg-orange-400/80 p-3 text-base text-white lg:mb-0 "
+                className="mb-2 flex-1 bg-orange-500/70 p-3 text-base text-white lg:mb-0"
               />
               <button className="md:text-bold mx-auto mt-3 w-1/2  rounded-lg bg-white  py-3 text-sm font-bold capitalize text-black md:mt-0 md:w-4/12 lg:w-2/6">
                 subscribe now
@@ -106,7 +111,57 @@ const Mainnews = () => {
         </section>
       </article>
 
-      <aside className=" mx-auto bg-blue-300  lg:w-2/5">aside</aside>
+      <div className="mx-auto mt-5 w-full md:mt-10 lg:w-1/5  ">
+        <div className="flex w-full justify-center md:justify-start">
+          <div className="flex h-28 w-28 flex-col items-center justify-center">
+            <div className="inline-block cursor-pointer rounded-full bg-[#dceee6]  p-4 hover:scale-105">
+              <AiFillLike className="fill-blue-500 text-5xl text-blue-500" />
+            </div>
+            <div className="mt-1  text-base font-extrabold ">73</div>
+          </div>
+        </div>
+
+        <div className="mt-2 md:mt-6">
+          <h3 className=" text-xl font-bold capitalize text-gray-600 md:text-3xl">
+            share post
+          </h3>
+          <div className="mt-3 space-x-4 md:mt-6">
+            <div className="inline-block cursor-pointer rounded-full bg-[#dceee6]  p-3 hover:scale-105">
+              <BsInstagram className="text-xl text-blue-500" />
+            </div>
+            <div className="inline-block cursor-pointer rounded-full bg-[#dceee6]  p-3 hover:scale-105">
+              <FaLinkedinIn className="text-xl text-blue-500" />
+            </div>
+            <div className="inline-block cursor-pointer rounded-full bg-[#dceee6]  p-3 hover:scale-105">
+              <BsTwitter className="text-xl text-blue-500" />
+            </div>
+            <div className="inline-block cursor-pointer rounded-full bg-[#dceee6]  p-3 hover:scale-105">
+              <BsTelegram className="text-xl text-blue-500" />
+            </div>
+            <div className="inline-block cursor-pointer rounded-full bg-[#dceee6]  p-3 hover:scale-105">
+              <BsLink className="text-xl text-blue-500" />
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8">
+          <h3 className=" text-xl font-bold capitalize text-gray-600 md:text-3xl">
+            15 comments
+          </h3>
+
+          <div className="mt-6">
+            <Postdetails />
+            <Postdetails />
+            <Postdetails />
+          </div>
+
+          <div className="mt-4 space-y-8">
+            <Blogpost />
+            <Blogpost />
+            <Blogpost />
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
