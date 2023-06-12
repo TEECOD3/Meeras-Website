@@ -42,6 +42,7 @@ const Blogpage = () => {
           <Blogpostlist />
         </div>
       </section>
+      <Newsletter />
     </section>
   );
 };
