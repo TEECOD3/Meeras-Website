@@ -24,7 +24,7 @@ const About = () => {
               Empowering Businesses through Innovative Technology Solutions
             </h1>
             <p className="self-center text-base font-bold text-blue-500  md:text-xl lg:w-1/2 lg:text-base xxl:text-3xl">
-              We're a leading tech company delivering innovative, customized
+              We are a leading tech company delivering innovative, customized
               software solutions for businesses of all sizes.
             </p>
           </div>
@@ -121,12 +121,12 @@ const About = () => {
 
         <div className="xl:5/6 relative z-30 flex flex-col  justify-center px-4 py-2 text-center md:w-1/2 lg:p-12  lg:text-left">
           <h4 className="mt-10 text-4xl font-extrabold text-white md:text-5xl lg:mt-0 xl:text-7xl">
-            Tailored <span className="text-orange-500">Solutions</span> for{" "}
+            Tailored <span className="text-orange-500">Solutions</span> for
             <span className="text-orange-500">Success</span>
           </h4>
           <p className="mt-3 text-sm text-white  lg:text-base xl:w-3/4 ">
             We understand that every business is unique, with distinct goals and
-            requirements. That's why we take a personalized approach to each
+            requirements. That is why we take a personalized approach to each
             project. Our team works closely with our clients, taking the time to
             understand their business objectives, target audience, and industry
             dynamics. This enables us to develop customized software solutions
@@ -163,9 +163,9 @@ const About = () => {
               </h4>
               <p className="mt-4  text-sm font-semibold  lg:text-base">
                 If you have any additional questions or would like more
-                information, please don't hesitate to contact us. We're here to
-                assist you and provide the technology solutions you require for
-                your business's success.
+                information, please don not hesitate to contact us. We are here
+                to assist you and provide the technology solutions you require
+                for your business success.
               </p>
             </div>
           </div>
