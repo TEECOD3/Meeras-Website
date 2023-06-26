@@ -26,10 +26,10 @@ const Home: FC<homeprops> = () => {
             <h2 className="text-xl font-medium capitalize text-orange-500 sm:text-2xl xxl:text-4xl">
               Software Solution for your Business
             </h2>
-            <h1 className="text-3xl font-extrabold sm:text-4xl lg:w-10/12 lg:text-4xl lg:leading-[9rem] xl:text-7xl">
+            <h1 className="text-3xl font-extrabold sm:text-4xl lg:w-10/12 lg:text-4xl xl:text-7xl">
               Empowering Your Digital Transformation
             </h1>
-            <p className="text-base font-medium md:text-base lg:text-xl xl:w-3/4 ">
+            <p className="text-base font-medium md:text-base lg:text-base xl:w-3/4 ">
               Are you ready to unlock the true potential of your business
               through cutting-edge software solutions? Look no further than
               Software Solution! We are a leading technology company dedicated

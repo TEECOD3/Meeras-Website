@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge";
 import React from "react";
 import image from "../../images/meerasblogimg.png";
 import { Button } from "@/app/Components/UI/Button";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 type Props = {
   textclassName?: string;
@@ -12,8 +12,10 @@ type Props = {
 
 export default function Blogpost({ textclassName }: Props) {
   const router = useRouter();
+  const path = usePathname();
   const blogdetailNavigationhandler = () => {
     router.push("/Blogpage/929");
+    console.log(path);
   };
   return (
     <li className="relative h-[300px] shadow-lg md:h-[350px] lg:h-[450px]">

@@ -9,11 +9,11 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className=" bg-blue-900 flex flex-col items-center justify-center pt-8 px-3 lg:pt-20">
-      <div className=" flex flex-col md:flex-row-reverse  md:max-w-[83%] mx-auto gap-10 ">
-        <div className="flex px-6 md:px-0 justify-between md:justify-around md:flex-1 max-sm:text-sm  text-white font-light md:gap-10 ">
-          <ul className="space-y-8 text-md md:text-base grid place-items-start">
-            <h4 className="font-bold text-md">Company</h4>
+    <footer className=" flex flex-col items-center justify-center bg-blue-900 px-3 pt-8 lg:pt-20">
+      <div className=" mx-auto flex flex-col  gap-10 md:max-w-[83%] md:flex-row-reverse ">
+        <div className="flex justify-between px-6 font-light text-white max-sm:text-sm md:flex-1  md:justify-around md:gap-10 md:px-0 ">
+          <ul className="text-md grid place-items-start space-y-8 md:text-base">
+            <h4 className="text-md font-bold">Company</h4>
             <li>About us</li>
             <li>About us</li>
             <li>Product</li>
@@ -26,39 +26,40 @@ const Footer = () => {
             <li>+234 801 2323 332</li>
           </ul>
         </div>
-        <div className=" px-4 mt-4 sm:mt-0 md:w-3/6 h-full ">
+        <div className=" mt-4 h-full px-4 sm:mt-0 md:w-3/6 ">
           <Image
             alt="nex"
             src={meerasfooter}
-            className=" h-20 w-20 bg-no-repeat bg-contain "
+            className=" h-20 w-20 bg-contain bg-no-repeat "
           />
-          <p className="lg:w-2/3 mt-6 text-md sm:text-xl text-white font-light md:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare
-            cursus sed nunc eget dictum Sed ornare cursus sed nunc eget dictumd
-            nunc eget dictum Sed ornare cursus sed nunc eget dictum
+          <p className="text-md mt-6 font-light text-white sm:text-xl md:text-base lg:w-2/3">
+            With our expertise in web development, mobile app development, IT
+            infrastructure, virtual services, content management, artificial
+            intelligence, and IoT, we are your trusted technology partner for a
+            comprehensive range of digital solutions.
           </p>
-          <ul className="flex gap-4 mt-6 ">
-            <li className="bg-white h-10 w-10  rounded-full flex items-center justify-center">
+          <ul className="mt-6 flex gap-4 ">
+            <li className="flex h-10 w-10  items-center justify-center rounded-full bg-white">
               <Facebook />
             </li>
-            <li className="bg-white  h-10 w-10   rounded-full flex items-center justify-center">
+            <li className="flex  h-10 w-10   items-center justify-center rounded-full bg-white">
               <Instagram />
             </li>
-            <li className="bg-white h-10 w-10  rounded-full flex items-center justify-center">
+            <li className="flex h-10 w-10  items-center justify-center rounded-full bg-white">
               <Twitter />
             </li>
-            <li className="bg-white  h-10 w-10   rounded-full flex items-center justify-center">
+            <li className="flex  h-10 w-10   items-center justify-center rounded-full bg-white">
               <FaLinkedinIn />
             </li>
-            <li className="bg-white h-10 w-10    rounded-full flex items-center justify-center">
+            <li className="flex h-10 w-10    items-center justify-center rounded-full bg-white">
               <Whatsapp />
             </li>
           </ul>
         </div>
       </div>
-      <div className="mt-10 w-3/4 text-center mx-auto text-white font-light">
-        <hr className="rounded-10 bg-white/20 w-2/3 mx-auto " />
-        <p className="sm:mt-6 mt-2 mb-8 text-sm">
+      <div className="mx-auto mt-10 w-3/4 text-center font-light text-white">
+        <hr className="rounded-10 mx-auto w-2/3 bg-white/20 " />
+        <p className="mb-8 mt-2 text-sm sm:mt-6">
           Copyright 2023 RetailBasics. All Rights Reserved.
         </p>
       </div>

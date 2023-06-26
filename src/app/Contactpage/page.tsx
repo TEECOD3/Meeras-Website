@@ -20,19 +20,16 @@ const Contactpage = () => {
 
         <div className="item-center relative z-30 flex h-full w-full flex-col justify-between  px-4 sm:px-20 md:px-2 md:text-left lg:w-[89%] lg:flex-row lg:p-12 lg:px-1">
           <div className="mb-3 flex h-full flex-col  text-center md:mb-0  md:text-left lg:my-auto lg:mt-5 lg:w-1/2">
-            <h4 className=" text-2xl font-bold  text-white  sm:text-5xl sm:leading-[4rem] md:w-11/12 lg:mt-16 lg:w-10/12 lg:text-7xl lg:leading-[6rem]">
-              Distribute your brand from
-              <span className="ml-1 font-black text-orange-600"> design </span>
-              to
-              <span className="ml-3 font-black text-orange-600 "> code</span>
+            <h4 className=" text-2xl font-extrabold  text-white  sm:text-5xl   lg:mt-16  lg:text-7xl">
+              Get in Touch with Meeras&nbsp;
+              <span className="text-orange-600">Software Solution</span>
             </h4>
             <p className="mt-3 p-3 text-sm  text-white xl:w-3/4">
-              We make it easy for you to share and collaborate on critical
-              content — everything from contracts to spreadsheets to videos —
-              all on a single platform. And we help you keep it all secure. Fill
-              out the form and we qill show you how to get more done in the
-              Content Cloud. Spreadsheets to videos — all on a single platform.
-              And we help you keep it all secure.
+              Thank you for your interest in Meeras Software Solution. We
+              welcome the opportunity to connect with you and discuss how our
+              innovative technology solutions can benefit your business. Please
+              feel free to reach out to us using the contact information
+              provided below:
             </p>
           </div>
           <div className="mt-4 rounded-lg text-white md:mt-0 md:p-4 lg:w-1/2">

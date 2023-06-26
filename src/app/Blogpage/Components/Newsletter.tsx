@@ -15,13 +15,10 @@ export default function Newsletter({}: Props) {
         </div>
 
         <div className=" flex flex-col gap-x-3 gap-y-6 md:w-1/2 md:flex-row lg:items-center lg:justify-center">
-          <Input
-            inputs={{ placeholder: "Enter your email" }}
-            className="mt-6 flex-1 bg-orange-200 text-white lg:mt-0 lg:text-base"
-          />
-          <Button className=" w-[40%] bg-white  text-sm lg:w-4/12 lg:py-3">
-            Subscribe Now
-          </Button>
+          <div className="">
+            <input type="text" />
+            <button>subscribe now</button>
+          </div>
         </div>
       </div>
     </section>
