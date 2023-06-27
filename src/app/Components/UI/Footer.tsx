@@ -60,7 +60,7 @@ const Footer = () => {
       <div className="mx-auto mt-10 w-3/4 text-center font-light text-white">
         <hr className="rounded-10 mx-auto w-2/3 bg-white/20 " />
         <p className="mb-8 mt-2 text-sm sm:mt-6">
-          Copyright 2023 RetailBasics. All Rights Reserved.
+          Copyright 2023 Meeras software solutions. All Rights Reserved.
         </p>
       </div>
     </footer>
