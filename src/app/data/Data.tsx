@@ -50,7 +50,7 @@ export const services = [
     img: virtual,
     title: "virtual services",
     description:
-      "Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social",
+      "Welcome to Meera's Software Solutions! We specialize in virtual display cards that elevate your visual experience. Our cards deliver stunning graphics, seamless performance, and unmatched realism, making them ideal for gaming enthusiasts and content creators alike.",
   },
 
   {
@@ -58,21 +58,21 @@ export const services = [
     img: content,
     title: "content management",
     description:
-      "Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social",
+      "Welcome to Meeras Software Solutions, your trusted partner in content management. We are dedicated to providing innovative solutions that streamline and enhance your content management processes, empowering you to effectively organize, store, and distribute your valuable digital assets. ",
   },
   {
     id: 6,
     img: artificial,
     title: "artificial interlligence",
     description:
-      "Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social",
+      "Meeras Software Solutions, where we harness the power of Artificial Intelligence (AI) to revolutionize content management. Our AI-powered solutions are designed to simplify and optimize your content workflows, enabling you to unlock new levels of efficiency and productivity.",
   },
   {
     id: 7,
     img: artificial,
     title: "internet of things",
     description:
-      "Web development is the work involved in developing a website for the Internet or an intranet. Web development can range",
+      "Meera's Software Solutions, where we harness the power of the Internet of Things (IoT) to revolutionize industries and drive digital transformation. Our IoT solutions are designed to connect devices, collect valuable data, and enable intelligent decision-making, empowering businesses to achieve new levels of efficiency, automation, and innovation",
   },
 ];
 
@@ -80,37 +80,30 @@ export const testimoonials = [
   {
     id: 1,
     description:
-      "Programming today is a race between software engineers striving to build bigger and better idiot-proof programs and the Universe trying to produce bigger and better idiots.  ",
-    name: "Rick Cook",
-    position: "CEO",
+      "I am incredibly satisfied with the services provided by Meera's Software Solutions. They have transformed our content management processes, making them more streamlined and efficient. The AI-powered solutions have revolutionized the way we organize and discover our digital assets. Highly recommended!",
+    name: "John Smith",
+    position: "Marketing Manager",
   },
   {
     id: 2,
     description:
-      "Any fool can write code that a computer can understand. Good programmers write code that humans can understand ",
-    name: "Martin Fowler",
-    position: "ACCOUNTANT",
+      "Meera's Software Solutions has been a game-changer for our business. Their IoT solutions have helped us achieve significant operational improvements and cost savings. We now have real-time visibility into our processes and can make data-driven decisions. We are delighted with the results!",
+    name: "Emily Johnson",
+    position: "Operations Director",
   },
   {
     id: 3,
     description:
-      "No matter which field of work you want to go in, it is of great importance to learn at least one programming language",
-    name: "Ram Ray",
-    position: "Developer",
+      "Choosing Meera's Software Solutions for our virtual display card needs was a fantastic decision. Their products have exceeded our expectations in terms of performance and visual quality. The team at Meera's has been extremely supportive throughout the process, ensuring a seamless experience. We couldn't be happier!",
+    name: "David Thompson",
+    position: "Gaming Enthusiast",
   },
   {
     id: 4,
     description:
-      "Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code. ",
-    name: "Dan Salomon",
-    position: "ui/ux designer",
-  },
-  {
-    id: 5,
-    description:
-      "You might not think that programmers are artists, but programming is an extremely creative profession. It’s logic-based creativity. ",
-    name: " John Romero",
-    position: "devops",
+      "Meera's Software Solutions has transformed our business with their exceptional virtual services. The virtual display cards have taken our design and animation projects to a whole new level. The realism and performance are unmatched. We highly recommend Meera's to all creative professionals!",
+    name: "Sophia Anderson",
+    position: "Creative Director",
   },
 ];
 

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import aboutlogo from "./assets/images/AboutPagehero.png";
 import aboutusimage from "./assets/images/AboutUsImage.png";
 import aboutimage from "./assets/images/aboutimage3.png";
@@ -15,22 +15,25 @@ import Accordion from "./components/Accordion";
 import Input from "../Components/forms/input";
 import Image from "next/image";
 const About = () => {
+  const emailref = useRef<HTMLInputElement>(null!);
   return (
     <main className="mx-auto max-w-[100%] pt-20 ">
-      <section className="firstsection| max-w-8xl mx-auto flex flex-col py-2  backdrop:relative md:mb-4 md:h-[400px] md:flex-row lg:h-[500px] lg:py-16 xl:h-[700px]">
+      <section className="firstsection| max-w-8xl mx-auto mb-28 flex flex-col py-2  backdrop:relative md:mb-4 md:h-[400px] lg:h-[500px] lg:flex-row lg:py-16 xl:h-[700px]">
         <div className="mx-auto flex  h-full w-full flex-col sm:w-[82%]  md:mt-14  lg:mt-0  lg:w-[90%] lg:flex-row lg:gap-1 lg:p-20 ">
           <div className="mt-0 space-y-5 text-center sm:px-4 md:px-0 md:text-left">
-            <h1 className="mt-4 px-1 text-3xl  font-extrabold sm:text-4xl md:mt-0 md:w-1/2 md:text-2xl lg:w-2/3 lg:text-4xl xl:w-[60%] xl:text-6xl xxl:text-8xl ">
+            <h1 className=" px-1 text-3xl font-extrabold  sm:text-4xl md:mt-0  md:w-1/2 md:text-2xl lg:w-2/3 lg:text-4xl xl:w-[60%] xl:text-6xl xxl:text-8xl ">
               Empowering Businesses through Innovative Technology Solutions
             </h1>
-            <p className="self-center text-base font-bold text-blue-500  md:text-xl lg:w-1/2 lg:text-base xxl:text-3xl">
+            <p className="self-center text-sm font-bold text-blue-500  md:w-1/2 md:text-base">
               We are a leading tech company delivering innovative, customized
               software solutions for businesses of all sizes.
             </p>
           </div>
         </div>
-        <div className=" top-[1rem] mt-8 w-full md:absolute md:right-[10%] md:mt-20 md:w-[70%]">
+        <div className="right-0  mt-8   w-full md:absolute  md:top-[3rem] md:mt-20 md:w-[70%] xl:top-[6rem] ">
           <Image
+            height={800}
+            width={900}
             alt="hero image"
             src={aboutlogo}
             className="h-full max-w-[60rwm]"
@@ -40,7 +43,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="secondSection|  flex flex-col md:flex-row lg:mb-4">
+      <section className="secondSection|  mt-10 flex flex-col md:flex-row lg:mb-28">
         <div className=" w-full md:w-1/2 lg:h-[500px] ">
           <Image
             src={aboutusimage}
@@ -119,7 +122,7 @@ const About = () => {
         />
         <div className="absolute left-0 top-0 z-10 h-full w-full bg-black/70" />
 
-        <div className="xl:5/6 relative z-30 flex flex-col  justify-center px-4 py-2 text-center md:w-1/2 lg:p-12  lg:text-left">
+        <div className="xl:5/6 relative z-30 flex flex-col  justify-center px-4 py-2 text-center lg:w-1/2 lg:p-12  lg:text-left">
           <h4 className="mt-10 text-4xl font-extrabold text-white md:text-5xl lg:mt-0 xl:text-7xl">
             Tailored <span className="text-orange-500">Solutions</span> for
             <span className="text-orange-500">Success</span>
@@ -185,8 +188,17 @@ const About = () => {
         <h2 className="lg:3/6 xl:1/4 px-2 text-center text-2xl font-bold text-[#000B17] md:mb-10 md:w-2/4 md:text-4xl lg:text-5xl xl:text-6xl">
           Ready to simplify how you work?
         </h2>
-        <div className="mt-2 flex w-full flex-col items-center justify-center space-y-4 md:h-10 md:w-1/2  md:flex-row md:gap-6">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            const email = emailref.current.value;
+            console.log(email);
+            emailref.current.value = "";
+          }}
+          className="mt-2 flex w-full flex-col items-center justify-center space-y-4 md:h-10 md:w-1/2  md:flex-row md:gap-6"
+        >
           <Input
+            ref={emailref}
             variant="default"
             inputs={{
               type: "email",
@@ -201,7 +213,7 @@ const About = () => {
           >
             subscribe Now
           </Button>
-        </div>
+        </form>
       </section>
     </main>
   );

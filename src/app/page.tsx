@@ -1,5 +1,5 @@
 "use client";
-import { FC } from "react";
+import { FC, useRef, useState } from "react";
 import { Button } from "./Components/UI/Button";
 import Input from "./Components/forms/input";
 import mobilemeerasimg from "./images/meraasIco.png";
@@ -18,15 +18,16 @@ import Image from "next/image";
 
 interface homeprops {}
 const Home: FC<homeprops> = () => {
+  const emailref = useRef<HTMLInputElement>(null!);
   return (
     <main>
-      <section className=" relative bg-[#FFEFE3] p-4 lg:py-28  ">
-        <div className="relative mx-auto flex w-full flex-col sm:w-[80%]  md:w-[70%] lg:w-[90%]  lg:flex-row lg:gap-10 lg:p-20 ">
-          <div className="mt-20 space-y-5 text-center sm:space-y-7 md:mt-20 md:space-y-10 lg:mt-10 lg:w-1/2 lg:space-y-5 lg:text-left xl:space-y-10">
+      <section className=" relative bg-[#FFEFE3] p-4 lg:py-24  ">
+        <div className="relative mx-auto flex w-full flex-col sm:w-[80%]  md:w-[70%] lg:w-[90%]  lg:flex-row lg:gap-6 lg:p-20 ">
+          <div className="mt-20 space-y-5 text-center sm:space-y-7 md:mt-20 md:space-y-10 lg:mt-6 lg:w-1/2 lg:space-y-5 lg:text-left xl:space-y-10">
             <h2 className="text-xl font-medium capitalize text-orange-500 sm:text-2xl xxl:text-4xl">
               Software Solution for your Business
             </h2>
-            <h1 className="text-3xl font-extrabold sm:text-4xl lg:w-10/12 lg:text-4xl xl:text-7xl">
+            <h1 className="text-3xl font-extrabold sm:text-4xl  lg:text-4xl xl:text-6xl">
               Empowering Your Digital Transformation
             </h1>
             <p className="text-base font-medium md:text-base lg:text-base xl:w-3/4 ">
@@ -101,7 +102,7 @@ const Home: FC<homeprops> = () => {
             <h2 className="text-xl font-bold text-orange-400 md:mb-4 md:text-2xl">
               Our Services
             </h2>
-            <h1 className="mb-10  text-2xl  font-extrabold lg:w-4/5 lg:text-6xl  ">
+            <h1 className="mb-10  text-2xl  font-extrabold lg:w-4/5 lg:text-5xl  ">
               Transform your digital presence with Meeras Software Solution.
             </h1>
           </div>
@@ -191,8 +192,17 @@ const Home: FC<homeprops> = () => {
         <h2 className="lg:3/6 xl:1/4 px-2 text-center text-2xl font-bold text-[#000B17] md:mb-10 md:w-2/4 md:text-4xl lg:text-5xl xl:text-6xl">
           Ready to simplify how you work?
         </h2>
-        <div className="mt-2 flex w-full flex-col items-center justify-center space-y-4 md:h-10 md:w-1/2  md:flex-row md:gap-6">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            const email = emailref.current.value;
+            console.log(email);
+            emailref.current.value = "";
+          }}
+          className="mt-2 flex w-full flex-col items-center justify-center space-y-4 md:h-10 md:w-1/2  md:flex-row md:gap-6"
+        >
           <Input
+            ref={emailref}
             variant="default"
             inputs={{
               type: "email",
@@ -207,7 +217,7 @@ const Home: FC<homeprops> = () => {
           >
             subscribe Now
           </Button>
-        </div>
+        </form>
       </section>
     </main>
   );
