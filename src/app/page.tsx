@@ -107,7 +107,7 @@ const Home: FC<homeprops> = () => {
             </h1>
           </div>
 
-          <div className=" mx-auto my-5 grid grid-cols-1 gap-4 gap-y-8 overflow-hidden px-3 sm:w-full sm:grid-cols-2 md:grid-cols-3">
+          <div className=" mx-auto my-5 grid grid-cols-1 gap-4 gap-y-8 overflow-hidden px-3 sm:w-full md:grid-cols-2 lg:grid-cols-3">
             {services.map((card) => (
               <CardServices
                 key={card.id}
