@@ -32,7 +32,7 @@ export default function Newsletter({}: Props) {
           className="w-full border-blue-700 bg-white text-base md:-mb-5 md:p-4 xxl:p-9 xxl:text-2xl"
         />
         <Button
-          className="mx-auto mt-4 w-1/2 p-3 hover:bg-white/75 hover:text-black text-black/75 text-[0.8rem] sm:w-2/3 md:p-5 lg:text-xl bg-white xxl:p-10 xxl:text-2xl"
+          className="mx-auto mt-4 w-1/2 p-3 hover:bg-white/75 hover:text-black text-black/75 text-[0.8rem] sm:w-2/3 md:p-3.5 lg:text-xl bg-white xxl:p-10 xxl:text-2xl"
           size="default"
           variants="default"
         >

@@ -14,6 +14,33 @@ import StaffCard from "./components/staffcard";
 import Accordion from "./components/Accordion";
 import Input from "../Components/forms/input";
 import Image from "next/image";
+
+const Accordiondata = [
+  {
+    id: 1,
+    question: "how experienced is your team?",
+  },
+  {
+    id: 1,
+    question: "What services does Meeras Software Solution offer?",
+  },
+  {
+    id: 1,
+    question: "Can you handle projects of all sizes?",
+  },
+  {
+    id: 1,
+    question: "How do you ensure the security of my data?",
+  },
+  {
+    id: 1,
+    question: "What is your approach to project management and communication?",
+  },
+  {
+    id: 1,
+    question: "How can I get started with Meeras Software Solution?",
+  },
+];
 const About = () => {
   const emailref = useRef<HTMLInputElement>(null!);
   return (
@@ -125,7 +152,7 @@ const About = () => {
         <div className="xl:5/6 relative z-30 flex flex-col  justify-center px-4 py-2 text-center lg:w-1/2 lg:p-12  lg:text-left">
           <h4 className="mt-10 text-4xl font-extrabold text-white md:text-5xl lg:mt-0 xl:text-7xl">
             Tailored <span className="text-orange-500">Solutions</span> for
-            <span className="text-orange-500">Success</span>
+            <span className="text-orange-500"> Success</span>
           </h4>
           <p className="mt-3 text-sm text-white  lg:text-base xl:w-3/4 ">
             We understand that every business is unique, with distinct goals and
@@ -173,13 +200,10 @@ const About = () => {
             </div>
           </div>
           <div className=" w-full px-1 lg:w-3/6">
-            <div className="flex  w-full flex-col items-center justify-center px-2 md:px-0">
-              <Accordion />
-              <Accordion />
-              <Accordion />
-              <Accordion />
-              <Accordion />
-              <Accordion />
+            <div className="flex  w-full flex-col items-start  px-2 md:px-0">
+              {Accordiondata.map((data) => (
+                <Accordion question={data.question} key={data.id} />
+              ))}
             </div>
           </div>
         </div>

@@ -3,22 +3,24 @@ import { AiOutlineMinus } from "react-icons/ai";
 import { AnimatePresence, delay, motion } from "framer-motion";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
-interface AccordionProps {}
+interface AccordionProps {
+  question: string;
+}
 
-const Accordion: FC<AccordionProps> = () => {
+const Accordion: FC<AccordionProps> = ({ question }) => {
   const [isactive, setisactive] = useState(false);
   const seticonHandler = () => {
     setisactive(!isactive);
   };
   return (
-    <div className=" md:w-[80%] mt-8 ">
+    <div className="mt-8 ">
       <div className="">
         <div className="flex gap-2 flex-col items-center ">
           <div
             className="text-base md:text-xl cursor-pointer flex gap-1"
             onClick={seticonHandler}
           >
-            <h4>What do Meeras Software Solution does?</h4>
+            <h4>{question}</h4>
             {isactive ? (
               <AiOutlineMinus />
             ) : (
