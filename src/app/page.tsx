@@ -27,8 +27,8 @@ const Home: FC<homeprops> = () => {
             <h2 className="text-xl font-medium capitalize text-orange-500 sm:text-2xl xxl:text-4xl">
               Software Solution for your Business
             </h2>
-            <h1 className="text-3xl font-extrabold sm:text-4xl  lg:text-4xl">
-              Empowering Your Digital Transformation
+            <h1 className="text-3xl font-extrabold sm:text-4xl xl:text-5xl ">
+              Empowering Your <br /> Digital Transformation
             </h1>
             <p className="text-base font-medium md:text-base lg:text-base xl:w-3/4 ">
               Are you ready to unlock the true potential of your business
@@ -43,8 +43,10 @@ const Home: FC<homeprops> = () => {
             <Image
               src={mobilemeerasimg}
               alt="meeras image for mobile"
-              className="h-[24rem] w-[80%] bg-contain bg-no-repeat sm:w-[16rem] "
+              className=" bg-contain bg-no-repeat sm:w-[16rem] "
               loading="lazy"
+              height={300}
+              width={600}
               placeholder="blur"
             />
           </div>
@@ -52,16 +54,18 @@ const Home: FC<homeprops> = () => {
           <Image
             alt="meerasimage"
             src={desktopmerrasimage}
-            className="hidden w-2/4 lg:mr-[-7rem] lg:block lg:h-[25rem] xl:mr-[-8.5rem]  xl:h-[30rem] xxl:w-2/4 "
+            className="hidden w-3/4 lg:mr-[-7rem] lg:block lg:h-[25rem] lg:w-2/4 xl:mr-[-8.5rem]  xl:h-[30rem] xxl:w-3/4 "
             loading="lazy"
             placeholder="blur"
+            height={300}
+            width={600}
           />
         </div>
       </section>
 
       <section className=" p-4">
         <div className="w-full text-center">
-          <p className="mb-4 text-base font-semibold  text-[#000B17]">
+          <p className="mb-4 text-base font-semibold lg:text-xl  text-[#000B17]">
             Join the 100+ companies using the Segment platform
           </p>
           <ul className="mt-10 flex w-full gap-5 md:mx-auto md:w-[80%]">
@@ -176,7 +180,7 @@ const Home: FC<homeprops> = () => {
             <div className="">
               <h2 className="text-6xl font-extrabold ">90%</h2>
               <p className="mt-8 text-xl font-bold xl:w-1/2">
-                Job success rate across all our project from our clieclients
+                Job success rate across all our project from our clients
               </p>
             </div>
             <h1 className="ml-10 mt-5 flex items-center justify-center gap-2">

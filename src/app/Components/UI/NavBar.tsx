@@ -61,9 +61,7 @@ const NavBar = () => {
             </Link>
             <ul className="flex items-center justify-around  gap-2 font-medium capitalize max-lg:hidden max-lg:w-[50%] lg:w-[40%] ">
               {aboutlink}
-              <Link href="/">
-                <li className="mb-1">product</li>
-              </Link>
+
               <Link href="/Blogpage">
                 <li className="mb-1">blog</li>
               </Link>

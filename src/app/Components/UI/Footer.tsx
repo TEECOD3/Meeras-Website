@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Facebook from "../../../../public/assets/icons/Facebook";
 import Instagram from "../../../../public/assets/icons/Instagram";
 import Twitter from "../../../../public/assets/icons/Twitter";
@@ -12,18 +13,23 @@ const Footer = () => {
     <footer className=" flex flex-col items-center justify-center bg-blue-900 px-3 pt-8 lg:pt-20">
       <div className=" mx-auto flex flex-col  gap-10 md:max-w-[83%] md:flex-row-reverse ">
         <div className="flex justify-between px-6 font-light text-white max-sm:text-sm md:flex-1  md:justify-around md:gap-10 md:px-0 ">
-          <ul className="text-md grid place-items-start space-y-8 md:text-base">
+          <ul className="text-md grid place-items-start space-y-2 md:text-base">
             <h4 className="text-md font-bold">Company</h4>
-            <li>About us</li>
-            <li>About us</li>
-            <li>Product</li>
-            <li>Blog</li>
+
+            <li>
+              <Link href="/Aboutpage">About us</Link>
+            </li>
+
+            <li>
+              <Link href="/Blogpage">Blog</Link>
+            </li>
           </ul>
           <ul className="space-y-8 md:text-base">
             <h4 className="font-bold ">Contact</h4>
-            <li>support@meeras.com</li>
-            <li>Whatsapp</li>
-            <li>+234 801 2323 332</li>
+
+            <li>Meerassoftware@gmail.com</li>
+
+            <li>Whatsapp : +234 708 135 3229</li>
           </ul>
         </div>
         <div className=" mt-4 h-full px-4 sm:mt-0 md:w-3/6 ">
@@ -40,16 +46,27 @@ const Footer = () => {
           </p>
           <ul className="mt-6 flex gap-4 ">
             <li className="flex h-10 w-10  items-center justify-center rounded-full bg-white">
-              <Facebook />
+              <a href="/" target="_blank">
+                <Facebook />
+              </a>
             </li>
-            <li className="flex  h-10 w-10   items-center justify-center rounded-full bg-white">
-              <Instagram />
+            <li className="flex h-10 w-10   items-center justify-center rounded-full bg-white">
+              <a href="https://instagram.com/Meerassoftware" target="_blank">
+                <Instagram />
+              </a>
             </li>
             <li className="flex h-10 w-10  items-center justify-center rounded-full bg-white">
-              <Twitter />
+              <a href="https://twitter.com/MeerasSoftware" target="_blank">
+                <Twitter />
+              </a>
             </li>
             <li className="flex  h-10 w-10   items-center justify-center rounded-full bg-white">
-              <FaLinkedinIn />
+              <a
+                href="https://www.linkedin.com/company/meeras-software-solution/"
+                target="_blank"
+              >
+                <FaLinkedinIn />
+              </a>
             </li>
             <li className="flex h-10 w-10    items-center justify-center rounded-full bg-white">
               <Whatsapp />

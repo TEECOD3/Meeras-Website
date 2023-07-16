@@ -97,13 +97,13 @@ const Mainnews = () => {
             <h2 className="my-2 text-center text-sm font-medium text-white md:my-6 md:text-base">
               Receive regular financial education content.
             </h2>
-            <div className="mx-auto flex flex-col items-center justify-center lg:flex-row xl:w-3/5">
+            <div className="mx-auto flex flex-col items-center justify-center lg:flex-row xl:w-3/5 gap-x-2">
               <Input
                 inputs={{
                   type: "text",
                   placeholder: "enter your email address..",
                 }}
-                className="mb-2 flex-1 bg-orange-500/70 p-3 text-base text-white lg:mb-0"
+                className="mb-2 flex-1 bg-white p-3 text-base text-gray-500 lg:mb-0"
               />
               <button className="md:text-bold mx-auto mt-3 w-1/2  rounded-lg bg-white  py-3 text-sm font-bold capitalize text-black md:mt-0 md:w-4/12 lg:w-2/6">
                 subscribe now
