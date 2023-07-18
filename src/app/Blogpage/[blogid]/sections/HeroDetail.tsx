@@ -3,9 +3,13 @@ import React from "react";
 import heroimage from "../../../images/blogdetshero.png";
 import image from "../../../images/blogimage.jpg";
 
-type Props = {};
+interface postdetails {}
 
-export default function HeroDetail({}: Props) {
+type Props = {
+  post: any;
+};
+
+export default function HeroDetail({ post }: Props) {
   return (
     <section className="relative h-full w-full md:px-10 md:py-10 ">
       <Image
@@ -22,11 +26,10 @@ export default function HeroDetail({}: Props) {
           UI/UX Design
         </h4>
         <h2 className="mb-3 text-center text-2xl font-extrabold md:w-1/2 md:text-4xl xl:mb-6 xl:text-6xl xl:leading-[5rem]">
-          Introducing Sprout: Modern Corporate Treasury...
+          {post.title}
         </h2>
         <h4 className="mb-4 w-3/4 text-center text-sm font-normal md:mb-6 md:text-base lg:w-1/3">
-          Specify helps you unify your brand identity by collecting, storing and
-          distributing design tokens
+          {post.content}
         </h4>
 
         <div className="flex flex-col">
@@ -48,7 +51,7 @@ export default function HeroDetail({}: Props) {
           </div>
 
           <div className="flex gap-x-3 text-base font-semibold capitalize md:mb-2">
-            <span>david temitope</span>
+            <span>{post.author}</span>
             <span>oloyede seyi</span>
           </div>
 

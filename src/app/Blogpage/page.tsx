@@ -5,8 +5,11 @@ import Blogherolist from "./Components/Blogherolist";
 import Blogpostlist from "./Components/Blogpostlist";
 import { Button } from "../Components/UI/Button";
 import Newsletter from "./Components/Newsletter";
+import { getposts } from "../utils/Query";
 
-const Blogpage = () => {
+const Blogpage = async () => {
+  const Posts = await getposts();
+
   return (
     <section className="py-24 lg:py-28">
       <section className="mx-auto w-[82%]">
@@ -39,7 +42,7 @@ const Blogpage = () => {
         </div>
 
         <div className=" mx-auto mt-16 w-11/12 md:w-[82%]">
-          <Blogpostlist />
+          <Blogpostlist Posts={Posts.data} />
         </div>
       </section>
       <Newsletter />
