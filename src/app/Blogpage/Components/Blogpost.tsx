@@ -8,11 +8,11 @@ import { useRouter, usePathname } from "next/navigation";
 
 type Props = {
   textclassName?: string;
-  title: string;
-  slug: string;
-  content: string;
-  published_at: string;
-  author: string;
+  title?: string;
+  slug?: string;
+  content?: string;
+  published_at?: string;
+  author?: string;
 };
 
 export default function Blogpost({
