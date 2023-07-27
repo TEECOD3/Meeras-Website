@@ -3,10 +3,18 @@ import React from "react";
 import heroimage from "../../../images/blogdetshero.png";
 import image from "../../../images/blogimage.jpg";
 
-interface postdetails {}
+interface posts {
+  id: number;
+  title: string;
+  content: string;
+  publihed_at: string;
+  author: string;
+  slug: string;
+  image: string;
+}
 
 type Props = {
-  post: any;
+  post: posts;
 };
 
 export default function HeroDetail({ post }: Props) {
@@ -15,8 +23,8 @@ export default function HeroDetail({ post }: Props) {
       <Image
         src={heroimage}
         alt="blog detail hero image"
-        loading="lazy"
-        placeholder="blur"
+        height={300}
+        width={800}
         className="absolute left-0 top-0 z-10 h-full w-full bg-cover object-cover "
       />
       <div className="absolute left-0 top-0 z-[14] h-full w-full bg-black/50"></div>
@@ -25,12 +33,12 @@ export default function HeroDetail({ post }: Props) {
         <h4 className=" text-xl font-medium md:mb-4 md:text-2xl md:font-bold ">
           UI/UX Design
         </h4>
-        <h2 className="mb-3 text-center text-2xl font-extrabold md:w-1/2 md:text-4xl xl:mb-6 xl:text-6xl xl:leading-[5rem]">
+        <h2 className="mb-3 text-center capitalize text-2xl font-extrabold md:w-1/2 md:text-4xl xl:mb-6 xl:text-6xl xl:leading-[5rem]">
           {post.title}
         </h2>
-        <h4 className="mb-4 w-3/4 text-center text-sm font-normal md:mb-6 md:text-base lg:w-1/3">
+        {/* <h4 className="mb-4 w-3/4 text-center text-sm font-normal md:mb-6 md:text-base lg:w-1/3">
           {post.content}
-        </h4>
+        </h4> */}
 
         <div className="flex flex-col">
           <div className="mb-6 flex items-center justify-center gap-x-4">
@@ -56,7 +64,7 @@ export default function HeroDetail({ post }: Props) {
           </div>
 
           <div className="item-center flex flex-col justify-center gap-y-4 text-center">
-            <div className="text-semibold text-base">jun 10 ,2022</div>
+            <div className="text-semibold text-base">{post.publihed_at}</div>
             <div className="text-light text-sm">2min read</div>
           </div>
         </div>

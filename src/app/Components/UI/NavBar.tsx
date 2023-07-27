@@ -59,11 +59,30 @@ const NavBar = () => {
                 placeholder="blur"
               />
             </Link>
-            <ul className="flex items-center justify-around  gap-2 font-medium capitalize max-lg:hidden max-lg:w-[50%] lg:w-[40%] ">
-              {aboutlink}
+
+            <ul className="flex items-center justify-around  gap-2 font-medium capitalize max-lg:hidden max-lg:w-[50%] lg:w-[40%]">
+              <Link href="/Aboutpage">
+                <li
+                  className={`${
+                    pathname === "/Aboutpage"
+                      ? "font-bold  border-b-4 border-orange-600"
+                      : " "
+                  }`}
+                >
+                  About
+                </li>
+              </Link>
 
               <Link href="/Blogpage">
-                <li className="mb-1">blog</li>
+                <li
+                  className={`${
+                    pathname === "/Blogpage"
+                      ? "font-bold  border-b-4 border-orange-600"
+                      : " "
+                  }`}
+                >
+                  blog
+                </li>
               </Link>
               <li>
                 <Button
