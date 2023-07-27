@@ -48,7 +48,7 @@ const About = () => {
       <section className="firstsection| max-w-8xl mx-auto mb-28 flex flex-col py-2  backdrop:relative md:mb-4 md:h-[400px] lg:h-[500px] lg:flex-row lg:py-16 xl:h-[700px]">
         <div className="mx-auto flex  h-full w-full flex-col sm:w-[82%]  md:mt-14  lg:mt-0  lg:w-[90%] lg:flex-row lg:gap-1 lg:p-20 ">
           <div className="mt-0 space-y-5 text-center sm:px-4 md:px-0 md:text-left">
-            <h1 className=" px-1 text-3xl font-extrabold  sm:text-4xl md:mt-0  md:w-1/2 md:text-2xl lg:w-2/3 lg:text-4xl xl:w-[60%] xl:text-6xl xxl:text-8xl ">
+            <h1 className=" px-1 text-3xl font-extrabold  sm:text-4xl md:mt-0  md:w-1/2 md:text-2xl lg:w-2/3 lg:text-4xl xl:w-[60%] xl:text-5xl xxl:text-5xl ">
               Empowering Businesses through Innovative Technology Solutions
             </h1>
             <p className="self-center text-sm font-bold text-blue-500  md:w-1/2 md:text-base">

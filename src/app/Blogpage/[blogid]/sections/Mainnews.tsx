@@ -9,8 +9,25 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { Postdetails } from "../../Components/Postdetails";
 import Blogpost from "../../Components/Blogpost";
 
-const data = [];
-const Mainnews = () => {
+interface posts {
+  data: {
+    id: number;
+    title: string;
+    content: string;
+    publihed_at: string;
+    author: string;
+    slug: string;
+    image: string;
+    like: number;
+    comments: [];
+  };
+}
+
+type Props = {
+  post: posts;
+};
+const Mainnews = ({ post }: Props) => {
+  console.log(post);
   return (
     <section className="mx-auto mb-5 flex w-full max-w-[95%] flex-col md:space-x-10 lg:max-w-[90%] lg:flex-row xl:space-x-36">
       <article className="flex-1">
@@ -23,7 +40,7 @@ const Mainnews = () => {
 
         <section>
           <h3 className="mt-3 text-3xl font-bold capitalize md:text-5xl ">
-            introducing sprout of modern comabait
+            {post?.data?.title}
           </h3>
           <Image
             src={someimage}
@@ -33,62 +50,11 @@ const Mainnews = () => {
             placeholder="blur"
           />
           <p className="mt-2 text-base md:mt-4 lg:text-2xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae, quis
-            facilisis semper integer pretium. Rutrum magna lacus dis purus,
-            vitae eget. Nisl enim sit varius auctor. In enim urna mauris ac
-            tellus aliquam turpis. Id vulputate orci amet sit nam consectetur
-            feugiat nisl, volutpat. Morbi tortor ultrices vulputate euismod
-            laoreet nibh consequat lectus tincidunt. Placerat aliquam viverra
-            nunc cursus bibendum faucibus aliquam. Odio varius neque, mauris id
-            ut aliquam. velit.
+            {post?.data?.content}
           </p>
-          <p className="mt-4 text-base lg:text-2xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae, quis
-            facilisis semper integer pretium. Rutrum magna lacus dis purus,
-            vitae eget. Nisl enim sit varius auctor. In enim urna mauris ac
-            tellus aliquam turpis. Id vulputate orci amet sit nam consectetur
-            feugiat Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Vitae, quis facilisis semper integer pretium. Rutrum magna lacus dis
-            purus, vitae eget. Nisl enim sit varius auctor. In enim urna mauris
-            ac tellus aliquam turpis. Id vulputate orci amet sit nam consectetur
-            feugiat nisl, volutpat. Morbi tortor ultrices vulputate euismod
-            laoreet nibh consequat lectus tincidunt. Placerat ali
-          </p>
+          <p className="mt-4 text-base lg:text-2xl">{post?.data?.content}</p>
         </section>
-        <section>
-          <h3 className="mt-3 text-3xl font-bold capitalize md:text-5xl ">
-            introducing sprout of modern comabait
-          </h3>
-          <Image
-            src={someimage}
-            alt="blogimagedescription"
-            className=" `w-full mt-4 bg-center object-cover md:h-[40rem]"
-            loading="lazy"
-            placeholder="blur"
-          />
-          <p className="font-nunito mt-2 text-base md:mt-4 lg:text-2xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae, quis
-            facilisis semper integer pretium. Rutrum magna lacus dis purus,
-            vitae eget. Nisl enim sit varius auctor. In enim urna mauris ac
-            tellus aliquam turpis. Id vulputate orci amet sit nam consectetur
-            feugiat nisl, volutpat. Morbi tortor ultrices vulputate euismod
-            laoreet nibh consequat lectus tincidunt. Placerat aliquam viverra
-            nunc cursus bibendum faucibus aliquam. Odio varius neque, mauris id
-            ut aliquam. velit.
-          </p>
-          <p className="mt-4 text-base lg:text-2xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae, quis
-            facilisis semper integer pretium. Rutrum magna lacus dis purus,
-            vitae eget. Nisl enim sit varius auctor. In enim urna mauris ac
-            tellus aliquam turpis. Id vulputate orci amet sit nam consectetur
-            feugiat Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Vitae, quis facilisis semper integer pretium. Rutrum magna lacus dis
-            purus, vitae eget. Nisl enim sit varius auctor. In enim urna mauris
-            ac tellus aliquam turpis. Id vulputate orci amet sit nam consectetur
-            feugiat nisl, volutpat. Morbi tortor ultrices vulputate euismod
-            laoreet nibh consequat lectus tincidunt. Placerat ali
-          </p>
-        </section>
+
         <section className=" mt-6 w-full rounded-xl bg-orange-500 p-6 px-6 lg:py-10 ">
           <div className="mx-auto md:w-2/3">
             <h3 className="text-center text-xl font-extrabold  text-white lg:text-5xl">
@@ -119,7 +85,9 @@ const Mainnews = () => {
             <div className="inline-block cursor-pointer rounded-full bg-[#dceee6]  p-4 hover:scale-105">
               <AiFillLike className="fill-blue-500 text-5xl text-blue-500" />
             </div>
-            <div className="mt-1  text-base font-extrabold ">73</div>
+            <div className="mt-1  text-base font-extrabold ">
+              {post?.data?.like} likes
+            </div>
           </div>
         </div>
 
@@ -148,7 +116,7 @@ const Mainnews = () => {
 
         <div className="mt-8">
           <h3 className=" text-xl font-bold capitalize text-gray-600 md:text-3xl">
-            15 comments
+            {post?.data?.comments.length} comments
           </h3>
 
           <div className="mt-6">
@@ -161,9 +129,9 @@ const Mainnews = () => {
             <h3 className=" my-2 text-xl font-bold capitalize text-gray-600 md:my-6 md:text-3xl">
               related posts
             </h3>
-            <Blogpost textclassName="text-sm" />
+            {/* <Blogpost textclassName="text-sm" />
             <Blogpost textclassName="text-base md:text-xl" />
-            <Blogpost textclassName="text-base md:text-xl" />
+            <Blogpost textclassName="text-base md:text-xl" /> */}
           </div>
         </div>
       </div>
