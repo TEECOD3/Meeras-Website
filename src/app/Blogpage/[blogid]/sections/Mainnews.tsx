@@ -129,9 +129,9 @@ const Mainnews = ({ post }: Props) => {
             <h3 className=" my-2 text-xl font-bold capitalize text-gray-600 md:my-6 md:text-3xl">
               related posts
             </h3>
-            <Blogpost textclassName="text-sm" />
+            {/* <Blogpost textclassName="text-sm" />
             <Blogpost textclassName="text-base md:text-xl" />
-            <Blogpost textclassName="text-base md:text-xl" />
+            <Blogpost textclassName="text-base md:text-xl" /> */}
           </div>
         </div>
       </div>
