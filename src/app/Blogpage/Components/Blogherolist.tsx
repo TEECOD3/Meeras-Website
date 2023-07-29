@@ -8,11 +8,24 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { blogheroposts } from "@/app/data/Data";
 
-type Props = {};
+interface posts {
+  id: number;
+  title: string;
+  content: string;
+  publihed_at: string;
+  author: string;
+  slug: string;
+  like: number;
+  comment: number;
+  image: string;
+}
+type Props = {
+  combinedimageandpost: posts[];
+};
 
-function Blogherolist({}: Props) {
+function Blogherolist({ combinedimageandpost }: Props) {
   return (
-    <ul className="relative flex items-center  xl:p-2">
+    <ul className="relative flex items-center  xl:p-2 h-[500px] w-full">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -34,18 +47,21 @@ function Blogherolist({}: Props) {
         className=" h-full p-4"
       >
         <div className="swiper-pagination"></div>
-        {blogheroposts.map((post) => (
+        {combinedimageandpost.map((post) => (
           <SwiperSlide
             key={post.id}
             className="h-full w-full transition-all delay-75 ease-in-out"
           >
             <Blogheroitem
-              name={post.name}
               image={post.image}
+              key={post.id}
+              author={post.author}
               title={post.title}
-              authorimage={post.blogauthorimage}
-              date={post.date}
-              blogtext={post.blogtext}
+              like={post.like}
+              comment={post.comment}
+              publihed_at={post.publihed_at}
+              slug={post.slug}
+              content={post.content}
             />
           </SwiperSlide>
         ))}

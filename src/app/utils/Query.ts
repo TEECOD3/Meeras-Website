@@ -43,7 +43,7 @@ export const getpost = async (id: string) => {
       throw new Error("Error fetching posts");
     }
     const post = await response.json();
-    console.log(post);
+
     return post;
   } catch (error) {
     console.error(error);

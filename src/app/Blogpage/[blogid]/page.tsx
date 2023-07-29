@@ -12,7 +12,7 @@ https: type Props = {
 export default async function BlogDetailpage({ params }: Props) {
   const slug = params.blogid;
   const post = await getpost(slug);
-  console.log(post);
+  
 
   return (
     <section className="mx-auto mb-28  w-[99.9%] bg-lightgreen py-24">

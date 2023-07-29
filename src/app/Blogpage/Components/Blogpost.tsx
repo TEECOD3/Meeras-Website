@@ -35,7 +35,7 @@ export default function Blogpost({
   const blogdetailNavigationhandler = () => {
     router.push(`/Blogpage/${slug}`);
   };
-  console.log(publihed_at);
+
 
   const formatDate = (dateString: any) => {
     const date = new Date(dateString);
