@@ -11,9 +11,14 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { images } from "../data/Data";
 import StaffCard from "./components/staffcard";
-import Accordion from "./components/Accordion";
 import Input from "../Components/forms/input";
 import Image from "next/image";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../Components/UI/accordion";
 
 const Accordiondata = [
   {
@@ -202,7 +207,14 @@ const About = () => {
           <div className=" w-full px-1 lg:w-3/6">
             <div className="flex  w-full flex-col items-start  px-2 md:px-0">
               {Accordiondata.map((data) => (
-                <Accordion question={data.question} key={data.id} />
+                <Accordion key={data.id} type="single" collapsible>
+                  <AccordionItem value="item-1">
+                    <AccordionTrigger>{data.question}</AccordionTrigger>
+                    <AccordionContent>
+                      Yes. It adheres to the WAI-ARIA design pattern.
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
               ))}
             </div>
           </div>

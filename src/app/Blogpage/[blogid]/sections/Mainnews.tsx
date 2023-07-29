@@ -27,7 +27,7 @@ type Props = {
   post: posts;
 };
 const Mainnews = ({ post }: Props) => {
-  console.log(post);
+
   return (
     <section className="mx-auto mb-5 flex w-full max-w-[95%] flex-col md:space-x-10 lg:max-w-[90%] lg:flex-row xl:space-x-36">
       <article className="flex-1">

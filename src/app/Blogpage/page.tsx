@@ -9,7 +9,7 @@ import { getimages, getposts } from "../utils/Query";
 
 const Blogpage = async () => {
   const Posts = await getposts();
-  console.log(Posts);
+
   const images = await getimages();
   const combinedimageandpost = Posts.data.map((item: any, index: number) => ({
     ...item,
@@ -18,23 +18,25 @@ const Blogpage = async () => {
 
   return (
     <section className="py-24 lg:py-28">
-      <section className="mx-auto w-[82%]">
+      <section className="mx-auto px-3 lg:w-[82%] h-screen lg:h-[80%] flex flex-col justify-center">
         <h2 className=" mb-4 text-3xl font-extrabold capitalize lg:text-6xl ">
           meeras blog
         </h2>
-        <article className="mt-4">
-          <Blogherolist />
+        <article className="flex items-center justify-center  w-full">
+          <Blogherolist combinedimageandpost={combinedimageandpost} />
         </article>
       </section>
 
       <section className="my-10">
-        <div className="mx-auto  flex  w-full gap-4 border-b-2 border-t-2 border-dashed border-black p-3 lg:mt-6 ">
-          <div className=" mx-auto  overflow-x-auto lg:w-[95%]">
-            <div className="no-scrollbar flex w-[60rem]  gap-3 sm:w-full sm:gap-5 md:p-4 lg:gap-5 ">
+        <div className="mx-auto flex  w-full gap-4 border-b-2 border-t-2 border-dashed border-black ">
+          <div className=" mx-auto overflow-x-auto lg:w-[95%] ">
+            <div className="no-scrollbar py-2 flex  gap-3 sm:w-full sm:gap-5 md:p-4 lg:gap-2  ">
               {buttondata.map((buttons) => (
                 <button key={buttons.id} className="mx-auto p-2 shadow-sm ">
-                  <div className="flex w-full items-center justify-between gap-3 px-4">
-                    <div className="font-bold uppercase">{buttons.name}</div>
+                  <div className="flex w-full items-center  gap-3">
+                    <div className="font-bold uppercase text-[0.5rem] lg:text-[0.9rem]   ">
+                      {buttons.name}
+                    </div>
                   </div>
                 </button>
               ))}
