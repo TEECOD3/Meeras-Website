@@ -17,12 +17,12 @@ const Blogpage = async () => {
   }));
 
   return (
-    <section className="py-24 lg:py-28">
-      <section className="mx-auto px-3 lg:w-[82%] h-screen lg:h-[80%] flex flex-col justify-center">
-        <h2 className=" mb-4 text-3xl font-extrabold capitalize lg:text-6xl ">
+    <section className="py-16 lg:py-28">
+      <section className="mx-auto px-3 lg:w-[82%]  flex flex-col ">
+        <h2 className=" mb-4 text-3xl font-extrabold capitalize  lg:text-6xl ">
           meeras blog
         </h2>
-        <article className="flex items-center justify-center  w-full">
+        <article className="flex items-center justify-center  w-full ">
           <Blogherolist combinedimageandpost={combinedimageandpost} />
         </article>
       </section>
@@ -34,7 +34,7 @@ const Blogpage = async () => {
               {buttondata.map((buttons) => (
                 <button key={buttons.id} className="mx-auto p-2 shadow-sm ">
                   <div className="flex w-full items-center  gap-3">
-                    <div className="font-bold uppercase text-[0.5rem] lg:text-[0.9rem]   ">
+                    <div className="font-bold uppercase text-[0.5rem] lg:text-[1rem]   ">
                       {buttons.name}
                     </div>
                   </div>

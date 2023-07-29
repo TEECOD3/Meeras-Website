@@ -191,7 +191,7 @@ const About = () => {
 
       <section className="accordion|  mb-20 max-w-[100%] bg-[#FFEFE3] px-1 py-8">
         <div className="mx-auto flex flex-col gap-4 md:w-[87%] md:flex-row ">
-          <div className="lg:justify-left px-10  md:w-3/6 lg:flex lg:items-center">
+          <div className="lg:justify-left px-2 lg:px-10  md:w-3/6 lg:flex lg:items-center">
             <div className="">
               <h4 className="text-left text-2xl font-extrabold md:text-5xl xl:text-6xl">
                 Frequent Asked Question
@@ -205,11 +205,13 @@ const About = () => {
             </div>
           </div>
           <div className=" w-full px-1 lg:w-3/6">
-            <div className="flex  w-full flex-col items-start  px-2 md:px-0">
+            <div className="flex  w-full flex-col  px-1 items-center justify-center md:px-0">
               {Accordiondata.map((data) => (
                 <Accordion key={data.id} type="single" collapsible>
                   <AccordionItem value="item-1">
-                    <AccordionTrigger>{data.question}</AccordionTrigger>
+                    <AccordionTrigger className="w-full ">
+                      {data.question}
+                    </AccordionTrigger>
                     <AccordionContent>
                       Yes. It adheres to the WAI-ARIA design pattern.
                     </AccordionContent>
