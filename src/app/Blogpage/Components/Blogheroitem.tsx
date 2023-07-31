@@ -34,14 +34,14 @@ function Blogheroitem({
 }: Props) {
   const router = useRouter();
   return (
-    <li className=" flex-col flex h-full items-center gap-x-[5rem] md:flex-row py-10 md:justify-around md:gap-x-[4rem] justify-center xl:gap-x-[10rem] ">
+    <li className=" flex-col flex h-full  items-center gap-x-[5rem] md:flex-row py-10 md:justify-around md:gap-x-[4rem] justify-center xl:gap-x-[10rem] ">
       <div className="h-full w-full xl:w-1/2">
         <Image
           src={image}
-          height={400}
+          height={800}
           width={400}
           alt="meeras blog image"
-          className="mx-auto max-h-[500px] w-full rounded-lg object-cover"
+          className="mx-auto max-h-[400px] w-full rounded-lg object-cover"
           loading="lazy"
         />
       </div>

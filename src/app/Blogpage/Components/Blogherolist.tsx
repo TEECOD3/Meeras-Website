@@ -25,7 +25,7 @@ type Props = {
 
 function Blogherolist({ combinedimageandpost }: Props) {
   return (
-    <ul className="relative flex items-center  xl:p-2 h-[500px] w-full">
+    <ul className="relative flex items-center  xl:p-2 h-full w-full">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
