@@ -101,7 +101,7 @@ const Home: FC<homeprops> = () => {
       </section>
 
       <section className=" mt-8 max-md:px-12 max-sm:p-2 md:p-6 ">
-        <div className=" mx-auto  lg:w-[100%] xl:max-w-[83%] ">
+        <div className=" mx-auto  lg:w-[90%] xl:max-w-[83%] ">
           <div className="sticky top-[3.9rem] bg-white p-2 md:top-[4.3rem]">
             <h2 className="text-xl font-bold text-orange-400 md:mb-4 md:text-2xl">
               Our Services
