@@ -27,7 +27,7 @@ const Blogpage = async () => {
         </article>
       </section>
 
-      <section className="my-4">
+      <section className="my-10">
         <div className="mx-auto flex  w-full gap-4 border-b-2 border-t-2 border-dashed border-black ">
           <div className=" mx-auto overflow-x-auto lg:w-[95%] ">
             <div className="no-scrollbar py-2 flex  gap-3 sm:w-full sm:gap-5 md:p-4 lg:gap-2  ">
@@ -44,7 +44,7 @@ const Blogpage = async () => {
           </div>
         </div>
 
-        <div className=" mx-auto mt-2 w-11/12 md:w-[82%]">
+        <div className=" mx-auto mt-10 w-11/12 md:w-[82%] ">
           <Blogpostlist combinedimageandpost={combinedimageandpost} />
         </div>
       </section>
