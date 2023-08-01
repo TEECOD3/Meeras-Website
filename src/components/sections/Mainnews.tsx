@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import someimage from "public/images/blogdetshero.png";
 import { Input } from "../UI/input";
-import { Button } from "../UI/Button";
+import { Button } from "@/src/components/ui/button";
 import { AiFillLike } from "react-icons/ai";
 import { BsInstagram, BsLink, BsTelegram, BsTwitter } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
