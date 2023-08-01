@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { MdOutlineClose } from "react-icons/md";
-import meeraslogo from "../../images/Meeraslogo.png";
+import meeraslogo from "public/images/Meeraslogo.png";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";

@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import Facebook from "../../../../public/assets/icons/Facebook";
-import Instagram from "../../../../public/assets/icons/Instagram";
-import Twitter from "../../../../public/assets/icons/Twitter";
-import Whatsapp from "../../../../public/assets/icons/Whatsapp";
+import Facebook from "../../../public/assets/icons/Facebook";
+import Instagram from "../../../public/assets/icons/Instagram";
+import Twitter from "../../../public/assets/icons/Twitter";
+import Whatsapp from "../../../public/assets/icons/Whatsapp";
 import { FaLinkedinIn } from "react-icons/fa";
-import meerasfooter from "../../images/merrasfooterimg.png";
+import meerasfooter from "public/images/merrasfooterimg.png";
 import Image from "next/image";
 
 const Footer = () => {

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import someimage from "../../images/blogimage.jpg";
-import { twMerge } from "tailwind-merge";
+import someimage from "public/images/blogimage.jpg";
 
 type Props = {};
 

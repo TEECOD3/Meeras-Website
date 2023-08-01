@@ -1,7 +1,7 @@
 import React from "react";
 import imagea from "../../images/meerasblogimg.png";
 import Image from "next/image";
-import image3 from "../../images/blogimage.jpg";
+import image3 from "public/images/blogimage.jpg";
 import { StaticImageData } from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
