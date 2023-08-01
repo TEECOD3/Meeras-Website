@@ -1,9 +1,10 @@
 import React from "react";
-import contactimage from "../images/contactImage.png";
+import contactimage from "public/images/contactImage.png";
 import Image from "next/image";
-import Input from "../Components/forms/input";
-import { Button } from "../Components/UI/Button";
-import map from "../images/Mapsiclemap.png";
+import { Input } from "@/components/UI/input";
+import { Button } from "@/src/components/ui/button";
+import map from "public/images/Mapsiclemap.png";
+import { Textarea } from "@/components/UI/textarea";
 
 const Contactpage = () => {
   return (
@@ -38,17 +39,37 @@ const Contactpage = () => {
               className="mx-auto space-y-2 rounded-lg bg-white p-4  sm:space-y-4 lg:space-y-8 xl:w-3/4"
             >
               <div className="flex gap-3">
-                <Input inputs={{ placeholder: "first name", type: "text" }} />
-                <Input inputs={{ placeholder: "last name", type: "text" }} />
+                <Input
+                  type="firstname"
+                  placeholder="enter your firstname"
+                  className="text-gray-600 capitalize"
+                />
+                <Input
+                  type="lastname"
+                  placeholder="enter your lastname"
+                  className="text-gray-600 capitalize"
+                />
               </div>
 
-              <Input inputs={{ placeholder: "email", type: "email" }} />
-              <Input inputs={{ placeholder: "phone number", type: "tel" }} />
-              <Input inputs={{ placeholder: "company name", type: "text" }} />
-              <textarea
+              <Input
+                type="email"
+                placeholder="enter your email"
+                className="text-gray-600 capitalize"
+              />
+              <Input
+                type="tel"
+                placeholder="Phone Number"
+                className="text-gray-600 capitalize"
+              />
+              <Input
+                type="text"
+                placeholder="enter your company's name"
+                className="text-gray-600 capitalize"
+              />
+              <Textarea
                 placeholder="how can the company help you"
-                className="w-full resize-none rounded-lg border-[1px] border-gray-300 p-4 text-[0.7rem] outline-none focus:border-[1px] focus:border-gray-400 focus:outline-none"
-              ></textarea>
+                className="w-full resize-none rounded-lg border-[1px] border-gray-300 p-4  text-gray-500 outline-none focus:border-[1px] focus:border-gray-400 focus:outline-none"
+              ></Textarea>
               <p className="text-[0.8rem] text-black">
                 By clicking on contact us, you agree to receive emails from Box
                 regarding product and service updates, special offers, events
@@ -57,11 +78,7 @@ const Contactpage = () => {
               </p>
 
               <div className="bg-red-4 flex w-full justify-end ">
-                <Button
-                  className="px-16 py-4"
-                  variants="default"
-                  size="default"
-                >
+                <Button className="px-16 py-4" size="default">
                   contact
                 </Button>
               </div>

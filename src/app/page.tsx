@@ -1,28 +1,28 @@
 "use client";
 import { FC, useRef, useState } from "react";
-import { Button } from "./Components/UI/Button";
-import Input from "./Components/forms/input";
-import mobilemeerasimg from "./images/meraasIco.png";
-import desktopmerrasimage from "./images/bigmerras.png";
-import schollmgt from "./images/schoomgtsys.png";
-import CardServices from "./Components/UI/CardServices";
+import { Button } from "@/src/components/ui/button";
+import { Input } from "@/components/UI/input";
+import mobilemeerasimg from "public/images/meraasIco.png";
+import desktopmerrasimage from "public/images/bigmerras.png";
+import schollmgt from "public/images/schoomgtsys.png";
+import CardServices from "../components/UI/CardServices";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
-import SwipperNavbuttons from "./Components/UI/SwipperNavbuttons";
-import { testimoonials, images, services } from "./data/Data";
-import TestimonialCard from "./Components/UI/TestimonialCard";
+import SwipperNavbuttons from "../components/UI/SwipperNavbuttons";
+import { testimoonials, images, services } from "../data/Data";
+import TestimonialCard from "../components/UI/TestimonialCard";
 import Image from "next/image";
 
 interface homeprops {}
 const Home: FC<homeprops> = () => {
   const emailref = useRef<HTMLInputElement>(null!);
   return (
-    <main>
+    <>
       <section className=" relative bg-[#FFEFE3] p-4 lg:py-24  ">
-        <div className="relative mx-auto flex w-full flex-col sm:w-[80%]  md:w-[70%] lg:w-[100%] xl:w-[90%] lg:flex-row lg:gap-6 lg:p-20 ">
+        <div className="relative mx-auto flex w-full flex-col sm:w-[80%]  md:w-[70%] lg:w-[100%] xl:w-[90%] lg:flex-row lg:gap-6 lg:p-20 items-center  justify-center ">
           <div className="mt-20 space-y-5 text-center sm:space-y-7 md:mt-20 md:space-y-10 lg:mt-6 lg:w-1/2 lg:space-y-5 lg:text-left xl:space-y-10">
             <h2 className="text-xl font-medium capitalize text-orange-500 sm:text-2xl xxl:text-4xl">
               Software Solution for your Business
@@ -54,7 +54,7 @@ const Home: FC<homeprops> = () => {
           <Image
             alt="meerasimage"
             src={desktopmerrasimage}
-            className="hidden w-3/4 lg:mr-[-7rem] lg:block lg:h-[25rem] lg:w-2/4 xl:mr-[-8.5rem]  xl:h-[30rem] xxl:w-3/4 "
+            className="hidden w-3/4 lg: lg:block lg:h-[25rem] lg:w-2/4 xl:mr-[0]  xl:h-[30rem] xxl:w-3/4 "
             loading="lazy"
             placeholder="blur"
             height={300}
@@ -207,23 +207,20 @@ const Home: FC<homeprops> = () => {
         >
           <Input
             ref={emailref}
-            variant="default"
-            inputs={{
-              type: "email",
-              placeholder: "enter your email",
-            }}
+            type="email"
+            placeholder="enter your email"
             className="w-full  border-[2px] border-blue-600 bg-[#EAEAEA] text-base md:-mb-5 md:p-4 xxl:p-9 xxl:text-2xl "
           />
           <Button
             className="mx-auto mt-4 w-1/2 p-3  text-[0.8rem] sm:w-2/3 md:p-5 lg:text-xl xxl:p-10 xxl:text-2xl  "
             size="default"
-            variants="default"
+            variant="default"
           >
             subscribe Now
           </Button>
         </form>
       </section>
-    </main>
+    </>
   );
 };
 

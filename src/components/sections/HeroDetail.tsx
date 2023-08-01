@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import heroimage from "../../../images/blogdetshero.png";
-import image from "../../../images/blogimage.jpg";
+import heroimage from "public/images/blogdetshero.png";
+import image from "public/images/blogimage.jpg";
 
 interface posts {
   id: number;

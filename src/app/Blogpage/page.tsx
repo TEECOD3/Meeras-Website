@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import { buttondata } from "../data/Data";
-import Blogherolist from "./Components/Blogherolist";
-import Blogpostlist from "./Components/Blogpostlist";
+import { buttondata } from "../../data/Data";
+import Blogherolist from "../../components/UI/Blogherolist";
+import Blogpostlist from "../../components/UI/Blogpostlist";
 
-import Newsletter from "./Components/Newsletter";
-import { getimages, getposts } from "../utils/Query";
+import Newsletter from "../../components/UI/Newsletter";
+import { getimages, getposts } from "../../utils/Query";
 
 const Blogpage = async () => {
   const Posts = await getposts();

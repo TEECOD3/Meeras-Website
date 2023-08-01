@@ -1,24 +1,24 @@
 "use client";
 import React, { useRef } from "react";
-import aboutlogo from "./assets/images/AboutPagehero.png";
-import aboutusimage from "./assets/images/AboutUsImage.png";
-import aboutimage from "./assets/images/aboutimage3.png";
-import { Button } from "../Components/UI/Button";
+import aboutlogo from "public/images/AboutPagehero.png";
+import aboutusimage from "public/images/AboutUsImage.png";
+import aboutimage from "public/images/aboutimage3.png";
+import { Button } from "@/src/components/ui/button";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
-import { images } from "../data/Data";
-import StaffCard from "./components/staffcard";
-import Input from "../Components/forms/input";
+import { images } from "../../data/Data";
+import StaffCard from "@/components/UI/staffcard";
+import { Input } from "@/components/UI/input";
 import Image from "next/image";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../Components/UI/accordion";
+} from "../../components/UI/accordion";
 
 const Accordiondata = [
   {
@@ -101,7 +101,7 @@ const About = () => {
           </p>
 
           <Button
-            variants="default"
+            variant="default"
             size="default"
             className="mt-4 rounded-none px-6 py-3 sm:mt-10"
           >
@@ -237,17 +237,14 @@ const About = () => {
         >
           <Input
             ref={emailref}
-            variant="default"
-            inputs={{
-              type: "email",
-              placeholder: "enter your email...",
-            }}
+            type="email"
+            placeholder="enter your email ..."
             className="w-full border-blue-700 bg-[#EAEAEA] text-base md:-mb-5 md:p-4 xxl:p-9 xxl:text-2xl "
           />
           <Button
             className="mx-auto mt-4 w-1/2 p-3  text-[0.8rem] sm:w-2/3 md:p-5 lg:text-xl xxl:p-10 xxl:text-2xl"
             size="default"
-            variants="default"
+            variant="default"
           >
             subscribe Now
           </Button>

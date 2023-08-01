@@ -3,7 +3,7 @@ import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import React from "react";
 import image from "../../images/meerasblogimg.png";
-import { Button } from "@/app/Components/UI/Button";
+import { Button } from "@/components/UI/Button";
 import { useRouter, usePathname } from "next/navigation";
 
 type Props = {
@@ -35,7 +35,6 @@ export default function Blogpost({
   const blogdetailNavigationhandler = () => {
     router.push(`/Blogpage/${slug}`);
   };
-
 
   const formatDate = (dateString: any) => {
     const date = new Date(dateString);

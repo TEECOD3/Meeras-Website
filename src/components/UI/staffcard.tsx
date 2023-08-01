@@ -1,5 +1,5 @@
 import { FC } from "react";
-import staffimage from "../assets/images/staffimg.jpg";
+import staffimage from "public/images/staffimg.jpg";
 import Image from "next/image";
 
 interface StaffpropsProps {}

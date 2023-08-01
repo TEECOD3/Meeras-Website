@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
-import { blogheroposts } from "@/app/data/Data";
+import { blogheroposts } from "@/data/Data";
 
 interface posts {
   id: number;

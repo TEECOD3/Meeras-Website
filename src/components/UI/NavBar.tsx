@@ -1,11 +1,11 @@
 "use client";
 import { MdOutlineMenu } from "react-icons/md";
 import { useState } from "react";
-import { Button } from "../../Components/UI/Button";
+import { Button } from "@/src/components/ui/button";
 import Link from "next/link";
-import merraslog from "../../images/Meeraslogo.png";
+import merraslog from "public/images/Meeraslogo.png";
 import { AnimatePresence } from "framer-motion";
-import MobileNav from "../UI/Mobilenav";
+import MobileNav from "./Mobilenav";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { AiOutlineDown } from "react-icons/ai";
@@ -87,7 +87,7 @@ const NavBar = () => {
               <li>
                 <Button
                   onClick={loadContactpagehandler}
-                  variants="default"
+                  variant="default"
                   className={`${
                     pathname === "/Contactpage"
                       ? " hover:text-white-200 border-2 border-orange-500 bg-transparent font-bold text-orange-600 hover:bg-orange-200 "
