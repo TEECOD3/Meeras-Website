@@ -21,14 +21,6 @@ import {
 import NewsletterBlue from "@/components/UI/NewsletterBlue";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "About us",
-  description: "All About Merras software solutions",
-  icons: {
-    icon: "/Meeraslogo.png",
-  },
-};
-
 const Accordiondata = [
   {
     id: 1,
