@@ -16,7 +16,7 @@ const CardServices = (props: CardProps) => {
           <Image
             src={image}
             alt="image"
-            className=" w-full rounded-xl  object-cover"
+            className=" w-full rounded-xl object-cover"
             loading="lazy"
             placeholder="blur"
           />

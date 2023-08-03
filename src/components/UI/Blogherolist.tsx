@@ -5,8 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, Pagination, Navigation } from "swiper";
-import { blogheroposts } from "@/data/Data";
+import { Autoplay, Navigation } from "swiper";
+
 
 interface posts {
   id: number;

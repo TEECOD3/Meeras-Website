@@ -1,19 +1,19 @@
 "use client";
 import { FC, useRef, useState } from "react";
-import { Button } from "@/src/components/ui/button";
+import { Button } from "@/components/UI/button";
 import { Input } from "@/components/UI/input";
 import mobilemeerasimg from "public/images/meraasIco.png";
 import desktopmerrasimage from "public/images/bigmerras.png";
 import schollmgt from "public/images/schoomgtsys.png";
-import CardServices from "../components/UI/CardServices";
+import CardServices from "../../components/UI/CardServices";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
-import SwipperNavbuttons from "../components/UI/SwipperNavbuttons";
-import { testimoonials, images, services } from "../data/Data";
-import TestimonialCard from "../components/UI/TestimonialCard";
+import SwipperNavbuttons from "../../components/UI/SwipperNavbuttons";
+import { testimoonials, images, services } from "../../data/Data";
+import TestimonialCard from "../../components/UI/TestimonialCard";
 import Image from "next/image";
 
 interface homeprops {}
@@ -22,7 +22,7 @@ const Home: FC<homeprops> = () => {
   return (
     <>
       <section className=" relative bg-[#FFEFE3] p-4 lg:py-24  ">
-        <div className="relative mx-auto flex w-full flex-col sm:w-[80%]  md:w-[70%] lg:w-[100%] xl:w-[90%] lg:flex-row lg:gap-6 lg:p-20 items-center  justify-center ">
+        <div className="relative mx-auto flex w-full flex-col sm:w-[70%] md:w-[70%] lg:w-[100%] xl:w-[90%] lg:flex-row lg:gap-6 lg:p-20 items-center  justify-center ">
           <div className="mt-20 space-y-5 text-center sm:space-y-7 md:mt-20 md:space-y-10 lg:mt-6 lg:w-1/2 lg:space-y-5 lg:text-left xl:space-y-10">
             <h2 className="text-xl font-medium capitalize text-orange-500 sm:text-2xl xxl:text-4xl">
               Software Solution for your Business
@@ -101,7 +101,7 @@ const Home: FC<homeprops> = () => {
       </section>
 
       <section className=" mt-8 max-md:px-12 max-sm:p-2 md:p-6 ">
-        <div className=" mx-auto  lg:w-[90%] xl:max-w-[83%] ">
+        <div className=" mx-auto  lg:w-[80%] xl:max-w-[83%] ">
           <div className="sticky top-[3.9rem] bg-white p-2 md:top-[4.3rem]">
             <h2 className="text-xl font-bold text-orange-400 md:mb-4 md:text-2xl">
               Our Services
@@ -111,7 +111,7 @@ const Home: FC<homeprops> = () => {
             </h1>
           </div>
 
-          <div className=" mx-auto my-5 grid grid-cols-1 gap-4 gap-y-8 overflow-hidden px-3 sm:w-full md:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto my-5 grid grid-cols-1 gap-4 gap-y-8 overflow-hidden px-3 sm:w-full md:grid-cols-2 lg:grid-cols-3">
             {services.map((card) => (
               <CardServices
                 key={card.id}

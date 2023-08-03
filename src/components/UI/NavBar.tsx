@@ -1,7 +1,7 @@
 "use client";
 import { MdOutlineMenu } from "react-icons/md";
 import { useState } from "react";
-import { Button } from "@/src/components/ui/button";
+import { Button } from "./button";
 import Link from "next/link";
 import merraslog from "public/images/Meeraslogo.png";
 import { AnimatePresence } from "framer-motion";

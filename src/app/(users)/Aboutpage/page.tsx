@@ -3,22 +3,31 @@ import React, { useRef } from "react";
 import aboutlogo from "public/images/AboutPagehero.png";
 import aboutusimage from "public/images/AboutUsImage.png";
 import aboutimage from "public/images/aboutimage3.png";
-import { Button } from "@/src/components/ui/button";
+import { Button } from "@/components/UI/button";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
-import { images } from "../../data/Data";
+import { images } from "../../../data/Data";
 import StaffCard from "@/components/UI/staffcard";
-import { Input } from "@/components/UI/input";
 import Image from "next/image";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../../components/UI/accordion";
+} from "../../../components/UI/accordion";
+import NewsletterBlue from "@/components/UI/NewsletterBlue";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About us",
+  description: "All About Merras software solutions",
+  icons: {
+    icon: "/Meeraslogo.png",
+  },
+};
 
 const Accordiondata = [
   {
@@ -47,7 +56,6 @@ const Accordiondata = [
   },
 ];
 const About = () => {
-  const emailref = useRef<HTMLInputElement>(null!);
   return (
     <main className="mx-auto max-w-[100%] pt-20 ">
       <section className="firstsection| max-w-8xl mx-auto mb-28 flex flex-col py-2  backdrop:relative md:mb-4 md:h-[400px] lg:h-[500px] lg:flex-row lg:py-16 xl:h-[700px]">
@@ -222,34 +230,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="mt-20 flex flex-col items-center justify-center bg-grey-100 px-2 py-28">
-        <h2 className="lg:3/6 xl:1/4 px-2 text-center text-2xl font-bold text-[#000B17] md:mb-10 md:w-2/4 md:text-4xl lg:text-5xl xl:text-6xl">
-          Ready to simplify how you work?
-        </h2>
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            const email = emailref.current.value;
-            console.log(email);
-            emailref.current.value = "";
-          }}
-          className="mt-2 flex w-full flex-col items-center justify-center space-y-4 md:h-10 md:w-1/2  md:flex-row md:gap-6"
-        >
-          <Input
-            ref={emailref}
-            type="email"
-            placeholder="enter your email ..."
-            className="w-full border-blue-700 bg-[#EAEAEA] text-base md:-mb-5 md:p-4 xxl:p-9 xxl:text-2xl "
-          />
-          <Button
-            className="mx-auto mt-4 w-1/2 p-3  text-[0.8rem] sm:w-2/3 md:p-5 lg:text-xl xxl:p-10 xxl:text-2xl"
-            size="default"
-            variant="default"
-          >
-            subscribe Now
-          </Button>
-        </form>
-      </section>
+      <NewsletterBlue />
     </main>
   );
 };
