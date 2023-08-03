@@ -1,25 +1,33 @@
 import Image from "next/image";
 import React from "react";
-import { buttondata } from "../../data/Data";
-import Blogherolist from "../../components/UI/Blogherolist";
-import Blogpostlist from "../../components/UI/Blogpostlist";
+import { buttondata } from "../../../data/Data";
+import Blogherolist from "../../../components/UI/Blogherolist";
+import Blogpostlist from "../../../components/UI/Blogpostlist";
+import Newsletter from "../../../components/UI/Newsletter";
+import { getAllPosts, getimages } from "../../../lib/getAllPosts";
+import { Metadata } from "next";
 
-import Newsletter from "../../components/UI/Newsletter";
-import { getimages, getposts } from "../../utils/Query";
+export const metadata: Metadata = {
+  title: "Blog",
+  description: "Blog Posts for Merras software solutions",
+  icons: {
+    icon: "/Meeraslogo.png",
+  },
+};
 
 const Blogpage = async () => {
-  const Posts = await getposts();
-
-  const images = await getimages();
-  const combinedimageandpost = Posts.data.map((item: any, index: number) => ({
+  const PostsData: Promise<posts> = getAllPosts();
+  const imageData: Promise<images> = getimages();
+  const [posts, images] = await Promise.all([PostsData, imageData]);
+  const combinedimageandpost = posts.data.map((item: any, index: number) => ({
     ...item,
     image: images[index % images.length].download_url,
   }));
 
   return (
     <section className="py-16 lg:py-28">
-      <section className="mx-auto px-3 lg:w-[82%]  flex flex-col  ">
-        <h2 className=" mb-4 text-3xl font-extrabold capitalize  lg:text-6xl ">
+      <section className="mx-auto px-3 lg:w-[82%] flex flex-col">
+        <h2 className="mb-4 text-3xl font-extrabold capitalize  lg:text-6xl ">
           meeras blog
         </h2>
         <article className="flex items-center justify-center h-[70vh] sm:h-full w-full ">

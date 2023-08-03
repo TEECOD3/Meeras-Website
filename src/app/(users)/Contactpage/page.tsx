@@ -2,9 +2,18 @@ import React from "react";
 import contactimage from "public/images/contactImage.png";
 import Image from "next/image";
 import { Input } from "@/components/UI/input";
-import { Button } from "@/src/components/ui/button";
+import { Button } from "@/components/UI/button";
 import map from "public/images/Mapsiclemap.png";
 import { Textarea } from "@/components/UI/textarea";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact us",
+  description: "Contact Merras software solutions",
+  icons: {
+    icon: "/Meeraslogo.png",
+  },
+};
 
 const Contactpage = () => {
   return (

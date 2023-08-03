@@ -2,29 +2,15 @@ import Image from "next/image";
 import React from "react";
 import someimage from "public/images/blogdetshero.png";
 import { Input } from "../UI/input";
-import { Button } from "@/src/components/ui/button";
+import { Button } from "../UI/button";
 import { AiFillLike } from "react-icons/ai";
 import { BsInstagram, BsLink, BsTelegram, BsTwitter } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Postdetails } from "../UI/Postdetails";
 import { Textarea } from "../UI/textarea";
 
-interface posts {
-  data: {
-    id: number;
-    title: string;
-    content: string;
-    publihed_at: string;
-    author: string;
-    slug: string;
-    image: string;
-    like: number;
-    comments: [];
-  };
-}
-
 type Props = {
-  post: posts;
+  post: Post;
 };
 const Mainnews = ({ post }: Props) => {
   return (
@@ -111,9 +97,7 @@ const Mainnews = ({ post }: Props) => {
             <div className="inline-block cursor-pointer rounded-full bg-[#dceee6]  p-4 hover:scale-105">
               <AiFillLike className="fill-blue-500 text-5xl text-blue-500" />
             </div>
-            <div className="mt-1  text-base font-extrabold ">
-              {post?.data?.like} likes
-            </div>
+            <div className="mt-1  text-base font-extrabold ">likes</div>
           </div>
         </div>
 

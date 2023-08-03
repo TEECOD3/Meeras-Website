@@ -3,7 +3,7 @@ import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import React from "react";
 import image from "../../images/meerasblogimg.png";
-import { Button } from "@/src/components/ui/button";
+import { Button } from "./button";
 import { useRouter, usePathname } from "next/navigation";
 
 type Props = {

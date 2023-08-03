@@ -8,9 +8,8 @@ interface posts {
   title: string;
   content: string;
   publihed_at: string;
-  author: string;
+  author: string | null;
   slug: string;
-  image: string;
 }
 
 type Props = {

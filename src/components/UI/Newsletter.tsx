@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "@/src/components/ui/button";
+import { Button } from "./button";
 import React, { useRef } from "react";
 import { Input } from "./input";
 
