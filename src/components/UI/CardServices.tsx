@@ -11,7 +11,7 @@ const CardServices = (props: CardProps) => {
 
   return (
     <>
-      <div className="overflow-hidden rounded-2xl bg-[#FFFFFF] p-2 shadow-lg">
+      <div className="overflow-hidden rounded-2xl bg-[#FFFFFF]  shadow-lg">
         <div>
           <Image
             src={image}
@@ -21,7 +21,7 @@ const CardServices = (props: CardProps) => {
             placeholder="blur"
           />
         </div>
-        <div className="px-2 md:px-8 md:pb-5 ">
+        <div className="px-2 md:px-3 mb-2 ">
           <h3 className="text-base  font-bold capitalize text-blue-600 sm:text-base md:font-extrabold lg:text-xl xxl:text-4xl">
             {title}
           </h3>

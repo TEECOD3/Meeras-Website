@@ -12,23 +12,19 @@ const Footer = () => {
   return (
     <footer className=" flex flex-col items-center justify-center bg-blue-900 px-3 pt-8 lg:pt-20">
       <div className=" mx-auto flex flex-col  gap-10 md:max-w-[83%] md:flex-row-reverse ">
-        <div className="flex justify-between px-6 font-light text-white max-sm:text-sm md:flex-1  md:justify-around md:gap-10 md:px-0 ">
-          <ul className="text-md grid place-items-start space-y-2 md:text-base">
+        <div className="flex justify-between px-6 font-light text-white max-sm:text-sm md:flex-1  md:justify-around md:gap-10 md:px-0">
+          <ul className="text-md flex flex-col gap-y-6 space-y-2 md:text-base">
             <h4 className="text-md font-bold">Company</h4>
-
             <li>
               <Link href="/Aboutpage">About us</Link>
             </li>
-
             <li>
               <Link href="/Blogpage">Blog</Link>
             </li>
           </ul>
           <ul className="space-y-8 md:text-base">
             <h4 className="font-bold ">Contact</h4>
-
             <li>Meerassoftware@gmail.com</li>
-
             <li>Whatsapp : +234 708 135 3229</li>
           </ul>
         </div>

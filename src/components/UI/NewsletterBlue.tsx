@@ -22,11 +22,11 @@ const NewsletterBlue = () => {
         <Input
           ref={emailref}
           type="email"
-          placeholder="enter your email ..."
-          className="w-full border-blue-700 bg-[#EAEAEA] text-base md:-mb-5 md:p-10 xxl:p-9 xxl:text-2xl "
+          placeholder="Enter Your Email..."
+          className="w-full border-blue-700 bg-[#EAEAEA] text-base md:-mb-5 md:p-6"
         />
         <Button
-          className="mx-auto mt-4 w-1/2 p-3  text-[0.8rem] sm:w-2/3 md:p-5 lg:text-xl xxl:p-10 xxl:text-2xl"
+          className="mx-auto mt-4 w-1/2 p-3  text-[0.8rem] sm:w-2/3 md:p-6 lg:text-xl xxl:text-2xl"
           size="default"
           variant="default"
         >

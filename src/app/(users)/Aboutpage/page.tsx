@@ -19,7 +19,6 @@ import {
   AccordionTrigger,
 } from "../../../components/UI/accordion";
 import NewsletterBlue from "@/components/UI/NewsletterBlue";
-import { Metadata } from "next";
 
 const Accordiondata = [
   {
@@ -196,7 +195,7 @@ const About = () => {
               <h4 className="text-left text-2xl font-extrabold md:text-5xl xl:text-6xl">
                 Frequent Asked Question
               </h4>
-              <p className="mt-4  text-sm font-semibold  lg:text-base">
+              <p className="mt-4 text-sm font-semibold  lg:text-base">
                 If you have any additional questions or would like more
                 information, please don not hesitate to contact us. We are here
                 to assist you and provide the technology solutions you require
@@ -205,7 +204,7 @@ const About = () => {
             </div>
           </div>
           <div className=" w-full px-1 lg:w-3/6">
-            <div className="flex  w-full flex-col  px-1 items-center justify-center md:px-0">
+            <div className="flex w-full flex-col  px-1 items-center lg:items-start  md:px-0">
               {Accordiondata.map((data) => (
                 <Accordion key={data.id} type="single" collapsible>
                   <AccordionItem value="item-1">
