@@ -43,7 +43,7 @@ const Home: FC<homeprops> = () => {
             <Image
               src={mobilemeerasimg}
               alt="meeras image for mobile"
-              className=" bg-contain bg-no-repeat sm:w-[16rem] "
+              className="bg-contain bg-no-repeat sm:w-[14rem] -mb-4"
               loading="lazy"
               height={300}
               width={600}
@@ -54,7 +54,7 @@ const Home: FC<homeprops> = () => {
           <Image
             alt="meerasimage"
             src={desktopmerrasimage}
-            className="hidden w-3/4 lg: lg:block lg:h-[25rem] lg:w-2/4 xl:mr-[0]  xl:h-[30rem] xxl:w-3/4 "
+            className="hidden w-3/4  lg:block lg:h-[25rem] lg:w-2/4 xl:mr-[0]  xl:h-[30rem] xxl:w-3/4 "
             loading="lazy"
             placeholder="blur"
             height={300}
@@ -101,7 +101,7 @@ const Home: FC<homeprops> = () => {
       </section>
 
       <section className=" mt-8 max-md:px-12 max-sm:p-2 md:p-6 ">
-        <div className=" mx-auto  lg:w-[80%] xl:max-w-[83%] ">
+        <div className=" mx-auto w-[80%] xl:max-w-[83%]">
           <div className="sticky top-[3.9rem] bg-white p-2 md:top-[4.3rem]">
             <h2 className="text-xl font-bold text-orange-400 md:mb-4 md:text-2xl">
               Our Services
@@ -208,11 +208,11 @@ const Home: FC<homeprops> = () => {
           <Input
             ref={emailref}
             type="email"
-            placeholder="enter your email"
-            className="w-full  border-[2px] border-blue-600 bg-[#EAEAEA] text-base md:-mb-5 md:p-4 xxl:p-9 xxl:text-2xl "
+            placeholder="Enter Your Email..."
+            className="w-full border-[2px] border-blue-600 bg-[#EAEAEA] text-base md:-mb-5 md:p-6 xxl:p-5 xxl:text-2xl"
           />
           <Button
-            className="mx-auto mt-4 w-1/2 p-3  text-[0.8rem] sm:w-2/3 md:p-5 lg:text-xl xxl:p-10 xxl:text-2xl  "
+            className="mx-auto mt-4 w-1/2 p-3  text-[0.8rem] sm:w-2/3 md:p-6 lg:text-xl xxl:p-10 xxl:text-2xl "
             size="default"
             variant="default"
           >
