@@ -16,13 +16,13 @@ import { LoginSchema } from "@/utils/schema";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useRouter } from "next/navigation";
 
-export const metadata: Metadata = {
-  title: "admin",
-  description: siteConfig.description,
-  icons: {
-    icon: "/Meeraslogo.png",
-  },
-};
+// export const metadata: Metadata = {
+//   title: "admin",
+//   description: siteConfig.description,
+//   icons: {
+//     icon: "/Meeraslogo.png",
+//   },
+// };
 
 const Admin = () => {
   const [Passwordseen, setPasswordseen] = useState(false);
