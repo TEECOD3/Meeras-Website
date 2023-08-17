@@ -22,21 +22,25 @@ const Home: FC<homeprops> = () => {
   return (
     <>
       <section className=" relative bg-[#FFEFE3] p-4 lg:py-24  ">
-        <div className="relative mx-auto flex w-full flex-col sm:w-[70%] md:w-[70%] lg:w-[100%] xl:w-[90%] lg:flex-row lg:gap-6 lg:p-20 items-center  justify-center ">
-          <div className="mt-20 space-y-5 text-center sm:space-y-7 md:mt-20 md:space-y-10 lg:mt-6 lg:w-1/2 lg:space-y-5 lg:text-left xl:space-y-10">
-            <h2 className="text-xl font-medium capitalize text-orange-500 sm:text-2xl xxl:text-4xl">
-              Software Solution for your Business
-            </h2>
-            <h1 className="text-3xl font-extrabold sm:text-4xl xl:text-5xl ">
-              Empowering Your <br /> Digital Transformation
-            </h1>
-            <p className="text-base font-medium md:text-base lg:text-xl xl:w-3/4 ">
-              Are you ready to unlock the true potential of your business
-              through cutting-edge software solutions? Look no further than
-              Software Solution! We are a leading technology company dedicated
-              to providing innovative and customized software solutions to
-              businesses of all sizes
-            </p>
+        <div className="relative mx-auto flex w-full flex-col lg:flex-row lg:gap-6 items-center justify-center ">
+          <div className="mt-20  lg:p-10 space-y-5 text-center sm:space-y-7 flex items-center justify-end md:mt-20 lg:ml-20 md:space-y-10 lg:mt-6 lg:w-1/2 lg:space-y-5 lg:text-left xl:space-y-10">
+            <div className="flex flex-col gap-y-6 lg:gap-y-10 ">
+              <h2 className="text-xl font-medium capitalize text-orange-500 sm:text-2xl xxl:text-4xl">
+                Software Solution for your Business
+              </h2>
+              <h1 className="font-extrabold text-4xl xl:text-6xl font-Raleway ">
+                Empowering <br />
+                Your Digital <br />
+                Transformation
+              </h1>
+              <p className="text-base font-medium md:text-base lg:text-xl xl:w-3/4 ">
+                Are you ready to unlock the true potential of your business
+                through cutting-edge software solutions? Look no further than
+                Software Solution! We are a leading technology company dedicated
+                to providing innovative and customized software solutions to
+                businesses of all sizes
+              </p>
+            </div>
           </div>
 
           <div className="mt-4 flex w-full items-center justify-center lg:hidden">
@@ -101,13 +105,13 @@ const Home: FC<homeprops> = () => {
       </section>
 
       <section className=" mt-8 max-md:px-12 max-sm:p-2 md:p-6 ">
-        <div className=" mx-auto w-[80%] xl:max-w-[83%]">
-          <div className="sticky top-[3.9rem] bg-white p-2 md:top-[4.3rem]">
+        <div className=" mx-auto w-[100%] lg:w-[80%] xl:max-w-[83%]">
+          <div className="sticky top-[0] bg-white p-2 md:top-[0]">
             <h2 className="text-xl font-bold text-orange-400 md:mb-4 md:text-2xl">
               Our Services
             </h2>
-            <h1 className="mb-10  text-2xl  font-extrabold lg:w-4/5 lg:text-5xl  ">
-              Transform your digital presence with Meeras Software Solution.
+            <h1 className="mb-10 text-xl font-extrabold lg:w-4/5 lg:text-5xl font-Raleway">
+              Transform your digital presence with Meeras Software Solutions.
             </h1>
           </div>
 
@@ -147,7 +151,7 @@ const Home: FC<homeprops> = () => {
         <h2 className="w-5/6  px-3 text-left text-2xl font-extrabold sm:w-5/6 sm:text-5xl md:w-1/2 md:text-2xl  lg:ml-12 lg:text-4xl  ">
           Trusted by startups and the worlds largest companies
         </h2>
-        <div className="mx-auto mt-4 flex h-full flex-col rounded-2xl p-3  px-3 shadow-xl md:p-0 lg:w-[90%] lg:flex-row xl:mt-8 ">
+        <div className="mx-auto mt-4 flex h-full flex-col rounded-2xl p-3  px-3 shadow-xl md:p-qb0 lg:w-[90%] lg:flex-row xl:mt-8 ">
           <Swiper
             spaceBetween={30}
             centeredSlides={true}

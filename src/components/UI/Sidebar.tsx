@@ -27,19 +27,19 @@ const Sidebar = ({ children }: props) => {
             />
           </div>
           <div className="flex flex-col items-start mt-10 gap-y-8">
-            <Link href="/">
+            <Link href="/Adminpage/AdminDashboard">
               <div className="flex gap-x-2 items-center justify-center capitalize text-blue-600">
                 <BiHomeAlt2 className="text-blue-600 text-2xl lg:text-base" />
                 <span className="lg:inline-block hidden">Dashboard</span>
               </div>
             </Link>
-            <Link href="/">
+            <Link href="/Adminpage/AdminDashboard/Blog">
               <div className="flex gap-x-2 items-center justify-center capitalize text-blue-600">
                 <HiOutlineViewGridAdd className="text-blue-600 text-2xl lg:text-base" />
                 <span className="lg:inline-block hidden ">blog</span>
               </div>
             </Link>
-            <Link href="/">
+            <Link href="/Adminpage/AdminDashboard/Blog">
               <div className="flex gap-x-2 items-center justify-center capitalize text-blue-600">
                 <IoMdAdd className="text-blue-600 text-2xl lg:text-base" />
                 <span className="lg:inline-block hidden">new blog</span>

@@ -8,6 +8,11 @@ module.exports = {
     "./src/**/*.{ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      cinzil: ["Cinzel", "serif"],
+      Raleway: ["Raleway", "serif"],
+      monstserrat: ["Montserrat", "serif"],
+    },
     screens: {
       sm: "480px",
       md: "768px",

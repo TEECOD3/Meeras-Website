@@ -3,12 +3,15 @@ import { Input } from "./input";
 import { BsBell, BsSearch } from "react-icons/bs";
 import { Avatar, AvatarFallback, AvatarImage } from "../UI/avatar";
 
-const Header = () => {
+type props = {
+  pageName: string;
+};
+const Header = ({ pageName }: props) => {
   return (
     <nav className=" flex justify-between px-1 pt-4 md:px-8 lg:px-14 ">
       <div className="mb-2">
         <h2 className="text-xl font-black capitalize text-blue-600 md:text-4xl ">
-          Blog
+          {pageName}
         </h2>
         <h1 className="text-[0.7rem] text-[#8E8E8E] lg:mt-3 lg:text-base">
           Hi Topshi, welcome back!

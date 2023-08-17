@@ -25,7 +25,7 @@ const MobileNav: FC<MobileNavProps> = (props: MobileNavProps) => {
   return (
     <>
       <motion.div
-        className="fixed top-0 left-0  h-full w-full bg-white z-[129030020039030920] flex items-center justify-start"
+        className="fixed top-0 left-0 right-0 botton-0  h-full w-full bg-white z-[129030020039030920] flex items-center justify-start"
         variants={item}
         initial={{ height: 0, opacity: 0 }}
         animate={{ height: "100vh", opacity: 1 }}
@@ -103,24 +103,6 @@ const MobileNav: FC<MobileNavProps> = (props: MobileNavProps) => {
             </motion.li>
           </Link>
 
-          <Link href="/">
-            <motion.li
-              variants={item}
-              initial={{ y: 24, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.4 }}
-              exit={{
-                opacity: 0,
-                y: 30,
-                transition: {
-                  ease: "easeInOut",
-                  delay: 0.4,
-                },
-              }}
-            >
-              portfolio
-            </motion.li>
-          </Link>
           <Link href="/Blogpage">
             <motion.li
               variants={item}

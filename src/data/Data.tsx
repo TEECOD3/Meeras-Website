@@ -1,5 +1,5 @@
-import webdev from "public/images/webdevelopment.png";
-import artificial from "public/images/artificial.png";
+import webdev from "public/webdev.jpg";
+import artificial from "public/webdev.jpg";
 import infras from "public/images/infrastructure.png";
 import mobile from "public/images/mobiledev.png";
 import virtual from "public/images/virtualserv.png";
@@ -94,7 +94,7 @@ export const testimoonials = [
   {
     id: 3,
     description:
-      "Choosing Meeras Software Solutions for our virtual display card needs was a fantastic decision. Their products have exceeded our expectations in terms of performance and visual quality. The team at Meera's has been extremely supportive throughout the process, ensuring a seamless experience. We couldn't be happier!",
+      "Choosing Meeras Software Solutions for our virtual display card needs was a fantastic decision. Their products have exceeded our expectations in terms of performance and visual quality. The team at Meeras has been extremely supportive throughout the process",
     name: "David Thompson",
     position: "Gaming Enthusiast",
   },
@@ -182,5 +182,125 @@ export const blogheroposts = [
     blogauthorimage: imageauthor,
     date: "2010-06-19",
     name: "david temitope",
+  },
+];
+
+export const blogPosts = [
+  {
+    blogName: "Mastering Frontend Frameworks",
+    author: "JS",
+    hashtags: ["frontenddevelopment", "javascript", "webdevelopment", "ui/ux"],
+    date: "August 10, 2023",
+    numberOfReads: 1200,
+    numberOfLikes: 450,
+    numberOfMessages: 25,
+  },
+  {
+    blogName: "Building Scalable Backend Services",
+    author: "PY",
+    hashtags: ["backenddevelopment", "python", "webdevelopment", "cloud"],
+    date: "August 15, 2023",
+    numberOfReads: 980,
+    numberOfLikes: 300,
+    numberOfMessages: 18,
+  },
+  {
+    blogName: "Designing User-Centric UI/UX",
+    author: "DG",
+    hashtags: ["ui/ux", "design", "userexperience", "webdevelopment"],
+    date: "August 20, 2023",
+    numberOfReads: 1500,
+    numberOfLikes: 600,
+    numberOfMessages: 30,
+  },
+  // {
+  //   blogName: "AI and Machine Learning Demystified",
+  //   author: "ML",
+  //   hashtags: ["artificialintelligence", "machinelearning", "datascience"],
+  //   date: "August 25, 2023",
+  //   numberOfReads: 800,
+  //   numberOfLikes: 250,
+  //   numberOfMessages: 15,
+  // },
+  // {
+  //   blogName: "Exploring DevOps Practices",
+  //   author: "CI",
+  //   hashtags: ["devops", "automation", "cloud", "agile"],
+  //   date: "August 30, 2023",
+  //   numberOfReads: 1100,
+  //   numberOfLikes: 400,
+  //   numberOfMessages: 20,
+  // },
+  {
+    blogName: "Modern JavaScript Patterns",
+    author: "ES",
+    hashtags: ["javascript", "webdevelopment", "bestpractices"],
+    date: "September 5, 2023",
+    numberOfReads: 950,
+    numberOfLikes: 380,
+    numberOfMessages: 22,
+  },
+  {
+    blogName: "Deep Dive into Node.js Ecosystem",
+    author: "NW",
+    hashtags: ["nodejs", "backenddevelopment", "javascript", "webdevelopment"],
+    date: "September 10, 2023",
+    numberOfReads: 1050,
+    numberOfLikes: 420,
+    numberOfMessages: 28,
+  },
+  {
+    blogName: "Creating Engaging Mobile Apps",
+    author: "RM",
+    hashtags: ["mobileappdevelopment", "reactnative", "flutter", "ui/ux"],
+    date: "September 15, 2023",
+    numberOfReads: 1300,
+    numberOfLikes: 550,
+    numberOfMessages: 35,
+  },
+  {
+    blogName: "Demystifying Cloud Computing",
+    author: "CL",
+    hashtags: ["cloudcomputing", "aws", "azure", "googlecloud"],
+    date: "September 20, 2023",
+    numberOfReads: 900,
+    numberOfLikes: 320,
+    numberOfMessages: 19,
+  },
+  {
+    blogName: "Exploring Data Visualization Techniques",
+    author: "DV",
+    hashtags: ["dataviz", "datascience", "visualization", "analytics"],
+    date: "September 25, 2023",
+    numberOfReads: 1100,
+    numberOfLikes: 420,
+    numberOfMessages: 24,
+  },
+  {
+    blogName: "Security Practices for Web Applications",
+    author: "SC",
+    hashtags: ["security", "webdevelopment", "cybersecurity"],
+    date: "September 30, 2023",
+    numberOfReads: 850,
+    numberOfLikes: 290,
+    numberOfMessages: 16,
+  },
+  {
+    blogName: "Advancements in UI/UX Design",
+    author: "UXD",
+    hashtags: ["ui/ux", "design", "userexperience", "trends"],
+    date: "October 5, 2023",
+    numberOfReads: 1200,
+    numberOfLikes: 500,
+    numberOfMessages: 31,
+  },
+  {
+    blogName: "Getting Started with Machine Learning",
+    author: "MLB",
+    hashtags: ["machinelearning", "datascience", "beginners"],
+    date: "October 10, 2023",
+    numberOfReads: 1000,
+    numberOfLikes: 380,
+    numberOfMessages: 21,
   },
 ];

@@ -13,6 +13,18 @@ type posts = {
   ];
 };
 
+type BlogDash = {
+  blogName: string;
+  author: string;
+  hashtags: string[];
+  date: string;
+  numberOfReads: number;
+  numberOfLikes: number;
+  numberOfMessages: number;
+};
+
+type HideNavBarProp = boolean;
+
 type Post = {
   data: {
     id: number;
