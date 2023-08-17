@@ -9,11 +9,14 @@ import MobileNav from "./Mobilenav";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { AiOutlineDown } from "react-icons/ai";
+import { useHideNavBar } from "@/Hooks/useHideNavbar";
 
-const NavBar = ({ hideNavBar }: { hideNavBar: HideNavBarProp }) => {
+const NavBar = () => {
   const [ModalOpen, setModalOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
+  const triggerPosition = 500; // Set your desired trigger position here
+  const hideNavBar = useHideNavBar(triggerPosition);
 
   const loadContactpagehandler = () => {
     router.push("/Contactpage");
