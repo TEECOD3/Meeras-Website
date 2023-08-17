@@ -1,28 +1,26 @@
-type testimonialprops = {
+type TestimonialProps = {
   description: string;
   name: string;
   position: string;
 };
 
-const TestimonialCard = (props: testimonialprops) => {
+const TestimonialCard = (props: TestimonialProps) => {
   const { description, name, position } = props;
   return (
-    <>
-      <div className="flex flex-col w-full lg:mt-10 md:gap-y-20  justify-between items-start px-3 text-white font-bold  md:px-10">
-        <p className="sm:text-base md:text-2xl xl:text-2xl mt-8">
-          {description}
-        </p>
+    <div className="flex flex-col items-center py-10 px-4 sm:px-6 md:px-8 ">
+      <p className="text-white text-lg md:text-2xl xl:text-xl mt-8">
+        {description}
+      </p>
 
-        <div className=" mt-20 sm:mt-4 ">
-          <h3 className="capitalize font-extralight text-xl md:text-2xl">
-            {name}
-          </h3>
-          <h4 className="uppercase font-medium text-base md:mt-3">
-            {position}
-          </h4>
-        </div>
+      <div className="w-full flex items-start flex-col mt-10 sm:mt-4">
+        <h3 className="capitalize font-extralight text-xl md:text-2xl text-white">
+          {name}
+        </h3>
+        <h4 className="uppercase font-medium text-base md:mt-3 text-white">
+          {position}
+        </h4>
       </div>
-    </>
+    </div>
   );
 };
 

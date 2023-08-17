@@ -32,7 +32,7 @@ const Footer = () => {
           <Image
             alt="nex"
             src={meerasfooter}
-            className=" h-20 w-20 bg-contain bg-no-repeat "
+            className=" h-32 w-32 bg-contain bg-no-repeat "
           />
           <p className="text-md mt-6 font-light text-white sm:text-xl md:text-base lg:w-2/3">
             With our expertise in web development, mobile app development, IT
