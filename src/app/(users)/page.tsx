@@ -111,7 +111,7 @@ const Home: FC<homeprops> = () => {
               Our Services
             </h2>
             <h1 className="mb-10 text-xl font-extrabold lg:w-4/5 lg:text-5xl font-Raleway">
-              Transform your digital presence with Meeras Software Solutions.
+              Transform your digital presence with Meeras Software Solution.
             </h1>
           </div>
 
