@@ -24,29 +24,42 @@ import { staffdata } from "../../../data/Data";
 const Accordiondata = [
   {
     id: 1,
-    question: "how experienced is your team?",
+    question: "How experienced is your team?",
+    answer:
+      "Our team consists of highly skilled professionals with years of experience in various domains of software development. We take pride in delivering high-quality solutions that meet our clients' needs.",
   },
   {
-    id: 1,
+    id: 2,
     question: "What services does Meeras Software Solution offer?",
+    answer:
+      "Meeras Software Solution offers a wide range of services, including web development, mobile app development, UI/UX design, e-commerce solutions, custom software development, and more. We tailor our services to fit your specific requirements and business goals.",
   },
   {
-    id: 1,
+    id: 3,
     question: "Can you handle projects of all sizes?",
+    answer:
+      "Yes, we have experience working on projects of various sizes, from small startups to large enterprises. Our team is equipped to handle projects of different complexities and scales, ensuring that your project receives the attention it deserves.",
   },
   {
-    id: 1,
+    id: 4,
     question: "How do you ensure the security of my data?",
+    answer:
+      "Security is a top priority for us. We implement industry best practices to ensure the security of your data. This includes using secure communication protocols, encryption, regular security audits, and following strict data protection regulations.",
   },
   {
-    id: 1,
+    id: 5,
     question: "What is your approach to project management and communication?",
+    answer:
+      "We follow an agile project management approach, which allows us to adapt and respond to changing requirements efficiently. We believe in transparent communication, providing regular updates, and involving clients in key decisions throughout the development process.",
   },
   {
-    id: 1,
+    id: 6,
     question: "How can I get started with Meeras Software Solution?",
+    answer:
+      "Getting started with us is easy! Simply reach out to us through our contact page or give us a call. We'll schedule a discussion to understand your project requirements and goals. From there, we'll provide you with a tailored proposal and roadmap for your project.",
   },
 ];
+
 const About = () => {
   return (
     <main className="mx-auto max-w-[100%] pt-20 ">
@@ -215,9 +228,7 @@ const About = () => {
                     <AccordionTrigger className="w-full ">
                       {data.question}
                     </AccordionTrigger>
-                    <AccordionContent>
-                      Yes. It adheres to the WAI-ARIA design pattern.
-                    </AccordionContent>
+                    <AccordionContent>{data.answer}</AccordionContent>
                   </AccordionItem>
                 </Accordion>
               ))}
