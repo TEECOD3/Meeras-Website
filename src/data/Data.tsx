@@ -4,7 +4,7 @@ import infras from "public/iT.jpg";
 import mobile from "public/appd.jpg";
 import virtual from "public/Virtual.jpg";
 import content from "public/cms.png";
-import Iot from "public/internet-of-Things.png";
+import Iot from "public/Iot.png";
 import firstimagelogo from "public/images/IMG-20230423-WA0028.jpg";
 import secondimagelogo from "public/images/IMG-20230423-WA0029.jpg";
 import thirdimagelogo from "public/images/IMG-20230423-WA0030.jpg";
