@@ -15,7 +15,7 @@ const NavBar = () => {
   const [ModalOpen, setModalOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
-  const triggerPosition = 500; // Set your desired trigger position here
+  const triggerPosition = 700;
   const hideNavBar = useHideNavBar(triggerPosition);
 
   const loadContactpagehandler = () => {

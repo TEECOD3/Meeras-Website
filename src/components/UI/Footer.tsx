@@ -30,9 +30,9 @@ const Footer = () => {
         </div>
         <div className=" mt-4 h-full px-4 sm:mt-0 md:w-3/6 ">
           <Image
-            alt="nex"
+            alt="Footer image"
             src={meerasfooter}
-            className=" h-32 w-32 bg-contain bg-no-repeat "
+            className=" h-24 w-24 md:h-32 md:w-32 bg-contain bg-no-repeat "
           />
           <p className="text-md mt-6 font-light text-white sm:text-xl md:text-base lg:w-2/3">
             With our expertise in web development, mobile app development, IT
