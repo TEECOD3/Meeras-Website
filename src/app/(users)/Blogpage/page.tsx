@@ -6,6 +6,8 @@ import Blogpostlist from "../../../components/UI/Blogpostlist";
 import Newsletter from "../../../components/UI/Newsletter";
 import { getAllPosts, getimages } from "../../../lib/getAllPosts";
 import { Metadata } from "next";
+import { posts } from "../../../../type";
+import { images } from "../../../../type";
 
 export const metadata: Metadata = {
   title: "Blog",
