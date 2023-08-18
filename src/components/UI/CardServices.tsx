@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import { motion } from "framer-motion";
 
 type CardProps = {
   image: StaticImageData;
@@ -10,7 +11,12 @@ const CardServices = (props: CardProps) => {
   const { image, title, paragraph } = props;
 
   return (
-    <div className="overflow-hidden rounded-2xl bg-[#FFFFFF] shadow-lg cursor-pointer ">
+    <motion.div
+      initial={{ x: -200, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="overflow-hidden rounded-2xl bg-[#FFFFFF] shadow-lg cursor-pointer "
+    >
       <div>
         <Image
           src={image}
@@ -28,7 +34,7 @@ const CardServices = (props: CardProps) => {
           {paragraph}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

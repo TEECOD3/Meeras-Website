@@ -24,11 +24,24 @@ const Home: FC<homeprops> = () => {
       <section className=" relative bg-[#FFEFE3] p-4 lg:py-24  ">
         <div className="relative mx-auto flex w-full flex-col lg:flex-row lg:gap-6 items-center justify-center ">
           <div className="mt-20  lg:p-10 space-y-5 text-center sm:space-y-7 flex items-center justify-end md:mt-20 lg:ml-20 md:space-y-10 lg:mt-6 lg:w-1/2 lg:space-y-5 lg:text-left xl:space-y-10">
-            <div className="flex flex-col gap-y-6 lg:gap-y-10 ">
+            <motion.div
+              initial={{
+                x: -500,
+                opacity: 0,
+                scale: 0.5,
+              }}
+              animate={{
+                x: 0,
+                opacity: 1,
+                scale: 1,
+              }}
+              transition={{ duration: 2 }}
+              className="flex flex-col gap-y-6 lg:gap-y-10 "
+            >
               <h2 className="text-xl font-medium capitalize text-orange-600 sm:text-2xl xxl:text-4xl">
                 Software Solution for your Business
               </h2>
-              <h1 className="font-extrabold text-5xl  lg:text-6xl font-Raleway ">
+              <h1 className="font-extrabold text-5xl  lg:text-6xl font-Raleway">
                 Empowering <br />
                 Your Digital <br />
                 Transformation
@@ -40,7 +53,7 @@ const Home: FC<homeprops> = () => {
                 to providing innovative and customized software solutions to
                 businesses of all sizes
               </p>
-            </div>
+            </motion.div>
           </div>
 
           <div className="mt-4 flex w-full items-center justify-center lg:hidden">
@@ -106,14 +119,19 @@ const Home: FC<homeprops> = () => {
 
       <section className=" mt-8 max-md:px-12 max-sm:p-2 md:p-6 ">
         <div className=" mx-auto w-[100%] lg:w-[80%] xl:max-w-[83%]">
-          <div className="sticky top-[0] bg-white p-2 md:top-[0]">
+          <motion.div
+            initial={{ x: -200, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 2 }}
+            className="sticky top-[0] bg-white p-2 md:top-[0]"
+          >
             <h2 className="text-xl font-bold text-orange-400 md:mb-2 md:text-2xl">
               Our Services
             </h2>
             <h1 className="mb-10 text-xl font-extrabold lg:w-4/5 lg:text-5xl font-Raleway">
               Transform your digital presence with Meeras Software Solution.
             </h1>
-          </div>
+          </motion.div>
 
           <div className="mx-auto w-[90%] my-5 grid grid-cols-1 gap-4 gap-y-8 overflow-hidden px-3 sm:w-full md:grid-cols-2 lg:grid-cols-3">
             {services.map((card) => (
