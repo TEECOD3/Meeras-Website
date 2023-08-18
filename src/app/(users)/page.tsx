@@ -143,12 +143,12 @@ const Home: FC<homeprops> = () => {
           placeholder="blur"
           src={schollmgt}
           alt="school management system image"
-          className="absolute top-[4rem] z-30 h-[15rem] w-full bg-contain bg-no-repeat  sm:top-[5rem] md:h-[28rem] lg:top-[10rem] lg:h-[35rem] xl:left-[15%] xl:h-[50rem]  xl:w-3/4"
+          className="absolute top-[4rem] z-30 h-[15rem] w-full bg-contain bg-no-repeat  sm:top-[5rem] md:h-[28rem] lg:top-[10rem] lg:h-[35rem] xl:left-[15%] xl:h-[40rem]  xl:w-[70rem]"
         ></Image>
       </section>
 
       <section className="mt-44  sm:mx-auto sm:max-w-[83%] md:w-full xl:w-[83%] md:mt-[24rem] xl:mt-[32rem] ">
-        <h2 className="w-5/6  px-3 text-left text-2xl font-extrabold sm:w-5/6 sm:text-5xl md:w-1/2 md:text-2xl  lg:ml-12 lg:text-4xl  ">
+        <h2 className="w-5/6  px-3 text-left text-2xl font-extrabold sm:w-5/6 font-Raleway sm:text-5xl md:w-1/2 md:text-2xl  lg:ml-12 lg:text-4xl  ">
           Trusted by startups and the worlds largest companies
         </h2>
         <div className="mx-auto mt-4 flex h-full flex-col rounded-2xl p-3  px-3 shadow-xl md:p-qb0 lg:w-[90%] lg:flex-row xl:mt-8 ">

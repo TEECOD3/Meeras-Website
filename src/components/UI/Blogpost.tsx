@@ -57,13 +57,13 @@ export default function Blogpost({
   };
 
   return (
-    <li className="relative h-[300px] shadow-lg md:h-[350px] lg:h-[450px]">
+    <li className="relative h-[300px] shadow-lg md:h-[350px] lg:h-[450px] rounded-lg overflow-hidden">
       <Image
         height={200}
         width={300}
         src={image}
         alt="blogimages"
-        className=" absolute left-0 top-0 z-10 h-full w-full rounded-lg object-cover"
+        className=" absolute left-0 top-0 z-10 h-full w-full rounded-lg object-cover overflow-hidden"
       />
 
       <div className="absolute left-0 top-0 z-[16] h-full w-full bg-gradient-to-r from-black/70 to-black/10 "></div>
@@ -79,13 +79,13 @@ export default function Blogpost({
           >
             {title}
           </p>
-          <h2 className="mt-4 text-sm">By {formatDate(publihed_at)}</h2>
+          <h2 className="mt-4 text-sm">By {author || "Anonymous"}</h2>
         </div>
         <div className="flex items-center justify-between">
           <h4 className="text-white">{comment} comments</h4>
           <Button
             onClick={blogdetailNavigationhandler}
-            className="mb-3  bg-white px-4 py-2 text-sm capitalize text-black outline-none focus:outline-none active:outline-none lg:px-10 lg:py-4 lg:text-base"
+            className="mb-3  bg-white px-4 py-2 text-sm capitalize text-black outline-none hover:bg-orange-400 hover:text-white focus:outline-none active:outline-none lg:px-10 lg:py-4 lg:text-base"
           >
             readmore
           </Button>
