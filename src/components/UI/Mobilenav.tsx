@@ -183,7 +183,7 @@ const MobileNav: FC<MobileNavProps> = (props: MobileNavProps) => {
               </ul>
             </motion.div>
           </div>
-          <Link href="/Blogpage">
+          <Link href="/Contactpage">
             <motion.button
               variants={item}
               initial={{ y: 24, opacity: 0 }}
