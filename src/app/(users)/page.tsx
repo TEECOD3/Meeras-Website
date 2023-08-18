@@ -15,7 +15,7 @@ import SwipperNavbuttons from "../../components/UI/SwipperNavbuttons";
 import { testimoonials, images, services } from "../../data/Data";
 import TestimonialCard from "../../components/UI/TestimonialCard";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 interface homeprops {}
 const Home: FC<homeprops> = () => {
   const emailref = useRef<HTMLInputElement>(null!);
@@ -25,15 +25,15 @@ const Home: FC<homeprops> = () => {
         <div className="relative mx-auto flex w-full flex-col lg:flex-row lg:gap-6 items-center justify-center ">
           <div className="mt-20  lg:p-10 space-y-5 text-center sm:space-y-7 flex items-center justify-end md:mt-20 lg:ml-20 md:space-y-10 lg:mt-6 lg:w-1/2 lg:space-y-5 lg:text-left xl:space-y-10">
             <div className="flex flex-col gap-y-6 lg:gap-y-10 ">
-              <h2 className="text-xl font-medium capitalize text-orange-500 sm:text-2xl xxl:text-4xl">
+              <h2 className="text-xl font-medium capitalize text-orange-600 sm:text-2xl xxl:text-4xl">
                 Software Solution for your Business
               </h2>
-              <h1 className="font-extrabold text-4xl xl:text-6xl font-Raleway ">
+              <h1 className="font-extrabold text-5xl  lg:text-6xl font-Raleway ">
                 Empowering <br />
                 Your Digital <br />
                 Transformation
               </h1>
-              <p className="text-base font-medium md:text-base lg:text-xl xl:w-3/4 ">
+              <p className="text-base px-2 lg:px-0 font-medium md:text-base lg:text-xl xl:w-3/4 ">
                 Are you ready to unlock the true potential of your business
                 through cutting-edge software solutions? Look no further than
                 Software Solution! We are a leading technology company dedicated
@@ -107,7 +107,7 @@ const Home: FC<homeprops> = () => {
       <section className=" mt-8 max-md:px-12 max-sm:p-2 md:p-6 ">
         <div className=" mx-auto w-[100%] lg:w-[80%] xl:max-w-[83%]">
           <div className="sticky top-[0] bg-white p-2 md:top-[0]">
-            <h2 className="text-xl font-bold text-orange-400 md:mb-4 md:text-2xl">
+            <h2 className="text-xl font-bold text-orange-400 md:mb-2 md:text-2xl">
               Our Services
             </h2>
             <h1 className="mb-10 text-xl font-extrabold lg:w-4/5 lg:text-5xl font-Raleway">
@@ -115,7 +115,7 @@ const Home: FC<homeprops> = () => {
             </h1>
           </div>
 
-          <div className="mx-auto my-5 grid grid-cols-1 gap-4 gap-y-8 overflow-hidden px-3 sm:w-full md:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto w-[90%] my-5 grid grid-cols-1 gap-4 gap-y-8 overflow-hidden px-3 sm:w-full md:grid-cols-2 lg:grid-cols-3">
             {services.map((card) => (
               <CardServices
                 key={card.id}

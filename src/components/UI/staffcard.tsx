@@ -1,28 +1,33 @@
 import { FC } from "react";
 import staffimage from "public/images/staffimg.jpg";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+import { staffdata } from "../../../type";
 
-interface StaffpropsProps {}
+interface StaffpropsProps {
+  id: number;
+  image: StaticImageData;
+  Name: string;
+  role: string;
+}
 
-const StaffCard: FC<StaffpropsProps> = () => {
+const StaffCard = ({ id, image, Name, role }: StaffpropsProps) => {
   return (
     <div className="">
       <div className="">
         <Image
           loading="lazy"
-          placeholder="blur"
-          src={staffimage}
+          src={image}
           alt="staffcard"
-          className="max-h-1/3"
+          className="max-h-1/3 h-[400px] w-[400px]"
         />
       </div>
 
       <div className="my-3">
         <h2 className="text-sm capitalize text-blue-500 md:text-base">
-          frontend developer
+          {role}
         </h2>
         <h3 className="text-base font-medium capitalize text-lightdark md:text-xl">
-          temitope david
+          {Name}
         </h3>
       </div>
     </div>

@@ -19,6 +19,7 @@ import {
   AccordionTrigger,
 } from "../../../components/UI/accordion";
 import NewsletterBlue from "@/components/UI/NewsletterBlue";
+import { staffdata } from "../../../data/Data";
 
 const Accordiondata = [
   {
@@ -52,7 +53,7 @@ const About = () => {
       <section className="firstsection| max-w-8xl mx-auto mb-28 flex flex-col py-2  backdrop:relative md:mb-4 md:h-[400px] lg:h-[500px] lg:flex-row lg:py-16 xl:h-[700px]">
         <div className="mx-auto flex  h-full w-full flex-col sm:w-[82%]  md:mt-14  lg:mt-0  lg:w-[90%] lg:flex-row lg:gap-1 lg:p-20 ">
           <div className="mt-0 space-y-5 text-center sm:px-4 md:px-0 md:text-left">
-            <h1 className=" px-1 text-3xl font-extrabold  sm:text-4xl md:mt-0  md:w-1/2 md:text-2xl lg:w-2/3 lg:text-4xl xl:w-[60%] xl:text-5xl xxl:text-5xl ">
+            <h1 className=" px-1 text-3xl font-extrabold  sm:text-4xl md:mt-0 font-Raleway  md:w-1/2 md:text-2xl lg:w-2/3 lg:text-4xl xl:w-[60%] xl:text-5xl xxl:text-5xl ">
               Empowering Businesses through Innovative Technology Solutions
             </h1>
             <p className="self-center text-sm font-bold text-blue-500  md:w-1/2 md:text-base">
@@ -154,7 +155,7 @@ const About = () => {
         <div className="absolute left-0 top-0 z-10 h-full w-full bg-black/70" />
 
         <div className="xl:5/6 relative z-30 flex flex-col  justify-center px-4 py-2 text-center lg:w-1/2 lg:p-12  lg:text-left">
-          <h4 className="mt-10 text-4xl font-extrabold text-white md:text-5xl lg:mt-0 xl:text-7xl">
+          <h4 className="mt-10 text-4xl font-extrabold text-white md:text-5xl lg:mt-0 xl:text-7xl font-Raleway">
             Tailored <span className="text-orange-500">Solutions</span> for
             <span className="text-orange-500"> Success</span>
           </h4>
@@ -171,20 +172,23 @@ const About = () => {
       </section>
 
       <section className="mx-auto my-16  mt-16 w-full lg:w-[90%]">
-        <h2 className="text-center font-bold capitalize text-blue-400 sm:text-3xl sm:font-semibold md:mt-4 lg:font-semibold ">
+        <h2 className="text-center font-bold capitalize font-Raleway text-blue-400 sm:text-3xl sm:font-semibold md:mt-4 lg:font-semibold ">
           Our team
         </h2>
-        <h1 className="mx-auto mb-4 w-2/3 text-center text-xl font-black text-lightdark sm:text-4xl lg:w-1/2 lg:text-5xl">
+        <h1 className="mx-auto mb-4 w-2/3 text-center text-xl font-black font-Raleway text-lightdark sm:text-4xl lg:w-1/2 lg:text-5xl">
           Passionate Experts Driving Innovation
         </h1>
 
         <div className="grid grid-cols-2 gap-4 px-3 md:grid-cols-3 md:gap-10 md:px-24">
-          <StaffCard />
-          <StaffCard />
-          <StaffCard />
-          <StaffCard />
-          <StaffCard />
-          <StaffCard />
+          {staffdata.map((staff) => (
+            <StaffCard
+              key={staff.id}
+              Name={staff.Name}
+              role={staff.role}
+              id={staff.id}
+              image={staff.image}
+            />
+          ))}
         </div>
       </section>
 
@@ -192,10 +196,10 @@ const About = () => {
         <div className="mx-auto flex flex-col gap-4 md:w-[87%] md:flex-row ">
           <div className="lg:justify-left px-2 lg:px-10  md:w-3/6 lg:flex lg:items-center">
             <div className="">
-              <h4 className="text-left text-2xl font-extrabold md:text-5xl xl:text-6xl">
+              <h4 className="text-left text-2xl font-extrabold md:text-5xl xl:text-6xl font-Raleway">
                 Frequent Asked Question
               </h4>
-              <p className="mt-4 text-sm font-semibold  lg:text-base">
+              <p className="mt-4 text-sm font-semibold lg:text-base">
                 If you have any additional questions or would like more
                 information, please don not hesitate to contact us. We are here
                 to assist you and provide the technology solutions you require

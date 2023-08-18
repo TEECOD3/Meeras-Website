@@ -1,9 +1,10 @@
-import webdev from "public/webdev.jpg";
-import artificial from "public/webdev.jpg";
-import infras from "public/images/infrastructure.png";
-import mobile from "public/images/mobiledev.png";
-import virtual from "public/images/virtualserv.png";
-import content from "public/images/contentmanagement.png";
+import webdev from "public/webdevimg.webp";
+import artificial from "public/AI.webp";
+import infras from "public/iT.jpg";
+import mobile from "public/appd.jpg";
+import virtual from "public/Virtual.jpg";
+import content from "public/cms.png";
+import Iot from "public/Iot.png";
 import firstimagelogo from "public/images/IMG-20230423-WA0028.jpg";
 import secondimagelogo from "public/images/IMG-20230423-WA0029.jpg";
 import thirdimagelogo from "public/images/IMG-20230423-WA0030.jpg";
@@ -21,6 +22,10 @@ import fourteendimagelogo from "public/images/IMG-20230423-WA0041.jpg";
 import fifteenedimagelogo from "public/images/IMG-20230423-WA0042.jpg";
 import imageauthor from "public/images/blogimage.jpg";
 import blogimage from "public/images/meerasblogimg.png";
+import bowofade from "public/bowofade.jpg";
+import seyi from "public/seyi.jpg";
+import aminu from "public/aminu.jpg";
+import temitope from "public/temitope.jpeg";
 export const services = [
   {
     id: 1,
@@ -42,7 +47,7 @@ export const services = [
     img: infras,
     title: "IT infrastructure",
     description:
-      "Meeras Software Solution optimizes and enhances your IT infrastructure. From network setup to data security, our expert team ensures robustness, security, and alignment with your business needs. We manage your IT infrastructure needs, allowing you to focus on your core business.",
+      "we optimize and enhances your IT infrastructure. From network setup to data security, our expert team ensures robustness, security, and alignment with your business needs. We manage your IT infrastructure needs, allowing you to focus on your core business.",
   },
 
   {
@@ -50,7 +55,7 @@ export const services = [
     img: virtual,
     title: "virtual services",
     description:
-      "Welcome to Meeras Software Solutions! We specialize in virtual display cards that elevate your visual experience. Our cards deliver stunning graphics, seamless performance, and unmatched realism, making them ideal for gaming enthusiasts and content creators alike.",
+      "We specialize in virtual display cards that elevate your visual experience. Our cards deliver stunning graphics, seamless performance, and unmatched realism, making them ideal for gaming enthusiasts and content creators alike.",
   },
 
   {
@@ -58,21 +63,48 @@ export const services = [
     img: content,
     title: "content management",
     description:
-      "Welcome to Meeras Software Solutions, your trusted partner in content management. We are dedicated to providing innovative solutions that streamline and enhance your content management processes, empowering you to effectively organize, store, and distribute your valuable digital assets. ",
+      "we are trusted partner in content management dedicated to providing innovative solutions that streamline and enhance your content management processes, empowering you to effectively organize, store, and distribute your valuable digital assets. ",
   },
   {
     id: 6,
     img: artificial,
     title: "artificial interlligence",
     description:
-      "Meeras Software Solutions, where we harness the power of Artificial Intelligence (AI) to revolutionize content management. Our AI-powered solutions are designed to simplify and optimize your content workflows, enabling you to unlock new levels of efficiency and productivity.",
+      "we harness the power of Artificial Intelligence (AI) to revolutionize content management. Our AI-powered solutions are designed to simplify and optimize your content workflows, enabling you to unlock new levels of efficiency and productivity.",
   },
   {
     id: 7,
-    img: artificial,
+    img: Iot,
     title: "internet of things",
     description:
-      "Meeras Software Solutions, where we harness the power of the Internet of Things (IoT) to revolutionize industries and drive digital transformation. Our IoT solutions are designed to connect devices, collect valuable data, and enable intelligent decision-making, empowering businesses to achieve new levels of efficiency, automation, and innovation",
+      "we bring on the power of the Internet of Things (IoT) to revolutionize industries and drive digital transformation. Our IoT solutions are designed to connect devices, collect valuable data, and enable intelligent decision-making, empowering businesses to achieve new levels of efficiency, automation, and innovation",
+  },
+];
+
+export const staffdata = [
+  {
+    id: 1,
+    image: bowofade,
+    Name: "Bowofade",
+    role: "CTO",
+  },
+  {
+    id: 2,
+    image: aminu,
+    Name: "Aminu",
+    role: "Backend Devloper",
+  },
+  {
+    id: 3,
+    image: seyi,
+    Name: "oloyede seyi",
+    role: "UI/UX Designer",
+  },
+  {
+    id: 4,
+    image: temitope,
+    Name: "Temitope david",
+    role: " FrontEnd Developer",
   },
 ];
 

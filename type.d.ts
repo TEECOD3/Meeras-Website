@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 type posts = {
   data: [
     {
@@ -24,6 +26,13 @@ type BlogDash = {
 };
 
 type HideNavBarProp = boolean;
+
+type staffdata = {
+  id: number;
+  image: string;
+  Name: string;
+  role: string;
+};
 
 type Post = {
   data: {
