@@ -12,16 +12,17 @@ const CardServices = (props: CardProps) => {
 
   return (
     <motion.div
-      initial={{ x: -200, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
-      transition={{ duration: 1 }}
+      initial={{ y: 300 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 1.2 }}
+      viewport={{ once: true }}
       className="overflow-hidden rounded-2xl bg-[#FFFFFF] shadow-lg cursor-pointer "
     >
       <div>
         <Image
           src={image}
           alt="image"
-          className="w-full h-[200px] bg-cover object-fit fill aspect-auto rounded-t-xl"
+          className="w-full h-[200px] bg-cover object-cover fill aspect-auto rounded-t-xl"
           loading="lazy"
           placeholder="blur"
         />

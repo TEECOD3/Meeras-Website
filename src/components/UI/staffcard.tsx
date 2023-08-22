@@ -18,7 +18,7 @@ const StaffCard = ({ id, image, Name, role }: StaffpropsProps) => {
           loading="lazy"
           src={image}
           alt="staffcard"
-          className="max-h-1/3 h-[200px] w-[200px] lg:h-[400px] lg:w-[400px]"
+          className="max-h-1/3 h-[200px] w-[200px] lg:h-[350px] lg:w-[350px] object-cover"
         />
       </div>
 
