@@ -6,6 +6,7 @@ import mobilemeerasimg from "public/images/meraasIco.png";
 import desktopmerrasimage from "public/images/bigmerras.png";
 import schollmgt from "public/images/schoomgtsys.png";
 import CardServices from "../../components/UI/CardServices";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -19,6 +20,12 @@ import { motion } from "framer-motion";
 interface homeprops {}
 const Home: FC<homeprops> = () => {
   const emailref = useRef<HTMLInputElement>(null!);
+  const [text, count] = useTypewriter({
+    words: [`Presence`, "capabilities", "transformation", "excellence"],
+    loop: true,
+    delaySpeed: 2000,
+  });
+
   return (
     <>
       <section className=" relative bg-[#FFEFE3] p-4 lg:py-24  ">
@@ -26,12 +33,10 @@ const Home: FC<homeprops> = () => {
           <div className="mt-20  lg:p-10 space-y-5 text-center sm:space-y-7 flex items-center justify-end md:mt-20 lg:ml-20 md:space-y-10 lg:mt-6 lg:w-1/2 lg:space-y-5 lg:text-left xl:space-y-10">
             <motion.div
               initial={{
-                x: -500,
                 opacity: 0,
                 scale: 0.5,
               }}
               animate={{
-                x: 0,
                 opacity: 1,
                 scale: 1,
               }}
@@ -41,10 +46,13 @@ const Home: FC<homeprops> = () => {
               <h2 className="text-xl font-medium capitalize text-orange-600 sm:text-2xl xxl:text-4xl">
                 Software Solution for your Business
               </h2>
-              <h1 className="font-extrabold text-5xl  lg:text-6xl font-Raleway">
+              <h1 className="font-bold text-5xl  lg:text-6xl font-Raleway">
                 Empowering <br />
                 Your Digital <br />
-                Transformation
+                <span className="capitalize text-orange-600">
+                  {text}
+                  <Cursor cursorColor="orange" />
+                </span>
               </h1>
               <p className="text-base px-2 lg:px-0 font-medium md:text-base lg:text-xl xl:w-3/4 ">
                 Are you ready to unlock the true potential of your business
@@ -123,6 +131,7 @@ const Home: FC<homeprops> = () => {
             initial={{ x: -200, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 2 }}
+            viewport={{ once: true }}
             className="sticky top-[0] bg-white p-2 md:top-[0]"
           >
             <h2 className="text-xl font-bold text-orange-400 md:mb-2 md:text-2xl">
