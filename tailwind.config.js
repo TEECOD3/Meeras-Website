@@ -12,6 +12,7 @@ module.exports = {
       cinzil: ["Cinzel", "serif"],
       Raleway: ["Raleway", "serif"],
       monstserrat: ["Montserrat", "serif"],
+      satisfy: ["Satisfy", "serif"],
     },
     screens: {
       sm: "480px",

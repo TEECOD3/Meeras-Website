@@ -12,11 +12,11 @@ const CardServices = (props: CardProps) => {
 
   return (
     <motion.div
-      initial={{ y: 300 }}
+      initial={{ y: 150 }}
       whileInView={{ y: 0 }}
-      transition={{ duration: 1.2 }}
+      transition={{ duration: 0.6 }}
       viewport={{ once: true }}
-      className="overflow-hidden rounded-2xl bg-[#FFFFFF] shadow-lg cursor-pointer "
+      className="overflow-hidden rounded-2xl bg-[#FFFFFF] shadow-lg cursor-pointer ring ring-slate-100  "
     >
       <div>
         <Image

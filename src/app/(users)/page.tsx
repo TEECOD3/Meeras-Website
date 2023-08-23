@@ -46,14 +46,14 @@ const Home: FC<homeprops> = () => {
               <h2 className="text-xl font-medium capitalize text-orange-600 sm:text-2xl xxl:text-4xl">
                 Software Solution for your Business
               </h2>
-              <h1 className="font-bold text-5xl  lg:text-6xl font-Raleway">
+              <p className="font-bold text-5xl  lg:text-6xl font-Raleway">
                 Empowering <br />
                 Your Digital <br />
-                <span className="capitalize text-orange-600">
+                <span className="capitalize text-orange-600 font-satisfy">
                   {text}
                   <Cursor cursorColor="orange" />
                 </span>
-              </h1>
+              </p>
               <p className="text-base px-2 lg:px-0 font-medium md:text-base lg:text-xl xl:w-3/4 ">
                 Are you ready to unlock the true potential of your business
                 through cutting-edge software solutions? Look no further than
@@ -64,7 +64,18 @@ const Home: FC<homeprops> = () => {
             </motion.div>
           </div>
 
-          <div className="mt-4 flex w-full items-center justify-center lg:hidden">
+          <motion.div
+            initial={{
+              opacity: 0,
+              scale: 0.8,
+            }}
+            animate={{
+              opacity: 1,
+              scale: 1,
+            }}
+            transition={{ duration: 2 }}
+            className="mt-4 flex w-full items-center justify-center lg:hidden"
+          >
             <Image
               src={mobilemeerasimg}
               alt="meeras image for mobile"
@@ -74,7 +85,7 @@ const Home: FC<homeprops> = () => {
               width={600}
               placeholder="blur"
             />
-          </div>
+          </motion.div>
 
           <Image
             alt="meerasimage"
@@ -126,7 +137,7 @@ const Home: FC<homeprops> = () => {
       </section>
 
       <section className=" mt-8 max-md:px-12 max-sm:p-2 md:p-6 ">
-        <div className=" mx-auto w-[100%] lg:w-[80%] xl:max-w-[83%]">
+        <div className=" mx-auto w-[100%] lg:w-[80%] xl:max-w-[83%] z-30">
           <motion.div
             initial={{ x: -200, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
