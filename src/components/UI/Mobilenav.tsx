@@ -47,7 +47,7 @@ const MobileNav: FC<MobileNavProps> = (props: MobileNavProps) => {
           onClick={hideModalHandler}
         />
 
-        <ul className=" flex flex-col gap-y-5 text-base font-semibold px-2 py-10  capitalize font-rails  text-blue-600 ">
+        <ul className=" flex flex-col gap-y-10 text-base font-semibold px-2 py-10  capitalize font-rails  text-blue-600 ">
           <Link href="/">
             <motion.li
               variants={item}
@@ -149,7 +149,7 @@ const MobileNav: FC<MobileNavProps> = (props: MobileNavProps) => {
               className="w-full capitalize"
             >
               <span className="">social media</span>
-              <ul className="flex gap-x-3 w-full justify-between mt-5">
+              <ul className="flex gap-x-3 w-10/12 mx-auto justify-between mt-8">
                 <li>
                   <a
                     href="https://instagram.com/Meerassoftware"
@@ -198,7 +198,7 @@ const MobileNav: FC<MobileNavProps> = (props: MobileNavProps) => {
                 },
               }}
               onClick={hideModalHandler}
-              className="w-full capitalize border-blue-600 rounded-lg border-2 py-2"
+              className="w-full capitalize border-blue-600 rounded-lg border-2 py-2 ring-2 "
             >
               contact us
             </motion.button>
