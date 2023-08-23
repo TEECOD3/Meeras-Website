@@ -29,7 +29,7 @@ const Blogpage = async () => {
   return (
     <section className="py-16 lg:py-28">
       <section className="mx-auto px-3 lg:w-[82%] flex flex-col">
-        <h2 className="mb-4 text-3xl font-extrabold capitalize  lg:text-6xl ">
+        <h2 className="sm:mt-10 mb-4 text-3xl font-extrabold capitalize  lg:text-6xl ">
           meeras blog
         </h2>
         <article className="flex items-center justify-center h-[70vh] sm:h-full w-full ">
