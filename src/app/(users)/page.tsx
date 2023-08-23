@@ -17,6 +17,7 @@ import { testimoonials, images, services } from "../../data/Data";
 import TestimonialCard from "../../components/UI/TestimonialCard";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 interface homeprops {}
 const Home: FC<homeprops> = () => {
   const emailref = useRef<HTMLInputElement>(null!);
@@ -54,7 +55,7 @@ const Home: FC<homeprops> = () => {
                   <Cursor cursorColor="orange" />
                 </span>
               </p>
-              <p className="text-base px-2 lg:px-0 font-medium md:text-base lg:text-xl xl:w-3/4 ">
+              <p className="text-base px-2 lg:px-0 font-medium flex flex-wrap md:text-base lg:text-xl xl:w-3/4 ">
                 Are you ready to unlock the true potential of your business
                 through cutting-edge software solutions? Look no further than
                 Software Solution! We are a leading technology company dedicated
@@ -122,7 +123,7 @@ const Home: FC<homeprops> = () => {
                   <li>
                     <Image
                       key={image.id}
-                      className="h-14 w-14 rounded-full md:h-20 md:w-20 "
+                      className="h-14 w-14 rounded-full md:h-20 md:w-20 object-cover"
                       src={image.image}
                       alt="images of clients"
                       loading="lazy"
@@ -227,7 +228,9 @@ const Home: FC<homeprops> = () => {
             </div>
             <h1 className="ml-10 mt-5 flex items-center justify-center gap-2">
               <span className="h-[0.09rem] w-20 bg-blue-600 "></span>
-              <span className="font-semibold">Learn More</span>{" "}
+              <Link href="/Contactpage">
+                <span className="font-semibold">Learn More</span>
+              </Link>
               <span>&#62;</span>
             </h1>
           </div>
