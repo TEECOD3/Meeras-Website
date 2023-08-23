@@ -40,9 +40,12 @@ const Blogpage = async () => {
       <section className="my-10">
         <div className="mx-auto flex  w-full gap-4 border-b-2 border-t-2 border-dashed border-black ">
           <div className=" mx-auto overflow-x-auto lg:w-[95%] ">
-            <div className="no-scrollbar py-2 flex  gap-3 sm:w-full sm:gap-5 md:p-4 lg:gap-2  ">
+            <div className="no-scrollbar py-2 flex  gap-3 sm:w-full sm:gap-5 md:p-4 lg:gap-2 snap-x snap-mandatory">
               {buttondata.map((buttons) => (
-                <button key={buttons.id} className="mx-auto p-2 shadow-sm ">
+                <button
+                  key={buttons.id}
+                  className="mx-auto p-2 shadow-sm snap-center"
+                >
                   <div className="flex w-full items-center  gap-3">
                     <div className="font-bold uppercase text-[0.5rem] lg:text-[1rem]   ">
                       {buttons.name}
