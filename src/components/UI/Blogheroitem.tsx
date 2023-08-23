@@ -41,7 +41,7 @@ function Blogheroitem({
           height={800}
           width={400}
           alt="meeras blog image"
-          className="mx-auto max-h-[400px] w-full rounded-lg object-cover"
+          className="mx-auto max-h-[400px] w-[400px] rounded-lg object-cover"
           loading="lazy"
         />
       </div>
