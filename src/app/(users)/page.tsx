@@ -54,7 +54,7 @@ const Home: FC<homeprops> = () => {
                   <Cursor cursorColor="orange" />
                 </span>
               </p>
-              <p className="text-base px-2 lg:px-0 font-medium md:text-base lg:text-xl xl:w-3/4 ">
+              <p className="text-base px-2 lg:px-0 font-medium flex flex-wrap md:text-base lg:text-xl xl:w-3/4 ">
                 Are you ready to unlock the true potential of your business
                 through cutting-edge software solutions? Look no further than
                 Software Solution! We are a leading technology company dedicated
@@ -122,7 +122,7 @@ const Home: FC<homeprops> = () => {
                   <li>
                     <Image
                       key={image.id}
-                      className="h-14 w-14 rounded-full md:h-20 md:w-20 "
+                      className="h-14 w-14 rounded-full md:h-20 md:w-20 object-cover"
                       src={image.image}
                       alt="images of clients"
                       loading="lazy"
