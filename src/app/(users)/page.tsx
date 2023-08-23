@@ -17,6 +17,7 @@ import { testimoonials, images, services } from "../../data/Data";
 import TestimonialCard from "../../components/UI/TestimonialCard";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 interface homeprops {}
 const Home: FC<homeprops> = () => {
   const emailref = useRef<HTMLInputElement>(null!);
@@ -227,7 +228,9 @@ const Home: FC<homeprops> = () => {
             </div>
             <h1 className="ml-10 mt-5 flex items-center justify-center gap-2">
               <span className="h-[0.09rem] w-20 bg-blue-600 "></span>
-              <span className="font-semibold">Learn More</span>{" "}
+              <Link href="/Contactpage">
+                <span className="font-semibold">Learn More</span>
+              </Link>
               <span>&#62;</span>
             </h1>
           </div>
