@@ -41,14 +41,14 @@ function Blogheroitem({
           height={800}
           width={400}
           alt="meeras blog image"
-          className="mx-auto max-h-[400px] w-[400px] rounded-lg object-cover"
+          className="mx-auto h-[400px] w-[500px] rounded-lg object-cover"
           loading="lazy"
         />
       </div>
 
       <div className="mx-auto flex w-full flex-col justify-between gap-y-4 lg:mt-4 xl:w-1/2 ">
         <div className="mx-auto">
-          <h3 className="mt-2 text-base font-extrabold capitalize md:text-2xl md:leading-[2rem] lg:mt-0 xl:text-5xl">
+          <h3 className="mt-4 text-base font-extrabold capitalize md:text-2xl md:leading-[2rem] lg:mt-0 xl:text-5xl">
             {title}
           </h3>
           <p className="mt-2 text-base font-normal xl:mt-5 xl:text-xl">
