@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { Suspense } from "react";
 import { buttondata } from "../../../data/Data";
 import Blogherolist from "../../../components/UI/Blogherolist";
 import Blogpostlist from "../../../components/UI/Blogpostlist";
@@ -8,6 +8,7 @@ import { getAllPosts, getimages } from "../../../lib/getAllPosts";
 import { Metadata } from "next";
 import { posts } from "../../../../type";
 import { images } from "../../../../type";
+import LoadingBlogSkeleton from "@/components/UI/blogSkeleton";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -33,7 +34,9 @@ const Blogpage = async () => {
           meeras blog
         </h2>
         <article className="flex items-center justify-center h-[70vh] sm:h-full w-full ">
-          <Blogherolist combinedimageandpost={combinedimageandpost} />
+          <Suspense fallback={<LoadingBlogSkeleton />}>
+            <Blogherolist combinedimageandpost={combinedimageandpost} />
+          </Suspense>
         </article>
       </section>
 
