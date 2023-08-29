@@ -37,7 +37,7 @@ const Header = ({ pageName }: props) => {
         <div className="h-10 w-[0.1rem] bg-gray-500"></div>
 
         <div className="">
-          <div className="">
+          <div className="" title="your avatar">
             <Avatar>
               <AvatarImage src="https://github.com/shadcn.png" />
               <AvatarFallback>TD</AvatarFallback>
