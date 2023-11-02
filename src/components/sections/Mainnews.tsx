@@ -10,7 +10,7 @@ import { Postdetails } from "../UI/Postdetails";
 import { Textarea } from "../UI/textarea";
 
 type Props = {
-  post: Post;
+  post: any;
 };
 const Mainnews = ({ post }: Props) => {
   return (
