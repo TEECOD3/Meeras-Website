@@ -29,11 +29,15 @@ const Footer = () => {
           </ul>
         </div>
         <div className=" mt-4 h-full px-4 sm:mt-0 md:w-3/6 ">
-          <Image
-            alt="Footer image"
-            src={meerasfooter}
-            className=" h-24 w-24 md:h-32 md:w-32 bg-contain bg-no-repeat "
-          />
+          <div className="relative h-24 w-32 md:h-32 md:w-44 ">
+            <Image
+              alt="Footer image"
+              fill
+              src={meerasfooter}
+              className=" bg-cover bg-no-repeat"
+            />
+          </div>
+
           <p className="text-md mt-6 font-light text-white sm:text-xl md:text-base lg:w-2/3">
             With our expertise in web development, mobile app development, IT
             infrastructure, virtual services, content management, artificial

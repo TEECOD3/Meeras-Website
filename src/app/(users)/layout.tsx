@@ -3,7 +3,7 @@ import NavBar from "../../components/UI/NavBar";
 import "../globals.css";
 import { siteConfig } from "../../../config/site";
 import { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
 export const metadata: Metadata = {
   title: siteConfig.name,
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
 };
 
-const nunito = Nunito({ subsets: ["latin"], display: "swap" });
+const Monstserrat = Montserrat({ subsets: ["latin"], display: "swap" });
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -21,7 +21,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" className={nunito.className}>
+    <html lang="en" className={Monstserrat.className}>
       <head />
       <body>
         <NavBar />

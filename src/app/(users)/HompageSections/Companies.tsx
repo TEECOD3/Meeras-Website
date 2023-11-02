@@ -13,10 +13,10 @@ type Props = {};
 const Companies = (props: Props) => {
   return (
     <div className="w-full text-center">
-      <p className="mb-4 text-base font-semibold lg:text-xl  text-[#000B17]">
+      <p className="mb-4 text-base  lg:text-xl uppercase font-semibold  text-[#000B17]">
         Join the 100+ companies using the Segment platform
       </p>
-      <ul className="mt-10 flex w-full gap-5 md:mx-auto md:w-[80%]">
+      <ul className="mt-10 flex w-full gap-5 max-lg:px-4 md:mx-auto lg:w-[90%] py-10">
         <Swiper
           spaceBetween={10}
           slidesPerView={4}

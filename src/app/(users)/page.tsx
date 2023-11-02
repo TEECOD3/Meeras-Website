@@ -22,7 +22,7 @@ const Home: FC<homeprops> = () => {
           <Companies />
         </section>
 
-        <section className=" mt-8 max-md:px-12 max-sm:p-2 md:p-6 ">
+        <section className=" mt-4 max-md:px-12 max-sm:p-2 md:p-6 ">
           <Services />
         </section>
 
@@ -30,7 +30,7 @@ const Home: FC<homeprops> = () => {
           <Product />
         </section>
 
-        <section className="mt-44  sm:mx-auto sm:max-w-[83%] md:w-full xl:w-[83%] md:mt-[24rem] xl:mt-[32rem] ">
+        <section className="mt-44  sm:mx-auto sm:w-[90%] md:w-full xl:w-[90%] md:mt-[24rem] xl:mt-[32rem] ">
           <Testimony />
         </section>
 

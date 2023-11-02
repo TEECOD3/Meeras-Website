@@ -7,7 +7,7 @@ const NewsletterBlue = () => {
   const emailref = useRef<HTMLInputElement>(null!);
   return (
     <section className="mt-20 flex flex-col items-center justify-center bg-grey-100 px-2 py-28">
-      <h2 className="lg:3/6 xl:1/4 px-2 text-center text-2xl font-bold text-[#000B17] md:mb-10 md:w-2/4 md:text-4xl lg:text-5xl xl:text-6xl">
+      <h2 className="lg:3/6 xl:1/4 px-2 text-center text-2xl font-semibold uppercase text-[#000B17] md:mb-10 md:w-2/4 md:text-4xl lg:text-5xl xl:text-6xl">
         Ready to simplify how you work?
       </h2>
       <form
@@ -26,7 +26,7 @@ const NewsletterBlue = () => {
           className="w-full border-blue-700 bg-[#EAEAEA] text-base md:-mb-5 md:p-6"
         />
         <Button
-          className="mx-auto mt-4 w-1/2 p-3  text-[0.8rem] sm:w-2/3 md:p-6 lg:text-xl xxl:text-2xl"
+          className="mx-auto mt-4 w-1/2 p-3  text-[0.8rem] sm:w-2/3 md:p-6 lg:text-xl xxl:text-2xl uppercase "
           size="default"
           variant="default"
         >

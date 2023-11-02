@@ -15,10 +15,10 @@ const Testimony = (props: Props) => {
   return (
     <>
       {" "}
-      <h2 className="w-5/6  px-3 text-left text-2xl font-extrabold sm:w-5/6 font-Raleway sm:text-5xl md:w-1/2 md:text-2xl  lg:ml-12 lg:text-4xl  ">
+      <h2 className="text-left text-xl font-semibold uppercase sm:text-2xl md:text-3xl ">
         Trusted by startups and the worlds largest companies
       </h2>
-      <div className="mx-auto mt-4 flex h-full flex-col rounded-2xl p-3  px-3 shadow-xl md:p-qb0 lg:w-[90%] lg:flex-row xl:mt-8 ">
+      <div className="mx-auto mt-4 flex h-full flex-col  p-3  px-3  lg:flex-row xl:mt-8 ">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -34,7 +34,7 @@ const Testimony = (props: Props) => {
           {testimoonials.map((testimony) => (
             <SwiperSlide
               key={testimony.id}
-              className="h-full w-full transition-all delay-75 ease-in-out"
+              className="h-full w-full transition-all delay-75 ease-in-out "
             >
               <TestimonialCard
                 name={testimony.name}
@@ -47,7 +47,7 @@ const Testimony = (props: Props) => {
           <SwipperNavbuttons className="absolute bottom-8 right-8 z-[3000] lg:bottom-16 " />
         </Swiper>
 
-        <div className="flex  w-full flex-col gap-10 space-y-7 rounded-br-[1rem] bg-[#ffffff] px-2 py-20 text-blue-600 sm:pl-8  lg:w-4/6">
+        <div className="flex w-full flex-col gap-10 space-y-7 rounded-br-[1rem] bg-[#ffffff] px-2 py-20 text-blue-600 sm:pl-8  lg:w-4/6">
           <div className="">
             <h2 className="text-6xl font-extrabold ">90%</h2>
             <p className="mt-8 text-xl font-bold xl:w-1/2">

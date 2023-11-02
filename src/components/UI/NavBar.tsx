@@ -51,9 +51,9 @@ const NavBar = () => {
       </AnimatePresence>
 
       {hideNavBar ? null : (
-        <nav className="max-w-[82%]">
-          <div className="fixed z-50 mx-auto w-full bg-white/20  backdrop-blur-md max-lg:w-full ">
-            <div className="mx-auto flex h-[4rem] w-[90%] items-center justify-between px-2 sm:h-[5rem]  sm:max-w-[84%] md:px-4">
+        <nav className="  fixed top-0 left-0 z-[400] w-full transition-all duration-500 ease-in-out">
+          <div className="w-[90%] z-50 mx-auto  bg-white/20  backdrop-blur-md  ">
+            <div className="flex h-[4rem] items-center justify-between px-2 sm:h-[5rem]  ">
               <Link href="/" className="">
                 <Image
                   src={merraslog}
@@ -64,7 +64,7 @@ const NavBar = () => {
                 />
               </Link>
 
-              <ul className="flex items-center justify-around  gap-2 font-medium capitalize max-lg:hidden max-lg:w-[50%] lg:w-[40%]">
+              <ul className="flex items-center justify-around  uppercase gap-2  font-semibold max-lg:hidden max-lg:w-[50%] lg:w-[40%]">
                 <Link href="/Aboutpage">
                   <li
                     className={`${
@@ -94,9 +94,9 @@ const NavBar = () => {
                     variant="default"
                     className={`${
                       pathname === "/Contactpage"
-                        ? " hover:text-white-200 border-2 border-orange-500 bg-transparent font-bold text-orange-600 hover:bg-orange-200 "
+                        ? " hover:text-white-200  border-2 border-orange-500 bg-transparent font-bold text-orange-600 hover:bg-orange-200 "
                         : ""
-                    } max-lg:text-[0.7rem]} cursor-pointer rounded-[0.5rem]  px-10 py-4 text-[1rem] max-xl:text-sm max-lg:py-2`}
+                    } rounded-none font-semibold uppercase max-lg:text-[0.7rem]} cursor-pointer  px-10 py-4 text-[1rem] max-xl:text-sm max-lg:py-2`}
                   >
                     {pathname === "/Contactpage" ? "Get Started" : "Contact Us"}
                   </Button>
