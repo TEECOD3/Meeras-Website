@@ -12,7 +12,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = params.blogid;
-  const BlogData: Promise<Post> = getpost(slug);
+  const BlogData = getpost(slug);
   const BlogPostdata = await BlogData;
 
   return {
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 export default async function BlogDetailpage({ params }: Props) {
   const slug = params.blogid;
-  const PostData: Promise<Post> = getpost(slug);
+  const PostData = getpost(slug);
   const post = await PostData;
 
   return (
@@ -35,10 +35,10 @@ export default async function BlogDetailpage({ params }: Props) {
   );
 }
 export async function generateStaticParams() {
-  const PostsData: Promise<posts> = getAllPosts();
+  const PostsData = getAllPosts();
   const posts = await PostsData;
 
-  return posts.data.map((post) => {
+  return posts.data.map((post: any) => {
     blogid: post.id.toString();
   });
 }
