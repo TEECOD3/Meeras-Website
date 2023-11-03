@@ -12,7 +12,7 @@ interface StaffpropsProps {
 
 const StaffCard = ({ id, image, Name, role }: StaffpropsProps) => {
   return (
-    <div className="">
+    <div className="flex items-center justify-center flex-col">
       <div className="">
         <Image
           loading="lazy"
@@ -22,11 +22,11 @@ const StaffCard = ({ id, image, Name, role }: StaffpropsProps) => {
         />
       </div>
 
-      <div className="my-3">
-        <h2 className="text-sm capitalize text-blue-500 md:text-base">
+      <div className="my-3 text-center">
+        <h2 className="text-sm  font-semibold md:text-base uppercase">
           {role}
         </h2>
-        <h3 className="text-base font-medium capitalize text-lightdark md:text-xl">
+        <h3 className="text-sm font-medium capitalize text-lightdark md:text-base mt-2">
           {Name}
         </h3>
       </div>

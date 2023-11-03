@@ -8,14 +8,14 @@ const Product = (props: Props) => {
   return (
     <>
       <div className="clip-octagon h-[10rem] bg-blue-600 pb-10 pt-2 md:h-[15rem] md:pb-20 md:pt-4 lg:h-[24rem] xl:h-[28rem]">
-        <h2 className="font-medium text-white sm:text-3xl sm:font-semibold md:mt-4 lg:font-semibold uppercase">
+        <h2 className="font-medium text-white sm:text-3xl sm:font-semibold md:mt-4 lg:font-semibold uppercase mb-4">
           Our Product
         </h2>
-        <h1 className="mb-4 text-xl  font-semibold uppercase text-white sm:text-3xl lg:text-5xl">
+        <h1 className="mb-4 text-xl  font-semibold uppercase text-white sm:text-3xl lg:text-5xl max-md:mb-4">
           School Management System
         </h1>
       </div>
-      .
+
       <Image
         loading="lazy"
         placeholder="blur"

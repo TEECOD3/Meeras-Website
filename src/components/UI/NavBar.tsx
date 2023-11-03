@@ -10,6 +10,7 @@ import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { AiOutlineDown } from "react-icons/ai";
 import { useHideNavBar } from "@/Hooks/useHideNavbar";
+import { Mobilenav } from "./Mobilenav2";
 
 const NavBar = () => {
   const [ModalOpen, setModalOpen] = useState(false);
@@ -52,19 +53,19 @@ const NavBar = () => {
 
       {hideNavBar ? null : (
         <nav className="  fixed top-0 left-0 z-[400] w-full transition-all duration-500 ease-in-out">
-          <div className="w-[90%] z-50 mx-auto  bg-white/20  backdrop-blur-md  ">
+          <div className="w-[90%] z-50 mx-auto  bg-white/20  backdrop-blur-md  py-4">
             <div className="flex h-[4rem] items-center justify-between px-2 sm:h-[5rem]  ">
               <Link href="/" className="">
                 <Image
                   src={merraslog}
                   alt="meeras logo"
-                  className="h-10 w-10 md:h-full md:w-full"
+                  className="h-16 w-16 md:h-20 md:w-24"
                   loading="lazy"
                   placeholder="blur"
                 />
               </Link>
 
-              <ul className="flex items-center justify-around  uppercase gap-2  font-semibold max-lg:hidden max-lg:w-[50%] lg:w-[40%]">
+              <ul className="flex items-center justify-around    gap-2 uppercase  font-semibold max-lg:hidden max-lg:w-[50%] lg:w-[40%]">
                 <Link href="/Aboutpage">
                   <li
                     className={`${
@@ -103,10 +104,9 @@ const NavBar = () => {
                 </li>
               </ul>
 
-              <MdOutlineMenu
-                className="cursor-pointer text-4xl lg:hidden "
-                onClick={openModalHandler}
-              />
+              <div className="md:hidden z-[4000]">
+                <Mobilenav />
+              </div>
             </div>
           </div>
         </nav>

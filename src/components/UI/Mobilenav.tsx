@@ -43,7 +43,7 @@ const MobileNav: FC<MobileNavProps> = (props: MobileNavProps) => {
         exit="exit"
       >
         <MdOutlineClose
-          className="text-3xl absolute text-blue-500 z-[8399] right-6 top-12"
+          className="text-3xl absolute text-blue-500  right-6 top-12"
           onClick={hideModalHandler}
         />
 

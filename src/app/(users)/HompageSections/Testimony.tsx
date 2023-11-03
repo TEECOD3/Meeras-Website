@@ -14,7 +14,6 @@ type Props = {};
 const Testimony = (props: Props) => {
   return (
     <>
-      {" "}
       <h2 className="text-left text-xl font-semibold uppercase sm:text-2xl md:text-3xl ">
         Trusted by startups and the worlds largest companies
       </h2>

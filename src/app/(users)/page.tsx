@@ -30,7 +30,7 @@ const Home: FC<homeprops> = () => {
           <Product />
         </section>
 
-        <section className="mt-44  sm:mx-auto sm:w-[90%] md:w-full xl:w-[90%] md:mt-[24rem] xl:mt-[32rem] ">
+        <section className="mt-44 mx-auto w-[90%] md:mt-[24rem] xl:mt-[32rem] ">
           <Testimony />
         </section>
 
