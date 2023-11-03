@@ -36,23 +36,26 @@ export function Mobilenav() {
       </SheetTrigger>
       <SheetContent className="z-[900000000000]">
         <ul className=" flex flex-col gap-y-10 text-xl font-semibold px-2 py-10 uppercase ">
-          <SheetClose>
-            <Link href="/Aboutpage">
+          <Link href="/Aboutpage">
+            <SheetClose>
               <li className="uppercase  text-xl">About us</li>
-            </Link>
-          </SheetClose>
-          <SheetClose>
-            <Link href="/Blogpage">
+            </SheetClose>
+          </Link>
+
+          <Link href="/Blogpage">
+            <SheetClose>
               <li className="uppercase  text-xl">blog</li>
-            </Link>
-          </SheetClose>
-          <SheetClose>
-            <Link href="/Aboutpage">
+            </SheetClose>
+          </Link>
+
+          <Link href="/Aboutpage">
+            <SheetClose>
               <li className="uppercase  text-xl">policy and privacy</li>
-            </Link>
-          </SheetClose>
+            </SheetClose>
+          </Link>
+
           <div className="flex items-center justify-center">
-            <div className="w-full uppercase flex-col flex items-center justify-center">
+            <div className="w-full uppercase flex-col flex items-left justify-center">
               <span className="">social media</span>
               <ul className="flex gap-x-3 w-10/12 mx-auto justify-between mt-8">
                 <li>

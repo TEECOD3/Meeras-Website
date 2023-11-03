@@ -21,7 +21,7 @@ const Product = (props: Props) => {
         placeholder="blur"
         src={schollmgt}
         alt="school management system image"
-        className="absolute top-[4rem] z-30 h-[15rem] object-cover w-full  bg-no-repeat  sm:top-[5rem] md:h-[28rem] lg:top-[10rem] lg:h-[35rem] xl:left-[15%] xl:h-[40rem]  xl:w-[70rem]"
+        className="absolute top-[6rem] z-30 h-[15rem] object-cover w-full  bg-no-repeat  sm:top-[5rem] md:h-[28rem] lg:top-[10rem] lg:h-[35rem] xl:left-[15%] xl:h-[40rem]  xl:w-[70rem]"
       ></Image>
     </>
   );

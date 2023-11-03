@@ -17,7 +17,7 @@ const Testimony = (props: Props) => {
       <h2 className="text-left text-xl font-semibold uppercase sm:text-2xl md:text-3xl ">
         Trusted by startups and the worlds largest companies
       </h2>
-      <div className="mx-auto mt-4 flex h-full flex-col  p-3  px-3  lg:flex-row xl:mt-8 ">
+      <div className="mx-auto mt-4 flex h-full flex-col lg:flex-row xl:mt-8 ">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
