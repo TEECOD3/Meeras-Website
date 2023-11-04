@@ -30,7 +30,7 @@ export default BlogPage;
 function BlogpostDashList() {
   return (
     <>
-      {blogPosts.map((post, i): any => (
+      {blogposts.map((post, i): any => (
         <BlogpostDashboard key={i} />
       ))}
     </>
