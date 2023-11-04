@@ -3,7 +3,7 @@ import Header from "@/components/UI/Header";
 import { FilterXIcon } from "lucide-react";
 import React from "react";
 import { HiFilter } from "react-icons/hi";
-import { blogPosts } from "@/data/Data";
+import { blogposts } from "@/data/Data";
 
 const BlogPage = () => {
   return (
