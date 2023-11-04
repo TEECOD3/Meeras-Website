@@ -26,6 +26,10 @@ import bowofade from "public/bowofade.jpg";
 import seyi from "public/seyi.jpg";
 import aminu from "public/aminu.jpg";
 import temitope from "public/temitope.jpeg";
+import firstimage from "../../public/meeras.jpg";
+import secondimage from "../../public/future.jpg";
+import thirdimage from "../../public/meeras3.jpg";
+import fourthimage from "../../public/transformingeducation.jpg";
 export const services = [
   {
     id: 1,
@@ -173,7 +177,7 @@ export const buttondata = [
 export const blogheroposts = [
   {
     id: 1,
-    image: blogimage,
+    image: firstimage,
     title: "Introducing Sprout: Modern Corporate Treasury...",
     blogtext:
       "  We make it easy for you to share and collaborate on critical content       — everything from contracts to spreadsheets to videos — all on a  single platform. And we help you keep it all secure. Fill out the form and we will show you how to get more done in the Content Cloud and some other things",
@@ -184,7 +188,7 @@ export const blogheroposts = [
   },
   {
     id: 2,
-    image: blogimage,
+    image: secondimage,
     title: "implications of ai to devlopement",
     blogtext:
       "  We make it easy for you to share and collaborate on critical content       — everything from contracts to spreadsheets to videos — all on a  single platform. And we help you keep it all secure. Fill out the form and we will show you how to get more done in the Content Cloud and some other things",
@@ -195,7 +199,7 @@ export const blogheroposts = [
   },
   {
     id: 3,
-    image: blogimage,
+    image: thirdimage,
     title: "distribution of laptops for developers",
     blogtext:
       "  We make it easy for you to share and collaborate on critical content       — everything from contracts to spreadsheets to videos — all on a  single platform. And we help you keep it all secure. Fill out the form and we will show you how to get more done in the Content Cloud and some other things",
@@ -206,7 +210,7 @@ export const blogheroposts = [
   },
   {
     id: 4,
-    image: blogimage,
+    image: fourthimage,
     title: "machine learning in the area of intrusion detections ",
     blogtext:
       "  We make it easy for you to share and collaborate on critical content       — everything from contracts to spreadsheets to videos — all on a  single platform. And we help you keep it all secure. Fill out the form and we will show you how to get more done in the Content Cloud and some other things",
@@ -222,7 +226,7 @@ export const blogposts = [
     id: "Our-Journey-From-Idea-to-Implementation-The-Suleja-School-Management-System",
     title:
       "Our Journey: From Idea to Implementation - The Suleja School Management System",
-    image: virtual,
+    image: firstimage,
     introduction:
       "In the fast-evolving landscape of technology and innovation, Meeras Software Solutions stands as a beacon of forward-thinking and inventive software development. Committed to shaping the future through creative solutions, we take pride in sharing the remarkable journey that led to the creation of the Suleja School Management System.",
 
@@ -255,7 +259,7 @@ export const blogposts = [
   },
   {
     id: "Transforming-Education-Through-Partnership-Meeras-Software-Solutions-Collaborates-with-ACCE-School",
-    image: virtual,
+    image: secondimage,
     title:
       "Transforming Education Through Partnership: Meeras Software Solutions Collaborates with ACCE School",
     introduction:
@@ -289,7 +293,7 @@ export const blogposts = [
   },
   {
     id: "The-Art-and-Science-of-Web-Development-Insights-from-Meeras-Software-Solutions",
-    image: virtual,
+    image: thirdimage,
     title:
       "The Art and Science of Web Development: Insights from Meeras Software Solutions",
     introduction:
@@ -321,7 +325,7 @@ export const blogposts = [
   },
   {
     id: "The-Future-of-Software-and-Web-Development-Meeras-Software-Solutions-Vision",
-    image: virtual,
+    image: fourthimage,
     title:
       "The Future of Software and Web Development: Meeras Software Solutions' Vision",
     introduction:
