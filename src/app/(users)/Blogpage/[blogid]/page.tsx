@@ -25,7 +25,7 @@ export default async function BlogDetailpage({ params }: Props) {
   const BlogPostdata = blogposts.find((post) => post.id === slug);
 
   return (
-    <section className="mx-auto mb-28  w-[99.9%] py-32">
+    <section className="mx-auto mb-28  w-[99.9%] pt-32">
       <div className="h-full w-full">
         <HeroDetail post={BlogPostdata} />
         <Mainnews post={BlogPostdata} />
