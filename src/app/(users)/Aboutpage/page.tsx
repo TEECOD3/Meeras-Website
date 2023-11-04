@@ -65,18 +65,20 @@ const About = () => {
   return (
     <main className="mx-auto max-w-[100%] pt-20 ">
       <section className="firstsection| md:max-w-8xl mx-auto lg:mb-28 flex flex-col py-2 lg:justify-start  backdrop:relative md:mb-4 md:h-[400px] lg:h-[500px] xl:flex-row lg:py-16 xl:h-[700px] p-4 max-xl:pt-20 xl:p-20">
-        <div className="mx-auto flex  h-full flex-col items-center justify-center  lg:justify-start lg:items-start  md:mt-14 lg:mt-0  lg:flex-row lg:gap-1 xl:p-20 ">
-          <Reveal>
-            <div className="mt-0 space-y-5 text-center sm:px-4 md:px-0 md:text-left max-lg:w-[90%] ">
-              <h1 className=" px-1 text-3xl font-semibold uppercase  sm:text-5xl md:mt-0  md:w-1/2 md:text-2xl lg:w-2/3 lg:text-4xl xl:w-[60%] leading-[35px] lg:leading-[45px]  ">
+        <div className="mx-auto  flex  h-full flex-col  items-center justify-center lg:justify-start lg:items-start md:mt-14 lg:mt-0  lg:flex-row lg:gap-1 lg:pt-16">
+          <div className="mt-0 space-y-5 text-center sm:px-4  md:px-0 md:text-left">
+            <Reveal>
+              <h1 className=" px-1 text-2xl font-semibold uppercase  sm:text-5xl md:mt-0  md:w-1/2 md:text-2xl lg:w-2/3 lg:text-4xl xl:w-[60%] leading-[35px] lg:leading-[45px] ">
                 Empowering Businesses through Innovative Technology Solutions
               </h1>
+            </Reveal>
+            <Reveal>
               <p className="self-center text-sm font-semibold  md:w-1/2 md:text-base">
                 We are a leading tech company delivering innovative, customized
                 software solutions for businesses of all sizes.
               </p>
-            </div>
-          </Reveal>
+            </Reveal>
+          </div>
         </div>
         <div className=" hidden lg:block right-0  mt-8   w-full md:absolute  md:top-[3rem] md:mt-20 md:w-[70%] xl:top-[6rem] ">
           <Image
@@ -103,18 +105,22 @@ const About = () => {
         </div>
 
         <div className=" p-4 md:w-1/2 xl:px-8 xl:py-8 mb-10">
-          <h2 className=" text-2xl font-semibold md:text-4xl lg:mt-10 lg:leading-[4rem] xl:w-3/5 uppercase ">
-            Our Mission
-          </h2>
-          <p className="mt-2 text-sm text-[#000B17] lg:py-3 lg:text-base xl:w-3/4">
-            Our mission is to leverage the power of technology to create
-            impactful solutions that drive growth, efficiency, and success for
-            our clients. We strive to be a trusted partner, working closely with
-            businesses to understand their unique requirements and challenges.
-            Through our expertise and dedication, we aim to deliver
-            transformative solutions that propel our clients towards their
-            goals.
-          </p>
+          <Reveal>
+            <h2 className=" text-2xl font-semibold md:text-4xl lg:mt-10 lg:leading-[4rem] xl:w-3/5 uppercase ">
+              Our Mission
+            </h2>
+          </Reveal>
+          <Reveal>
+            <p className="mt-2 text-sm text-[#000B17] lg:py-3 lg:text-base xl:w-3/4">
+              Our mission is to leverage the power of technology to create
+              impactful solutions that drive growth, efficiency, and success for
+              our clients. We strive to be a trusted partner, working closely
+              with businesses to understand their unique requirements and
+              challenges. Through our expertise and dedication, we aim to
+              deliver transformative solutions that propel our clients towards
+              their goals.
+            </p>
+          </Reveal>
 
           <Button
             variant="default"
@@ -175,23 +181,27 @@ const About = () => {
               Tailored <span className="text-orange-500">Solutions</span> for
               <span className="text-orange-500"> Success</span>
             </h4>
-            <p className="mt-3 text-sm text-white  lg:text-base xl:w-3/4 leading-[24px]  lg:leading-[30px]">
-              We understand that every business is unique, with distinct goals
-              and requirements. That is why we take a personalized approach to
-              each project. Our team works closely with our clients, taking the
-              time to understand their business objectives, target audience, and
-              industry dynamics. This enables us to develop customized software
-              solutions that precisely meet their needs, drive efficiency, and
-              deliver tangible results.
-            </p>
+            <Reveal>
+              <p className="mt-3 text-sm text-white  lg:text-base xl:w-3/4 leading-[24px]  lg:leading-[30px]">
+                We understand that every business is unique, with distinct goals
+                and requirements. That is why we take a personalized approach to
+                each project. Our team works closely with our clients, taking
+                the time to understand their business objectives, target
+                audience, and industry dynamics. This enables us to develop
+                customized software solutions that precisely meet their needs,
+                drive efficiency, and deliver tangible results.
+              </p>
+            </Reveal>
           </div>
         </Reveal>
       </section>
 
       <section className="mx-auto my-16  mt-16 w-full lg:w-[90%]">
-        <h2 className="text-center text-2xl font-semibold md:text-4xl  uppercase sm:font-semibold md:mt-4 ">
-          Our team
-        </h2>
+        <Reveal>
+          <h2 className="text-center text-2xl font-semibold md:text-4xl  uppercase sm:font-semibold md:mt-4 ">
+            Our team
+          </h2>
+        </Reveal>
         <h1 className="mx-auto mb-4 w-2/3 text-center text-base lg:text-xl font-semibold  text-lightdark  lg:w-1/2 my-6">
           Passionate Experts Driving Innovation
         </h1>
@@ -210,7 +220,7 @@ const About = () => {
       </section>
 
       <section className="accordion|  mb-20 max-w-[100%] bg-[#FFEFE3] px-1 py-8">
-        <div className="mx-auto flex flex-col gap-4 md:flex-row ">
+        <div className="mx-auto flex w-[90%] flex-col gap-4 md:flex-row ">
           <div className="lg:justify-left px-2 lg:px-10  md:w-3/6 lg:flex lg:items-center">
             <div className="">
               <h4 className="text-center lg:text-left text-2xl font-semibold md:text-4xl  uppercase">

@@ -11,7 +11,7 @@ const Product = (props: Props) => {
         <h2 className="font-medium text-white sm:text-3xl sm:font-semibold md:mt-4 lg:font-semibold uppercase mb-4">
           Our Product
         </h2>
-        <h1 className="mb-4 text-xl  font-semibold uppercase text-white sm:text-3xl lg:text-5xl max-md:mb-4">
+        <h1 className="mb-4 text-xl  font-semibold uppercase text-white sm:text-3xl  max-md:mb-4">
           School Management System
         </h1>
       </div>

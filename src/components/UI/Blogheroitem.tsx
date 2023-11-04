@@ -7,74 +7,43 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 type Props = {
-  textclassName?: string;
+  introduction: string;
   title?: string;
   slug?: string;
-  content?: string;
-  publihed_at?: any;
-  author?: string;
-  like?: number;
-  comment?: number;
-  image: string;
+  image: StaticImageData;
 };
 
-const text =
-  " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magn deserunt nam consectetur debitis, qui, dicta unde beatae solutincidunt natus eum illo quo corporis quia, numquam fugit iste saepecommodi?";
-
-function Blogheroitem({
-  textclassName,
-  title,
-  slug,
-  like,
-  content,
-  comment,
-  image,
-  publihed_at,
-  author,
-}: Props) {
+function Blogheroitem({ title, slug, introduction, image }: Props) {
   const router = useRouter();
   return (
     <li className=" flex-col flex h-full  items-center gap-x-[5rem] md:flex-row py-10 md:justify-around md:gap-x-[4rem] justify-center xl:gap-x-[10rem] ">
-      <div className="h-full w-full xl:w-1/2">
+      <div className="h-[400px]  w-full lg:w-1/2 relative">
         <Image
           src={image}
-          height={800}
-          width={400}
+          fill
+          placeholder="blur"
           alt="meeras blog image"
-          className="mx-auto h-[250px] lg:h-[400px] w-[500px] rounded-lg object-cover"
+          className="object-cover"
           loading="lazy"
         />
       </div>
 
       <div className="mx-auto flex w-full flex-col justify-between gap-y-4 lg:mt-4 xl:w-1/2 ">
         <div className="mx-auto">
-          <h3 className="mt-4 text-base font-extrabold capitalize md:text-2xl md:leading-[2rem] lg:mt-0 xl:text-5xl">
+          <h3 className="mt-4 text-xl font-semibold uppercase md:text-3xl leading-[35px] md:leading-[45px] lg:mt-0 ">
             {title}
           </h3>
-          <p className="mt-2 text-base font-normal xl:mt-5 xl:text-xl">
-            {text.slice(0, 200)}{" "}
+          <p className="mt-2 text-base font-normal xl:mt-5">
+            {introduction?.slice(0, 200)}{" "}
             <span
               onClick={() => {
                 router.push(` /Blogpage/${slug}`);
               }}
-              className="text-sm text-blue-400 font-bold cursor-pointer"
+              className="text-sm text-blue-400 font-semibold cursor-pointer capitalize"
             >
               read more
             </span>
           </p>
-          <div className="mt-6  flex items-center justify-start gap-x-1 font-semibold">
-            <Image
-              src={image3}
-              alt="authorimage"
-              height={50}
-              width={50}
-              className="rounded-full"
-            />
-            <div className="flex flex-col lg:flex-row gap-x-2 items-left">
-              <h4 className="capitalize">by {author || "annonymous"}</h4>
-              <h3>{publihed_at}</h3>
-            </div>
-          </div>
         </div>
       </div>
     </li>

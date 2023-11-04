@@ -24,7 +24,7 @@ function HeroSection({}: Props) {
             </h2>
           </Reveal>
           <Reveal>
-            <p className="font-semibold text-4xl lg:text-5xl uppercase tracking-tight">
+            <p className="font-semibold text-4xl lg:text-5xl uppercase tracking-wide">
               Empowering <br />
               Your Digital <br />
               presence

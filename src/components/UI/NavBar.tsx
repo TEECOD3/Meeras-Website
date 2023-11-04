@@ -52,8 +52,8 @@ const NavBar = () => {
       </AnimatePresence>
 
       {hideNavBar ? null : (
-        <nav className="  fixed top-0 left-0 z-[400] w-full transition-all duration-500 ease-in-out">
-          <div className="w-[90%] z-50 mx-auto  bg-white/20  backdrop-blur-md  py-4">
+        <nav className="fixed top-0 left-0 z-[400] w-full transition-all duration-500 ease-in-out">
+          <div className="w-full max-lg:px-3 lg:w-[90%] z-50 mx-auto  bg-white/20  backdrop-blur-md  py-4">
             <div className="flex h-[4rem] items-center justify-between px-2 sm:h-[5rem]  ">
               <Link href="/" className="">
                 <Image
@@ -65,7 +65,7 @@ const NavBar = () => {
                 />
               </Link>
 
-              <ul className="flex items-center justify-around    gap-2 uppercase  font-semibold max-lg:hidden max-lg:w-[50%] lg:w-[40%]">
+              <ul className="flex items-center justify-around text-base gap-2 uppercase  font-semibold max-lg:hidden max-lg:w-[50%] lg:w-[40%]">
                 <Link href="/Aboutpage">
                   <li
                     className={`${

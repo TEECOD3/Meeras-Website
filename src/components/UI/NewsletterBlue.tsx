@@ -23,10 +23,10 @@ const NewsletterBlue = () => {
           ref={emailref}
           type="email"
           placeholder="Enter Your Email..."
-          className="w-full border-blue-700 bg-[#EAEAEA] text-base md:-mb-5 md:p-6 rouned-none"
+          className="w-full border-blue-700 rounded-none bg-[#EAEAEA] text-base md:-mb-5 md:p-6 rouned-none"
         />
         <Button
-          className="mx-auto mt-4 w-1/2 p-3  text-[0.8rem] sm:w-2/3 md:p-6 lg:text-xl xxl:text-2xl uppercase "
+          className="mx-auto mt-4 w-1/2 p-3 rounded-none text-[0.8rem] sm:w-2/3 md:p-6 lg:text-xl xxl:text-2xl uppercase "
           size="default"
           variant="default"
         >

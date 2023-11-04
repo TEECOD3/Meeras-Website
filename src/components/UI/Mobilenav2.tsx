@@ -5,28 +5,17 @@ import {
   MenuIcon,
   TwitterIcon,
 } from "lucide-react";
-import { FC } from "react";
-import { MdOutlineClose } from "react-icons/md";
-import meeraslogo from "public/images/Meeraslogo.png";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
-import Facebook from "../../../public/assets/icons/Facebook";
-import Twitter from "../../../public/assets/icons/Twitter";
-import Instagram from "../../../public/assets/icons/Instagram";
 import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/UI/sheet";
-import { Button } from "./button";
+import { Separator } from "@/components/UI/separator";
+
 import Whatsapp from "../../../public/assets/icons/Whatsapp";
-import { FaHamburger } from "react-icons/fa";
 
 export function Mobilenav() {
   return (
@@ -35,29 +24,28 @@ export function Mobilenav() {
         <MenuIcon />
       </SheetTrigger>
       <SheetContent className="z-[900000000000]">
-        <ul className=" flex flex-col gap-y-10 text-xl font-semibold px-2 py-10 uppercase ">
+        <ul className=" flex flex-col gap-y-10 text-xl font-semibold px-2 py-10 uppercase mt-10">
           <Link href="/Aboutpage">
             <SheetClose>
               <li className="uppercase  text-xl">About us</li>
             </SheetClose>
           </Link>
-
+          <Separator />
           <Link href="/Blogpage">
             <SheetClose>
               <li className="uppercase  text-xl">blog</li>
             </SheetClose>
           </Link>
-
+          <Separator />
           <Link href="/Aboutpage">
             <SheetClose>
               <li className="uppercase  text-xl">policy and privacy</li>
             </SheetClose>
           </Link>
-
+          <Separator />
           <div className="flex items-center justify-center">
             <div className="w-full uppercase flex-col flex items-left justify-center">
-              <span className="">social media</span>
-              <ul className="flex gap-x-3 w-10/12 mx-auto justify-between mt-8">
+              <ul className="flex gap-x-3 justify-between ">
                 <li>
                   <a
                     href="https://instagram.com/Meerassoftware"
